@@ -1,0 +1,46 @@
+.navbar{
+    justify-content: center;
+}
+
+
+
+
+.bg-False .nav_items_emp {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bg-False .nav_items_emp:hover {
+  color: #fe4c1c;
+}
+
+.bg-True .nav_items_emp {
+  color: #fe4c1c;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bg-True .nav_items_emp:hover {
+  color: #ffffff;
+}
+
+
+
+
+
+
+/* .nav_items_main:hover{
+    color: #fe4c1c;
+} */
+
+
+/* .nav-item a:hover {
+  color: #fe4c1c;
+} */
+.logout_user {
+  color: #d6d6d6;
+  font-size: 18px;
+
+}
+.logout_username {
+  color: #fe4c1c;
+}

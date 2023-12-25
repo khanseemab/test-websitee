@@ -1,0 +1,38 @@
+.why_us_container {
+  /* margin-top: 100px; */
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+.why_us_container h1{
+  /* margin-top: 100px; */
+  color:#fe4c1c;
+}
+
+.whyus_connect {
+  background-color: rgb(66, 66, 66);
+}
+
+.whyUs_project {
+    margin-top: 120px;
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+.head h1,
+.head p {
+  color: white;
+}
+
+.whyus_connect_button {
+  display: inline;
+  text-decoration: none;
+  color: #000000;
+  background: rgb(255, 255, 255);
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  /* margin:30px 500px 100px 500px; */
+  margin-top: 20px;
+}

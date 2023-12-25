@@ -1,0 +1,30 @@
+.client_detail_main{
+	min-height: 100vh;
+    /* background-image: url('../../assets/4.png'); */
+}
+.googleSheetData{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 50px 100px 50px 350px;
+}
+.clientTable{
+    border: 2px solid rgb(63, 63, 63);
+   
+}
+.clientTableHead{
+text-align: center;
+}
+.clientTableData{
+    padding: 0px 10px !important;
+}
+.clientTableData:hover{
+    background-color: rgb(139, 141, 141);
+}
+.clientTableButton{
+    padding: 0px 10px !important;
+    text-align: center;
+}
+.clientTableButton:hover{
+    color: red;
+    cursor: pointer;;
+}

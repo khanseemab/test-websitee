@@ -1,0 +1,121 @@
+.Invoice_form {
+  height: 93.2vh;
+  margin: 0px;
+  
+
+  /* padding: 50px; */
+}
+.InvoiceContainer{
+  overflow: unset; /* Disable scrollbar */
+}
+/* .container {
+    border: 2px solid black;
+}
+.row{
+    border:2px solid red
+}
+.assas{
+    background-color: aqua;
+} */
+.mainInvoice {
+    width: 85%;
+  margin-top: 50px;
+}
+.income_heading{
+  color: #fe4c1c;
+ }
+.employee_heading{
+  color: #fe4c1c;
+ }
+
+.Earning_heading,.Deduction_heading,.summary_heading{
+  color: #fe4c1c;
+}
+.salary_amount{
+  color: #39bb42;
+  border: 1px solid #39bb42;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.totalPay{
+  font-size: 20px;
+}
+.performa_table{
+  background-color: #ffffff;
+width: 100%;
+}
+.performa_img {
+  width: 100%;
+  border: 2px solid black;
+}
+
+ th,  td {
+  border: 2px solid #000000; /* Set the border for cells */
+  text-align: left;
+  padding: 17px;
+}
+.company{
+  width: 560px;
+}
+.terms_and_bankDetails{
+  list-style: none;
+}
+/*Animate Button START*/
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 28px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #fe4c1c;
+  width: 65px;
+  height: 50px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #fe4c1c;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.85);
+ }
+ /*Animate Button END*/
