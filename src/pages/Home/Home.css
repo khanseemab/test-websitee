@@ -37,6 +37,20 @@
   cursor: pointer;
 } */
 
+.text-loop {
+  display: inline-block;
+  animation: textScroll 10s linear infinite;
+}
+
+@keyframes textScroll {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
 
 .card_home,
 .card_home1 ,
@@ -60,7 +74,15 @@
   /* border: 2px solid #fe4c1c; */
 }
 
-.card_home:hover,
+.card_home:hover{
+  /* background-color: #f7d9d1; */
+  /* color: #fe4c1c; */
+  border-color: #ffffff;
+  cursor: pointer;
+  transform: scale(0.9); /* Apply a scale transformation on hover */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
 .card_home1:hover,
 .card_home2:hover {
   /* background-color: #f7d9d1; */

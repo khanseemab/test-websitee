@@ -22,7 +22,7 @@ const PerformaDetails = ({ downloadPDF }) => {
           // controlId="formHorizontalName"
         >
           <Form.Label column sm={3} htmlFor="name">
-            Buyer Name
+            Company Name
           </Form.Label>
           <Col sm={7}>
             <Form.Control
@@ -30,7 +30,7 @@ const PerformaDetails = ({ downloadPDF }) => {
               name="name"
               id="name"
               value={performa.name}
-              placeholder="Enter Buyer Name"
+              placeholder="Enter Company Name"
               onChange={handleInput}
               autoComplete="false"
             />
@@ -101,7 +101,7 @@ const PerformaDetails = ({ downloadPDF }) => {
           // controlId="formHorizontalPaidDay"
         >
           <Form.Label column sm={3} htmlFor="code">
-            Code
+            State Code
           </Form.Label>
           <Col sm={5}>
             <Form.Control
@@ -109,7 +109,7 @@ const PerformaDetails = ({ downloadPDF }) => {
               name="code"
               id="code"
               value={performa.code}
-              placeholder="Enter Post Code"
+              placeholder="Enter State Code"
               onChange={handleInputNum}
             />
           </Col>

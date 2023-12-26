@@ -13,8 +13,8 @@ const Dashboard = () => {
           <div className="col-md-4">
             <Sidebar />
           </div>
-          <div className="col-md-6 ">
-            <h1 className="welcome mt-5">Welcome Back !!</h1>
+          <div className="col-md-6 ms-4 ">
+            <h1 className="welcome ms-5 mt-5">Welcome Back !!</h1>
           </div>
         </div>
       </div>

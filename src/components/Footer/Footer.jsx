@@ -28,18 +28,18 @@ const Footer = () => {
                 full potential by providing affordable, effective, custom design
                 and marketing solutions.
                 <br />
-                <Link to={'https://twitter.com/k2_e_solutions'}>
+                <Link target="_blank" to={'https://twitter.com/k2_e_solutions'}>
 
                 <FaTwitter className="social-icon" /></Link> &nbsp;
-                <Link
+                <Link target="_blank"
                   to={
                     "https://www.instagram.com/k2e_solutions/"
                   }
                 >
                 <FaInstagram className="social-icon" /></Link> &nbsp;
-                <Link to={'https://www.facebook.com/profile.php?id=100092475399808'}>
+                <Link target="_blank" to={'https://www.facebook.com/profile.php?id=100092475399808'}>
                 <FaFacebook className="social-icon" /></Link> &nbsp;
-                <Link to={'#'}>
+                <Link target="_blank" to={'#'}>
 
                 <FaLinkedinIn className="social-icon" /></Link>
               </p>

@@ -132,6 +132,7 @@ const Navbar = () => {
                 as={Link}
                 to="/login"
                 // eventKey="employee"
+                // target="_blank"
               >
                 Employee
               </Nav.Link>

@@ -1,66 +1,28 @@
-.Invoice_form {
-  height: 93.2vh;
-  margin: 0px;
-  
 
-  /* padding: 50px; */
-}
-.InvoiceContainer{
-  overflow: unset; /* Disable scrollbar */
-}
-/* .container {
-    border: 2px solid black;
-}
-.row{
-    border:2px solid red
-}
-.assas{
-    background-color: aqua;
-} */
-.mainInvoice {
-    width: 85%;
-  margin-top: 50px;
-}
-.income_heading{
-  color: #fe4c1c;
- }
-.employee_heading{
-  color: #fe4c1c;
- }
-
-.Earning_heading,.Deduction_heading,.summary_heading{
-  color: #fe4c1c;
-}
-.salary_amount{
-  color: #39bb42;
-  border: 1px solid #39bb42;
-  border-radius: 15px;
-  padding: 10px;
-}
-
-.totalPay{
-  font-size: 20px;
-}
 .performa_table{
   background-color: #ffffff;
 width: 100%;
 }
 .performa_img {
   width: 100%;
+  height: 130px;
   border: 2px solid black;
 }
 
  th,  td {
   border: 2px solid #000000; /* Set the border for cells */
   text-align: left;
-  padding: 17px;
+  padding: 10px;
 }
 .company{
-  width: 560px;
+  max-width: 560px;
+  min-height: 200px;
 }
-.terms_and_bankDetails{
-  list-style: none;
+.terms_conditions{
+ font-size: 6x !important; 
 }
+
+
 /*Animate Button START*/
 .cta {
   position: relative;

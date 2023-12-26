@@ -26,7 +26,9 @@ const Login=()=>{
 if((email==="nabeel" || email==="seemab" || email==="dawood") && password==="admin"){
 	alert("Successfully Logged In")
     navigate('/Dashboard');	
-}else{
+}else if(email==="K2" && password==="Hills@123"){
+	alert("Successfully Logged In")
+    navigate('/Dashboard')}else{
 	alert("You don't have permissions")
 }
 	  

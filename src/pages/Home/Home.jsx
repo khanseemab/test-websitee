@@ -65,6 +65,47 @@ const Home = () => {
       <div className="container_main_page mb-0">
         <div className="container-fluid">
           <div className="row mt-4 ">
+            {" "}
+            <marquee
+              behavior="scroll"
+              direction="left"
+              scrollamount="5"
+              className="text-white"
+            >
+              <div className="text-loop">
+                K2 E-COMMERCE SOLUTIONS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                E-COMMERCE SOLUTIONS
+              </div>
+            </marquee>
             <div data-aos="fade-right" className="cards_main col-md-6   mt-5">
               <div className="row  mt-5">
                 <Link
@@ -97,7 +138,6 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-
             <div className="col-md-6 p-0 mt-0 ">
               {/* <img src={test} className="img-fluid" alt="test" /> */}
               <div className="mt-0">

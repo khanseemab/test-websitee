@@ -16,7 +16,7 @@ const Performa = () => {
       const options = {
         filename: "Performa.pdf",
         page: {
-          margin: 5,
+          margin: 0,
           format: "a4",
           orientation: "portrait",
         },
@@ -43,7 +43,7 @@ const Performa = () => {
   };
   useEffect(()=>{
     setShowMainPerforma(true);
-    setShowMainPerforma(false);
+    // setShowMainPerforma(false);
 
   },[])
 
