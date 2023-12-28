@@ -196,6 +196,21 @@ const PerformaDetails = ({ downloadPDF }) => {
       <option value="9">9%</option>
     </Form.Select>
   </Col>
+</Form.Group><Form.Group as={Row} className="mb-3 col-md-6 text-white">
+  <Form.Label column sm={2} htmlFor="exevutive">
+    Executive
+  </Form.Label>
+  <Col sm={6}>
+    <Form.Control
+      name="exevutive"
+      id="exevutive"
+      value={performa.exevutive}
+      onChange={handleInput}
+      placeholder="Enter Executive Name"
+
+    >
+    </Form.Control>
+  </Col>
 </Form.Group>
 
         <Form.Group>

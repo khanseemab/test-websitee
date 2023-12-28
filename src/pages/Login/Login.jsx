@@ -1,4 +1,5 @@
 import React,{ useState} from "react";
+import Logo from '../../assets/logo.png';
 
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -39,11 +40,27 @@ if((email==="nabeel" || email==="seemab" || email==="dawood") && password==="adm
 	// }
 
     return(
-        <>
-       
+        <> 
+		
          <div className="login_container">
 	        
-	            <div className="login_screen">
+
+
+<div className="form_box d-flex">
+		 <div className="Screen1 p-0 m-0" >
+			  <div className="register_main">
+			    <div><h1 className="heading_welcome">WELCOME TO </h1></div>
+				<Link  to={'/'}>
+
+			        <img className='image_logo' src={Logo} alt="404"/></Link>
+		      	<div className="heading_name"><h1>K2 E-Commerce Solution</h1></div>
+		       	</div>
+			</div>
+
+
+
+
+	            <div className="login_screen p-0 m-0">
 	            	<div className="screen__content">
 	            		<form className="login" onSubmit={submitLogin}>
 	            			<div className="login__field">
@@ -71,11 +88,10 @@ if((email==="nabeel" || email==="seemab" || email==="dawood") && password==="adm
 	            			</button>	
 										
 	            		</form>
-						{/* <a className="register" href="/Register">Register</a> */}
-	            		<div >
+	            		{/* <div >
 	            			<Link className="social-login" to={'/'}><h3>K2 e-commerce</h3></Link>
 	            			
-	            		</div>
+	            		</div> */}
 						
 	            	</div>
 	            	<div className="screen__background">
@@ -84,7 +100,7 @@ if((email==="nabeel" || email==="seemab" || email==="dawood") && password==="adm
 	            		<span className="screen__background__shape screen__background__shape1"></span>
 	            	</div>		
 	            </div>
-    
+				</div>
 			</div>
         </>
     )

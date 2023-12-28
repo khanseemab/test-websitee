@@ -43,7 +43,7 @@ const Performa = () => {
   };
   useEffect(()=>{
     setShowMainPerforma(true);
-    // setShowMainPerforma(false);
+    setShowMainPerforma(false);
 
   },[])
 

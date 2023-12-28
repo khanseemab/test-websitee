@@ -14,11 +14,16 @@ width: 100%;
   text-align: left;
   padding: 10px;
 }
-.company{
-  max-width: 560px;
-  min-height: 200px;
+.serviceName{ 
+  max-height: '1000px'!important;
+   /* max-width: '400px'; */
+   overflow: 'hidden';
+   /* white-space: 'pre-wrap'; */
 }
 .terms_conditions{
+  padding: 0px;
+  /* height: "20px"; */
+                 
  font-size: 6x !important; 
 }
 

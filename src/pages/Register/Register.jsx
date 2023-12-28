@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Register.css";
+// import "./Register.css";/
 import Logo from '../../assets/logo.png';
 
 const Register=()=>{
@@ -24,11 +24,11 @@ const Register=()=>{
         <div>             
             <div className="register_container">
             <div className="Screen1" >
-			<div className="register_main">
-			<div><h1 className="heading_welcome">WELCOME TO </h1></div>
-			<img className='image_logo' src={Logo} alt="404"/>
-			<div className="heading_name"><h1>K2 E-Commerce Solution</h1></div>
-			</div>
+			  <div className="register_main">
+			    <div><h1 className="heading_welcome">WELCOME TO </h1></div>
+			        <img className='image_logo' src={Logo} alt="404"/>
+		      	<div className="heading_name"><h1>K2 E-Commerce Solution</h1></div>
+		       	</div>
 			</div>
                 	<div className="Screen">
 					

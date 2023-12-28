@@ -3,7 +3,7 @@ import "./Performa.css";
 import performaIMG from "../../assets/Performa.png";
 import adminSignature from "../../assets/Admin_Signature.jpg";
 import { PerformaContext } from "./PerformaContext";
-import numberToWords from "number-to-words";
+import { ToWords } from "to-words";
 
 const MainPerforma = ({ pdfPerformaRef }) => {
   //WORKING USECONTEXT
@@ -18,13 +18,32 @@ const MainPerforma = ({ pdfPerformaRef }) => {
 
   // const wordResult = numberToWords.toWords(grandTotal);
   // setWords(wordResult);
+  const toWords = new ToWords({
+    localeCode: "en-IN",
+    converterOptions: {
+      currency: true,
+      ignoreDecimal: false,
+      ignoreZeroCurrency: false,
+      doNotAddOnly: false,
+      currencyOptions: {
+        // can be used to override defaults for the selected locale
+        name: "Rupee",
+        plural: "Rupees",
+        symbol: "₹",
+        fractionalUnit: {
+          name: "Paisa",
+          plural: "Paise",
+          symbol: "",
+        },
+      },
+    },
+  });
 
   useEffect(() => {
-    // Calculate word result when grandTotal changes
-    const wordResult = numberToWords.toWords(grandTotal);
-    const wordGST = numberToWords.toWords(gstAmount);
-    setAmountWords(wordResult);
-    setGSTWords(wordGST)
+    const amountWords = toWords.convert(grandTotal);
+    const wordGST = toWords.convert(gstAmount);
+    setAmountWords(amountWords);
+    setGSTWords(wordGST);
   }, [grandTotal]); // Only re-run the effect when grandTotal changes
 
   return (
@@ -70,7 +89,15 @@ const MainPerforma = ({ pdfPerformaRef }) => {
               <td colSpan="3">Mode/Terms of Payment</td>
             </tr>
             <tr>
-              <td rowspan="3" colSpan="2">
+              <td
+                rowspan="3"
+                colSpan="2"
+                style={{
+                  maxWidth: "530px",
+                  overflow: "hidden",
+                  whiteSpace: "pre-wrap",
+                }}
+              >
                 Buyer (Bill to): <b>{performa.name}</b>
                 <br />
                 <br />
@@ -79,7 +106,8 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                 GSTIN/UIN : {performa.GSTIN}
                 <br />
                 <br />
-                State Name: {performa.state} , Code: {performa.code}
+                State Name: {performa.state} , Code: {performa.code} <br />
+                <br />
               </td>
 
               <td colSpan="2">Dispatch Doc No.</td>
@@ -93,24 +121,35 @@ const MainPerforma = ({ pdfPerformaRef }) => {
               <td colSpan="5">Terms of Delivery</td>
             </tr>
             <tr>
-              <td>Sr.No</td>
+              <td style={{ textAlign: "center" }}>Sr.No</td>
               <td style={{ textAlign: "center" }}>Description of Services</td>
-              <td>HSN/SAC</td>
-              <td>Quantity</td> <td>Rate</td> <td>per</td> <td>Amount</td>
+              <td style={{ textAlign: "center" }}>HSN/SAC</td>
+              <td style={{ textAlign: "center" }}>Quantity</td> <td>Rate</td>{" "}
+              <td colSpan="2" style={{ textAlign: "center" }}>
+                Amount
+              </td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>
-                <p className="company">{performa.serviceName}</p>
+              <td style={{ textAlign: "center" }}>1</td>
+              <td
+                style={{
+                  height: "210px",
+                  maxWidth: "500px",
+                  overflow: "hidden",
+                  whiteSpace: "pre-wrap",
+                }}
+              >
+                {performa.serviceName}
+                <br />
+                <br />
               </td>
-              <td>998399</td> <td></td>
+              <td style={{ textAlign: "center" }}>998399</td> <td></td>
               <td>
                 <br />
                 <br />
                 {performa.gstRate}%
               </td>
-              <td></td>
-              <td>
+              <td colSpan="2" style={{ textAlign: "center" }}>
                 ₹{performa.amount}
                 <br />
                 <br />₹{gstAmount}
@@ -132,9 +171,10 @@ const MainPerforma = ({ pdfPerformaRef }) => {
               <td>
                 <b>₹{grandTotal}</b>
               </td>
-            </tr><tr>
+            </tr>
+            <tr>
               <td colspan="7">
-                Amount Chargeable (in words) :<b> {amountWords} Only</b>
+                Amount Chargeable (in words) :<b> {amountWords} </b>
               </td>
             </tr>
             <tr style={{ textAlign: "center" }}>
@@ -175,11 +215,12 @@ const MainPerforma = ({ pdfPerformaRef }) => {
             </tr>
             <tr>
               <td colspan="7">
-                Tax Amount (in words) :<b> {gstWords} Only</b>
+                Tax Amount (in words) :<b> {gstWords} </b>
               </td>
             </tr>
-            <tr className="terms_conditions" style={{ fontSize: "11px" }}>
-              <td colspan="7">
+            <tr className="terms_conditions" style={{ fontSize: "10px" ,padding:"0px"}}>
+              <td colspan="7" 
+               >
                 <ul>
                   <li>
                     This application is for K2 E-Commerce solutions which
@@ -226,7 +267,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                       TDS(Tax Deducted at Source) will be charged at rate of 2%.
                       <p
                         className="terms_&_bank_details p-0 m-0"
-                        style={{ fontSize: "12px" }}
+                        style={{ fontSize: "11px" }}
                       >
                         Bank Details : <br />
                         Account Name : K2 E-COMMERCE SOLUTIONS

@@ -19,11 +19,11 @@
 	/* margin-left: 5%; */
 }
 .Screen1{		
-	background: linear-gradient(90deg, #665caf, #7975b3);		
+	background: linear-gradient(90deg, #343434, #232323);		
 	position: relative;	
 	height: 500px;
 	width: 500px;	
-	box-shadow: 0px 0px 24px #5C5696;
+	box-shadow: 0px 0px 24px #ffffff;
 	margin-left: 5%;
 	opacity: 0.73;
 }

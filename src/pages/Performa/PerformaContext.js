@@ -13,6 +13,7 @@ const PerformaProvider = ({ children }) => {
     amount: '',
     discount: "",
     gstRate: "",
+    executive:''
   });
 
   const handleInputNum = (e) => {
