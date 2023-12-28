@@ -73,7 +73,7 @@ const Home = () => {
               className="text-white"
             >
               <div className="text-loop">
-                K2 E-COMMERCE SOLUTIONS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
+                {/* K2 E-COMMERCE SOLUTIONS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
@@ -102,8 +102,8 @@ const Home = () => {
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS
+                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  */}
+                 <span style={{color:"#fe4c1c"}}>K2 </span>E-COMMERCE <span style={{color:"green"}}>SOLUTIONS</span>
               </div>
             </marquee>
             <div data-aos="fade-right" className="cards_main col-md-6   mt-5">

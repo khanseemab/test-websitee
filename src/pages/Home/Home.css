@@ -38,6 +38,7 @@
 } */
 
 .text-loop {
+  font-size: 18px;
   display: inline-block;
   animation: textScroll 10s linear infinite;
 }

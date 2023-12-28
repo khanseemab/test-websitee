@@ -106,8 +106,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                 GSTIN/UIN : {performa.GSTIN}
                 <br />
                 <br />
-                State Name: {performa.state} , Code: {performa.code} <br />
-                <br />
+                State Name: {performa.state} , Code: {performa.code} 
               </td>
 
               <td colSpan="2">Dispatch Doc No.</td>
@@ -139,9 +138,15 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                   whiteSpace: "pre-wrap",
                 }}
               >
-                {performa.serviceName}
+                {performa.package}
                 <br />
+                {performa.marketplace}
+
                 <br />
+                {performa.sku}
+                <br />
+
+                {performa.details}
               </td>
               <td style={{ textAlign: "center" }}>998399</td> <td></td>
               <td>
@@ -218,9 +223,11 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                 Tax Amount (in words) :<b> {gstWords} </b>
               </td>
             </tr>
-            <tr className="terms_conditions" style={{ fontSize: "10px" ,padding:"0px"}}>
-              <td colspan="7" 
-               >
+            <tr
+              className="terms_conditions"
+              style={{ fontSize: "10px", padding: "0px" }}
+            >
+              <td colspan="7">
                 <ul>
                   <li>
                     This application is for K2 E-Commerce solutions which

@@ -41,7 +41,7 @@ const PerformaDetails = ({ downloadPDF }) => {
           className="mb-3 col-md-6 text-white"
           // controlId="formHorizontalID"
         >
-          <Form.Label column sm={2} htmlFor="GSTIN">
+          <Form.Label column sm={3} htmlFor="GSTIN">
             GSTIN{" "}
           </Form.Label>
           <Col sm={6}>
@@ -81,7 +81,7 @@ const PerformaDetails = ({ downloadPDF }) => {
           className="mb-3 col-md-6 text-white"
           // controlId="formHorizontalDate"
         >
-          <Form.Label column sm={2} htmlFor="state">
+          <Form.Label column sm={3} htmlFor="state">
             STATE{" "}
           </Form.Label>
           <Col sm={5}>
@@ -124,20 +124,73 @@ const PerformaDetails = ({ downloadPDF }) => {
 
         <Form.Group
           as={Row}
-          className="mb-3 col-md-9 text-white"
+          className="mb-3 col-md-6 text-white"
           // controlId="formHorizontalSalary"
         >
-          <Form.Label column sm={2} htmlFor="serviceName">
-            Service Name
+          <Form.Label column sm={3} htmlFor="package">
+            Package Name
           </Form.Label>
-          <Col sm={10}>
+          <Col sm={7}>
             <Form.Control
               type="text"
-              name="serviceName"
-              id="serviceName"
-              value={performa.serviceName}
+              name="package"
+              id="package"
+              value={performa.package}
               onChange={handleInput}
-              placeholder="Enter Service Name"
+              placeholder="Enter Package Name"
+            />
+          </Col>
+        </Form.Group>
+        <Form.Group
+          as={Row}
+          className="mb-3 col-md-6 text-white"
+          // controlId="formHorizontalSalary"
+        >
+          <Form.Label column sm={3} htmlFor="marketplace">
+Marketplace          </Form.Label>
+          <Col sm={7}>
+            <Form.Control
+              type="text"
+              name="marketplace"
+              id="marketplace"
+              value={performa.marketplace}
+              onChange={handleInput}
+              placeholder="Enter Marketplace Name"
+            />
+          </Col>
+        </Form.Group>
+        <Form.Group
+          as={Row}
+          className="mb-3 col-md-6 text-white"
+          // controlId="formHorizontalSalary"
+        >
+          <Form.Label column sm={3} htmlFor="sku">
+SKU          </Form.Label>
+          <Col sm={7}>
+            <Form.Control
+              type="text"
+              name="sku"
+              id="sku"
+              value={performa.sku}
+              onChange={handleInput}
+              placeholder="Enter SKU Details"
+            />
+          </Col>
+        </Form.Group><Form.Group
+          as={Row}
+          className="mb-3 col-md-6 text-white"
+          // controlId="formHorizontalSalary"
+        >
+          <Form.Label column sm={3} htmlFor="details">
+Additional Info          </Form.Label>
+          <Col sm={7}>
+            <Form.Control
+              type="text"
+              name="details"
+              id="details"
+              value={performa.details}
+              onChange={handleInput}
+              placeholder="Enter Additional Information"
             />
           </Col>
         </Form.Group>
@@ -149,7 +202,7 @@ const PerformaDetails = ({ downloadPDF }) => {
           <Form.Label column sm={3} htmlFor="amount">
             Amount
           </Form.Label>
-          <Col sm={7}>
+          <Col sm={6}>
             <Form.Control
               type="number"
               name="amount"
@@ -165,7 +218,7 @@ const PerformaDetails = ({ downloadPDF }) => {
           className="mb-3 col-md-6 text-white"
           // controlId="formHorizontalHRA"
         >
-          <Form.Label column sm={2} htmlFor="discount">
+          <Form.Label column sm={3} htmlFor="discount">
             Discount
           </Form.Label>
           <Col sm={5}>
@@ -183,7 +236,7 @@ const PerformaDetails = ({ downloadPDF }) => {
   <Form.Label column sm={3} htmlFor="gstRate">
     GST
   </Form.Label>
-  <Col sm={7}>
+  <Col sm={5}>
     <Form.Select
       name="gstRate"
       id="gstRate"
@@ -197,7 +250,7 @@ const PerformaDetails = ({ downloadPDF }) => {
     </Form.Select>
   </Col>
 </Form.Group><Form.Group as={Row} className="mb-3 col-md-6 text-white">
-  <Form.Label column sm={2} htmlFor="exevutive">
+  <Form.Label column sm={3} htmlFor="exevutive">
     Executive
   </Form.Label>
   <Col sm={6}>
@@ -215,7 +268,7 @@ const PerformaDetails = ({ downloadPDF }) => {
 
         <Form.Group>
           <Form.Label column sm={2}></Form.Label>
-          <Col sm={7}>
+          <Col sm={8}>
             <button className=" cta col-md-3 mt-3 justify-content-start align-items-start text-start">
               <span className="d-inline" onClick={downloadPDF}>
                 Generate

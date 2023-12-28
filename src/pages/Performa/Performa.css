@@ -12,7 +12,7 @@ width: 100%;
  th,  td {
   border: 2px solid #000000; /* Set the border for cells */
   text-align: left;
-  padding: 10px;
+  padding: 8px;
 }
 .serviceName{ 
   max-height: '1000px'!important;
