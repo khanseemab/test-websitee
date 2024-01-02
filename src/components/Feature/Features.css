@@ -12,7 +12,8 @@
     /* border-radius: 60px; */
     /* background-color: #ffffff; */
     box-shadow: 0 15px 35px rgb(0 0 0 / 30%);
-    /* -webkit-transform: translateY(-10px);
+    /* filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); */
+        /* -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
     transform: translateY(-10px);
     transition: 0.5s; */

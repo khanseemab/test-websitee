@@ -35,8 +35,9 @@ const Services = () => {
                 <p>{homePageText.serviceshome_subheader1}</p>
               </div>
               <div className="row">
+
                 <div data-aos="zoom-in" className="col-lg-4 col-md-4 col-6">
-                  <div className="services-box-home m-3">
+                  <div className="services-box-home m-3 pt-5">
                     <AiOutlineNotification className="icon1" />
                     <h4>{homePageText.services_box_title1}</h4>
                     <p>{homePageText.services_box_des1}</p>
@@ -44,8 +45,8 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4 col-md-4 col-6">
-                  <div data-aos="zoom-in" className="services-box-home m-3">
+                  <div data-aos="zoom-in" className="col-lg-4 col-md-4 col-6">
+                  <div className="services-box-home m-3 pt-5">
                     <AiOutlineFundView className="icon2" />
                     <h4>{homePageText.services_box_title2}</h4>
                     <p>{homePageText.services_box_des2}</p>
@@ -53,8 +54,8 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4 col-md-4 col-6">
-                  <div data-aos="zoom-in" className="services-box-home m-3">
+                <div data-aos="zoom-in"  className="col-lg-4 col-md-4 col-6">
+                  <div className="services-box-home m-3 pt-5">
                     <AiOutlineFileSearch className="icon3" />
                     <h4>{homePageText.services_box_title3}</h4>
                     <p>{homePageText.services_box_des3}</p>
@@ -62,8 +63,8 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4 col-md-4 col-6">
-                  <div data-aos="zoom-in" className="services-box-home m-3">
+                <div data-aos="zoom-in" className="col-lg-4 col-md-4 col-6">
+                  <div className="services-box-home m-3 pt-5">
                     <AiOutlineTeam className="icon3" />
                     <h4>{homePageText.services_box_title4}</h4>
                     <p>{homePageText.services_box_des4}</p>
@@ -71,8 +72,8 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4 col-md-4 col-6">
-                  <div data-aos="zoom-in" className="services-box-home m-3">
+                <div data-aos="zoom-in" className="col-lg-4 col-md-4 col-6">
+                  <div  className="services-box-home m-3 pt-5">
                     <AiOutlineProject className="icon2" />
                     <h4>{homePageText.services_box_title5}</h4>
                     <p>{homePageText.services_box_des5}</p>
@@ -80,8 +81,8 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4 col-md-4 col-6">
-                  <div data-aos="zoom-in" className="services-box-home m-3">
+                <div data-aos="zoom-in" className="col-lg-4 col-md-4 col-6">
+                  <div className="services-box-home m-3 pt-5">
                     <AiOutlineSync className="icon1" />
                     <h4>{homePageText.services_box_title6}</h4>
                     <p>{homePageText.services_box_des6}</p>

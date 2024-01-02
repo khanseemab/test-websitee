@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { PerformaContext } from "./PerformaContext";
 const PerformaDetails = ({ downloadPDF }) => {
-  const { performa, handleInputNum, handleInput } = useContext(PerformaContext);
+  const { performa, handleInputNum, handleInput,handleCustomInputChange,customPackage,selectedPackage,handleSelectChange } = useContext(PerformaContext);
   const submitHandle = (e) => {
     e.preventDefault();
   };
@@ -69,7 +69,7 @@ const PerformaDetails = ({ downloadPDF }) => {
               name="address"
               id="address"
               value={performa.address}
-              placeholder="Enter Buyer Address"
+              placeholder="Enter Company Address"
               onChange={handleInput}
               autoComplete="false"
             />
@@ -120,9 +120,7 @@ const PerformaDetails = ({ downloadPDF }) => {
         <h2 className="income_heading">Description</h2>
         <br />
 
-     
-
-        <Form.Group
+        {/* <Form.Group
           as={Row}
           className="mb-3 col-md-6 text-white"
           // controlId="formHorizontalSalary"
@@ -140,14 +138,53 @@ const PerformaDetails = ({ downloadPDF }) => {
               placeholder="Enter Package Name"
             />
           </Col>
-        </Form.Group>
+        </Form.Group> */}
+
+        <Form.Group as={Row} className="mb-3 col-md-6 text-white">
+      <Form.Label column sm={3} htmlFor="package">
+        Package Name
+      </Form.Label>
+      <Col sm={7}>
+        <Form.Select
+          name="package"
+          id="package"
+          value={selectedPackage}
+          onChange={handleSelectChange}
+        >
+          <option value="" disabled>
+            Select Package Name
+          </option>
+          <option value="Start up mini">Start up mini</option>
+          <option value="Start up">Start up</option>
+          <option value="Standard">Standard</option>
+          <option value="Premium">Premium</option>
+          <option value="SEO/SMO">SEO/SMO</option>
+          <option value="Web Development">Web Development</option>
+          <option value="other">Other</option>
+        </Form.Select>
+
+        {/* Input field for custom package name */}
+        {selectedPackage === 'other' && (
+          <Form.Control
+            type="text"
+            name="customPackage"
+            value={customPackage}
+            onChange={handleCustomInputChange}
+            placeholder="Enter Package Name"
+            className="mt-2"
+          />
+        )}
+      </Col>
+    </Form.Group>
+
         <Form.Group
           as={Row}
           className="mb-3 col-md-6 text-white"
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="marketplace">
-Marketplace          </Form.Label>
+            Marketplace{" "}
+          </Form.Label>
           <Col sm={7}>
             <Form.Control
               type="text"
@@ -165,7 +202,8 @@ Marketplace          </Form.Label>
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="sku">
-SKU          </Form.Label>
+            SKU{" "}
+          </Form.Label>
           <Col sm={7}>
             <Form.Control
               type="text"
@@ -176,13 +214,15 @@ SKU          </Form.Label>
               placeholder="Enter SKU Details"
             />
           </Col>
-        </Form.Group><Form.Group
+        </Form.Group>
+        <Form.Group
           as={Row}
           className="mb-3 col-md-6 text-white"
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="details">
-Additional Info          </Form.Label>
+            Additional Info{" "}
+          </Form.Label>
           <Col sm={7}>
             <Form.Control
               type="text"
@@ -233,38 +273,40 @@ Additional Info          </Form.Label>
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3 col-md-6 text-white">
-  <Form.Label column sm={3} htmlFor="gstRate">
-    GST
-  </Form.Label>
-  <Col sm={5}>
-    <Form.Select
-      name="gstRate"
-      id="gstRate"
-      value={performa.gstRate}
-      onChange={handleInputNum}
-    >
-          <option value="" disabled>Select GST Rate</option>
+          <Form.Label column sm={3} htmlFor="gstRate">
+            GST
+          </Form.Label>
+          <Col sm={5}>
+            <Form.Select
+              name="gstRate"
+              id="gstRate"
+              value={performa.gstRate}
+              onChange={handleInputNum}
+            >
+              <option value="" disabled>
+                Select GST Rate
+              </option>
 
-      <option value="18">18%</option>
-      <option value="9">9%</option>
-    </Form.Select>
-  </Col>
-</Form.Group><Form.Group as={Row} className="mb-3 col-md-6 text-white">
-  <Form.Label column sm={3} htmlFor="exevutive">
-    Executive
-  </Form.Label>
-  <Col sm={6}>
-    <Form.Control
-      name="exevutive"
-      id="exevutive"
-      value={performa.exevutive}
-      onChange={handleInput}
-      placeholder="Enter Executive Name"
+              <option value="18">18%</option>
+              <option value="9">9%</option>
+            </Form.Select>
+          </Col>
+        </Form.Group>
 
-    >
-    </Form.Control>
-  </Col>
-</Form.Group>
+        <Form.Group as={Row} className="mb-3 col-md-6 text-white">
+          <Form.Label column sm={3} htmlFor="exevutive">
+            Executive
+          </Form.Label>
+          <Col sm={6}>
+            <Form.Control
+              name="exevutive"
+              id="exevutive"
+              value={performa.exevutive}
+              onChange={handleInput}
+              placeholder="Enter Executive Name"
+            ></Form.Control>
+          </Col>
+        </Form.Group>
 
         <Form.Group>
           <Form.Label column sm={2}></Form.Label>

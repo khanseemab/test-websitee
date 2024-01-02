@@ -6,8 +6,9 @@ const WhyUsSection1 = () => {
   return (
     <>
       <div className="container-fluid whyus_connect ">
-        <div className="row whyUs_project  p-5">
-          <div className="col-md-6 p-5">
+      
+        <div className="row whyUs_project  p-5 ">
+          <div className="col-md-7 p-5 m-auto">
             <h2>Have a Project in mind?</h2>
             <p>
               We can help you bring your ideas to life. Let’s talk about what we
@@ -15,8 +16,8 @@ const WhyUsSection1 = () => {
             </p><Link to='https://wa.link/oq74n9'>
             <button className="whyus_connect_button glow-button">connect</button></Link>
           </div>
-          <div data-aos='zoom-in'  className="col-md-6">
-            <img src={connect} height={"290px"} alt="Lets Connect" />
+          <div data-aos='zoom-in'  className="col-md-5">
+            <img src={connect} height={"330px"} alt="Lets Connect" />
           </div>
         </div>
         <div className="row ">

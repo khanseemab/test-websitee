@@ -18,13 +18,23 @@
 }
 .heading_welcome {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 35px;
   color: #ffffff;
 }
 .image_logo {
-  height: 200px;
-  margin: 60px 20px 20px 150px;
+  height: 380px;
+  margin: -15px 20px -60px 12%;
   opacity: 1;
+ 
+  border-radius: 100%;
+  transform: translateY(-10px) scale(0.95); /* Initial state */
+  transition: transform 1s;
+}
+.image_logo:hover{
+
+
+  transform: translateY(-10px) scale(1.02); /* Adjust the scale factor as needed */
+
 }
 
 .form_box {
@@ -162,14 +172,18 @@
 
 .social-login {
   position: absolute;
-  height: 80px;
-  width: 200px;
-  text-align: center;
-  bottom: 0px;
-  right: 0px;
+  /* height: 85px; */
+  width: auto;
+  text-align: start;
+  /* bottom: 0px; */
+  right: 30px;
   color: #fff;
+  font-size: 18px;
 }
-
+.social-login:hover {
+  color: #fe4c1c;
+  font-size: 18px;
+}
 .heading_name {
   text-align: center;
   margin-top: 30px;

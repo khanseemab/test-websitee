@@ -21,6 +21,14 @@
     -moz-animation: gradbar 15s ease infinite;
     animation: gradbar 15s ease infinite;
   } */
+  .nav_items_dropdown{
+
+    color: black;
+  }
+  .nav_items_dropdown:hover{
+
+    color: #fe4c1c;
+  }
 
 .bg-False {
   /* background-image: url('../../assets/SEO.jpg'); */
@@ -54,6 +62,11 @@
   color: #ffffff;
 }
 
+.emp_login_btn{
+  border-color:'white';
+  color:"white"
+
+}
 /* .logos{
   background-color: rgb(238, 238, 238);
 } */

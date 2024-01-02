@@ -1,6 +1,11 @@
 import React from "react";
 import homePageText from "./data";
 import "./Home.css";
+import connect from "../../assets/connect.png";
+import pricing from "../../assets/package.png";
+import testimonial from "../../assets/testimonial.png";
+import whyUS from "../../assets/whyUS.png";
+
 // import  team1  from "../../assets/Images/team_1.jpg";
 // import  team2  from "../../assets/Images/team_2.jpg";
 // import  team3  from "../../assets/Images/team_3.jpg";
@@ -52,6 +57,19 @@ const Home = () => {
     testimonialElement.scrollIntoView({ behavior: "smooth" });
   };
 
+  const styles = {
+    outlinedButton: {
+      // Define your default styles for the outlined button
+      border: '1px solid #2196F3',
+      color: '#2196F3',
+      transition: 'color 0.3s, border 0.3s', // Add a transition effect
+    },
+    hoverEffect: {
+      color: '#1565C0', // Change the color on hover
+      border: '1px solid #1565C0', // Change the border color on hover
+    },
+  };
+
   return (
     <>
       {/*Main Section start */}
@@ -62,10 +80,9 @@ const Home = () => {
      </div>
          */}
 
-      <div className="container_main_page mb-0">
+      <div className="container_main_page ">
         <div className="container-fluid">
           <div className="row mt-4 ">
-            {" "}
             <marquee
               behavior="scroll"
               direction="left"
@@ -103,7 +120,8 @@ const Home = () => {
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
                 E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  */}
-                 <span style={{color:"#fe4c1c"}}>K2 </span>E-COMMERCE <span style={{color:"green"}}>SOLUTIONS</span>
+                <span style={{ color: "#fe4c1c" }}>K2 </span>E-COMMERCE{" "}
+                <span style={{ color: "green" }}>SOLUTIONS</span>
               </div>
             </marquee>
             <div data-aos="fade-right" className="cards_main col-md-6   mt-5">
@@ -111,14 +129,25 @@ const Home = () => {
                 <Link
                   className="card_home col-6 "
                   to={"https://wa.link/oq74n9"}
-                >
-                  Let's Connect
-                  <br />
-                  <FaRegHandshake className="home_icons" />
+                > 
+                 
+                  {/* <FaRegHandshake className="home_icons" /> */}
+                  <img
+                    src={connect}
+                    height={"70px"}
+                    alt="K2 e-commerce Solutions connect"
+                  /><br /> Let's Connect
+                  
                 </Link>
                 <Link className="card_home1 col-6" to={"/why-us"}>
-                  Why US ?<br />
-                  <RiQuestionnaireLine className="home_icons" />
+                  
+                  {/* <RiQuestionnaireLine className="home_icons" /> */}
+                  <img
+                    src={whyUS}
+                    height={"70px"}
+                    alt="K2 e-commerce Solutions connect"
+                  /> <br /> Why US ?
+                 
                 </Link>
               </div>
               <div className="row ">
@@ -127,14 +156,24 @@ const Home = () => {
                   to="#"
                   onClick={scrollToTestimonial}
                 >
-                  Testimonial
-                  <br />
-                  <FaRegCircleUser className="home_icons" />
+                 
+                  {/* <FaRegCircleUser className="home_icons" /> */}
+                  <img
+                    src={testimonial}
+                    height={"70px"}
+                    alt="K2 e-commerce Solutions connect testimonial"
+                  /><br /> Testimonial
+                  
                 </Link>
                 <Link className="card_home col-6 " to={"/services/pricing"}>
-                  Packages
-                  <br />
-                  <TbCoinRupee className="home_icons" />
+                 
+                  {/* <TbCoinRupee className="home_icons" /> */}
+                  <img
+                    src={pricing}
+                    height={"70px"}
+                    alt="K2 e-commerce Solutions connect package"
+                  /><br /> Packages
+                  
                 </Link>
               </div>
             </div>

@@ -50,7 +50,7 @@ const About = () => {
 
           <div className="container">
             <div className="row">
-              <div data-aos='flip-left' className="col-lg-6 col-md-6 ">
+              <div data-aos='zoom-in' className="col-lg-6 col-md-6 ">
                 <img
                   src="https://drscottcolonna.com/wp-content/uploads/2022/07/Why-Determining-Core-Values-Will-Help-Grow-Your-Business-768x504.jpg"
                   className="img-fluid mt-5 pt-5"

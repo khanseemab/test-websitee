@@ -34,16 +34,12 @@ const Performa = () => {
 
     setTimeout(()=>{
       generateAndDownloadPDF();
-    },100)
-    // Call the function to generate and download the PDF
-    
-
-    // Add any other logic you need after triggering the PDF download
+    },100) 
     console.log("PDF download initiated");
   };
   useEffect(()=>{
     setShowMainPerforma(true);
-    // setShowMainPerforma(false);
+    setShowMainPerforma(false);
 
   },[])
 

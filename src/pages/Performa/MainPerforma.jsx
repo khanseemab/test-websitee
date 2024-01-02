@@ -11,7 +11,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
   const [amountWords, setAmountWords] = useState("");
   const [gstWords, setGSTWords] = useState("");
 
-  const { performa, gstAmount, totalAmount, grandTotal } =
+  const { performa, gstAmount, totalAmount, grandTotal,customPackage,selectedPackage } =
     useContext(PerformaContext);
 
   const today = new Date().toLocaleDateString("en-GB");
@@ -48,8 +48,8 @@ const MainPerforma = ({ pdfPerformaRef }) => {
 
   return (
     <>
-      <div className="">
-        <div ref={pdfPerformaRef} className="container mainInvoice ">
+      <div ref={pdfPerformaRef} className="">
+        <div  className="container mainInvoice mt-2">
           <table className="performa_table">
             <tr style={{ padding: "0px" }}>
               <td colspan="7" style={{ padding: "0px" }}>
@@ -138,7 +138,10 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                   whiteSpace: "pre-wrap",
                 }}
               >
-                {performa.package}
+                <b>
+                {/* {performa.package} */}
+                {customPackage||selectedPackage}
+                </b>
                 <br />
                 {performa.marketplace}
 
