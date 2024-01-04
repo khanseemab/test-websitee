@@ -68,7 +68,7 @@ const Client = () => {
         <td className='clientTableData' ><Link to={`/${elem.ID}`}>{elem['Name']}</Link> </td>
         <td className='clientTableData'>{elem['Mobile no.']}</td>  
         <td className='clientTableData'>{elem['Mail ID']}</td>
-       <td className='clientTableData' >{elem['Company Name']}</td>  
+       <td className='clientTableData'>{elem['Company Name']}</td>  
         <td className='clientTableData'>{elem['Remark']}</td>  
         <td className='clientTableData'>{elem['Status']}</td>   
         <td className='clientTableButton'><DeleteOutlineIcon onClick={()=>{deleteData(i)}}/></td>  
@@ -78,7 +78,7 @@ const Client = () => {
   </tbody>
 </Table>
   </div>
- 
+
 
     </div>
     </>

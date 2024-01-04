@@ -11,7 +11,7 @@ const Features = () => {
             <div className="feature-container ">
               <img
                 src="https://techvify-software.com/wp-content/uploads/2023/09/account-management-1536x768.webp"
-                alt="Flexbox Feature"
+                alt="Complete Account Management"
               />
             </div>
             <h2 className="h2">Complete Account Management</h2>

@@ -24,10 +24,10 @@ import Features from "../../components/Feature/Features";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import { Link } from "react-router-dom";
 // import ControlledCarousel from "../../components/Carousel/Carousel";
-import { FaRegHandshake } from "react-icons/fa6";
-import { TbCoinRupee } from "react-icons/tb";
-import { FaRegCircleUser } from "react-icons/fa6";
-import { RiQuestionnaireLine } from "react-icons/ri";
+// import { FaRegHandshake } from "react-icons/fa6";
+// import { TbCoinRupee } from "react-icons/tb";
+// import { FaRegCircleUser } from "react-icons/fa6";
+// import { RiQuestionnaireLine } from "react-icons/ri";
 
 import {
   // AiOutlineRocket,
@@ -57,18 +57,18 @@ const Home = () => {
     testimonialElement.scrollIntoView({ behavior: "smooth" });
   };
 
-  const styles = {
-    outlinedButton: {
-      // Define your default styles for the outlined button
-      border: '1px solid #2196F3',
-      color: '#2196F3',
-      transition: 'color 0.3s, border 0.3s', // Add a transition effect
-    },
-    hoverEffect: {
-      color: '#1565C0', // Change the color on hover
-      border: '1px solid #1565C0', // Change the border color on hover
-    },
-  };
+  // const styles = {
+  //   outlinedButton: {
+  //     // Define your default styles for the outlined button
+  //     border: '1px solid #2196F3',
+  //     color: '#2196F3',
+  //     transition: 'color 0.3s, border 0.3s', // Add a transition effect
+  //   },
+  //   hoverEffect: {
+  //     color: '#1565C0', // Change the color on hover
+  //     border: '1px solid #1565C0', // Change the border color on hover
+  //   },
+  // };
 
   return (
     <>
@@ -82,7 +82,7 @@ const Home = () => {
 
       <div className="container_main_page ">
         <div className="container-fluid">
-          <div className="row mt-4 ">
+          <div className="row mt-md-3 ">
             <marquee
               behavior="scroll"
               direction="left"
@@ -124,10 +124,17 @@ const Home = () => {
                 <span style={{ color: "green" }}>SOLUTIONS</span>
               </div>
             </marquee>
-            <div data-aos="fade-right" className="cards_main col-md-6   mt-5">
-              <div className="row  mt-5">
+            <div className="col-md-6 p-0 mt-0 order-md-2">
+              {/* <img src={test} className="img-fluid" alt="test" /> */}
+              <div className="mt-md-1">
+                {/* <ControlledCarousel /> */}
+                <Lottie animationData={animationData} />
+              </div>
+            </div>
+            <div data-aos="fade-right" className=" col-md-6   mt-md-4 order-md-1">
+             <div className="cards_main"> <div className=" row  mt-5">
                 <Link
-                  className="card_home col-6 "
+                  className="card_home col-md-6 "
                   to={"https://wa.link/oq74n9"}
                 > 
                  
@@ -139,7 +146,7 @@ const Home = () => {
                   /><br /> Let's Connect
                   
                 </Link>
-                <Link className="card_home1 col-6" to={"/why-us"}>
+                <Link className="card_home1 col-md-6" to={"/why-us"}>
                   
                   {/* <RiQuestionnaireLine className="home_icons" /> */}
                   <img
@@ -152,7 +159,7 @@ const Home = () => {
               </div>
               <div className="row ">
                 <Link
-                  className="card_home2 col-6  "
+                  className="card_home2 col-md-6  "
                   to="#"
                   onClick={scrollToTestimonial}
                 >
@@ -165,7 +172,7 @@ const Home = () => {
                   /><br /> Testimonial
                   
                 </Link>
-                <Link className="card_home col-6 " to={"/services/pricing"}>
+                <Link className="card_home col-md-6 " to={"/services/pricing"}>
                  
                   {/* <TbCoinRupee className="home_icons" /> */}
                   <img
@@ -175,19 +182,13 @@ const Home = () => {
                   /><br /> Packages
                   
                 </Link>
-              </div>
+              </div></div>
             </div>
-            <div className="col-md-6 p-0 mt-0 ">
-              {/* <img src={test} className="img-fluid" alt="test" /> */}
-              <div className="mt-0">
-                {/* <ControlledCarousel /> */}
-                <Lottie animationData={animationData} />
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>
-      <div data-aos="zoom-in" className="col-md-12">
+      <div data-aos="zoom-in" className="col-md-12 mt-md-5">
         <Features />
       </div>
       {/* <div className="container">
@@ -232,8 +233,8 @@ const Home = () => {
       </div>
 
       {/* Services Card start*/}
-      <div className="  mb-5 ">
-        <div className="row">
+      {/* <div className="  mb-5  p-0">
+        <div className="row"> */}
           <div className="serviceshome">
             <div className="container">
               <div className="servicesheader">
@@ -310,8 +311,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        {/* </div>
+      </div> */}
 
       {/* Services Card end*/}
 
@@ -323,8 +324,9 @@ const Home = () => {
         </div>
 
         {/* Header 4 test */}
+        <div className="container">
         <div className="home-test mt-0" id="testimonial">
-          <div className="container">
+          
             <div className="row">
               <div className="col-md-6 ">
                 <div className="">

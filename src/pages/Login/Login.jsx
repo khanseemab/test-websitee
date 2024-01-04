@@ -92,7 +92,7 @@ const Login = () => {
                   <span className="button__text">Sign In</span>
                 </button>
               </form>
-              <div>
+              {/* <div>
                 <Link
                 
                   to="https://docs.google.com/forms/d/e/1FAIpQLScBFBIH5YglsInxE1HpV1eCngwXKkZvAJyY7opxzrQLxgDN1w/viewform?usp=sf_link"
@@ -100,7 +100,7 @@ const Login = () => {
                 <span  className="social-login" >
                  [ Join Us ]</span>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="screen__background">
               <span className="screen__background__shape screen__background__shape3"></span>

@@ -27,15 +27,20 @@
 
 .sidebar_element{
     display: block;
-    color: rgb(204, 204, 204);
+    color: rgb(255, 255, 255);
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 20px;
   }
   /* .logos {
     margin: 20px 0px 80px 0px;
 } */
 
 .sidebar .sidebar_element:hover {
+  cursor: pointer;
+  color: #fe4c1c;
+}
+.sidebar_element:hover {
   cursor: pointer;
   color: #fe4c1c;
 }

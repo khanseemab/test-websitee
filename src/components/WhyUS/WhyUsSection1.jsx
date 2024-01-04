@@ -17,7 +17,7 @@ const WhyUsSection1 = () => {
             <button className="whyus_connect_button glow-button">connect</button></Link>
           </div>
           <div data-aos='zoom-in'  className="col-md-5">
-            <img src={connect} height={"330px"} alt="Lets Connect" />
+            <img src={connect} height={"250px"} alt="Lets Connect" />
           </div>
         </div>
         <div className="row ">
