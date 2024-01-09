@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Performa.css";
-import Header from "../../components/Header/Header";
+import Header from "../../components/Header/AdminHeader";
 import PerformaProvider from "./PerformaContext";
 import PerformaDetails from "./PerformaDetails";
 import MainPerforma from "./MainPerforma";
@@ -11,7 +11,7 @@ const Performa = () => {
 
   const pdfPerformaRef = useRef();
 
-  const generateAndDownloadPDF =async() => {
+  const generateAndDownloadPDF = async () => {
     if (pdfPerformaRef) {
       const options = {
         filename: "Performa.pdf",
@@ -29,19 +29,18 @@ const Performa = () => {
     }
   };
 
-  const downloadPDF = () => {    
+  const downloadPDF = () => {
     setShowMainPerforma(true);
 
-    setTimeout(()=>{
+    setTimeout(() => {
       generateAndDownloadPDF();
-    },100) 
+    }, 100);
     console.log("PDF download initiated");
   };
-  useEffect(()=>{
+  useEffect(() => {
     setShowMainPerforma(true);
     setShowMainPerforma(false);
-
-  },[])
+  }, [setShowMainPerforma]);
 
   return (
     <>
@@ -50,7 +49,7 @@ const Performa = () => {
         <div className="container InvoiceContainer">
           <div className="Invoice_form mt-5">
             <div className="row">
-              <h1 className="text-white text-end">PERFORMA GENERATOR</h1>
+              <h2 className="text-white text-end">PERFORMA GENERATOR</h2>
               <div className="col-md-12 ms-5">
                 <PerformaDetails downloadPDF={downloadPDF} />
               </div>

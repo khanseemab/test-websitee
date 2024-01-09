@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Contact.css";
-import Header from "../../components/Header/Header";
+import Header from "../../components/Header/AdminHeader";
 import brand from "../../assets/logo.png";
 import Footer from "../../components/Footer/Footer";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
@@ -23,14 +23,12 @@ const ContactPage = () => {
   //   },
   // });
 
-
-
   const theme = createTheme({
     components: {
       MuiInputLabel: {
         styleOverrides: {
           root: {
-            color: '#fe4c1c', // Change this to your desired label color
+            color: "#fe4c1c", // Change this to your desired label color
           },
         },
       },
@@ -52,16 +50,14 @@ const ContactPage = () => {
     },
   });
 
-
-
   return (
     <>
       <Header />
 
       <div className="container-fluid contact-page">
         <div className="row">
-          <div data-aos='zoom-in' className="map_container ms-md-3 col-md-6">
-            <Map/>
+          <div data-aos="zoom-in" className="map_container ms-md-3 col-md-6">
+            <Map />
           </div>
           <div className="details-container col-md-5 p-0 ms-md-5 mt-md-5">
             {/* <h2>We are here to help!</h2>
@@ -92,15 +88,11 @@ const ContactPage = () => {
                 <form>
                   <ThemeProvider theme={theme}>
                     <TextField
-                    // color="success"
+                      // color="success"
                       id="outlined-basic"
                       label="Name"
                       variant="outlined"
                       className="contact_form-field"
-
-                      
-
-
                     />
                     <TextField
                       id="outlined-basic"
@@ -141,7 +133,11 @@ const ContactPage = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"https://www.instagram.com/k2e_solutions/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="}>
+                    <Link
+                      to={
+                        "https://www.instagram.com/k2e_solutions/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+                      }
+                    >
                       <FaFacebook className="social-icon me-2" />
                     </Link>
                   </li>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import brand from '../../assets/logo.png'
 import { Dropdown } from "react-bootstrap";
 
-function Sidebar() {
+function AdminSidebar() {
   return (
     <>
       <div className="container_sidebar ">
@@ -18,14 +18,11 @@ function Sidebar() {
           <Link to={"/client"} className="sidebar_element">
             All Clients
           </Link>
-          {/* <Link to={"/performa"} className="sidebar_element">
-            Generate Performa
-          </Link> */}
-          <Dropdown  className="text-white">
-            <Dropdown.Toggle
-              variant="none"
-              className="sidebar_element "
-            >
+          <Link to={"#"} className="sidebar_element">
+            Close Deal
+          </Link>
+          <Dropdown className="text-white">
+            <Dropdown.Toggle variant="none" className="sidebar_element ms-2">
               Generate Performa
             </Dropdown.Toggle>
             <Dropdown.Menu>
@@ -45,10 +42,30 @@ function Sidebar() {
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          {/* <Link to={"#"} className="sidebar_element">
-            Printed Invoice
-          </Link> */}
-          <Link to={"/invoice"} className="sidebar_element">
+          <Dropdown className="text-white ">
+            <Dropdown.Toggle variant="none" className="sidebar_element m-auto">
+              Generate Tax Invoice
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item
+                as={Link}
+                to="/igst-invoice"
+                className="nav_items_dropdown"
+              >
+                IGST Invoice
+              </Dropdown.Item>
+              <Dropdown.Item
+                as={Link}
+                to="/sgst-cgst-invoice"
+                className="nav_items_dropdown"
+              >
+                SGST-CGST Invoice
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+          {/* <Link to={"/tax-invoice"} className="sidebar_element">
+Tax Invoice          </Link> */}
+          <Link to={"/pay-slip"} className="sidebar_element">
             Generate Pay Slip
           </Link>
           {/* <Link to={"/print-invoice"} className="sidebar_element">
@@ -60,4 +77,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default AdminSidebar;

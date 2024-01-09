@@ -28,10 +28,10 @@ const Login = () => {
       password === "admin"
     ) {
       alert("Successfully Logged In");
-      navigate("/Dashboard");
+      navigate("/admin-dashboard");
     } else if (email === "K2" && password === "Hills@123") {
       alert("Successfully Logged In");
-      navigate("/Dashboard");
+      navigate("/emp-dashboard");
     } else {
       alert("You don't have permissions");
     }

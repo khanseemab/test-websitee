@@ -1,0 +1,77 @@
+body {
+  background: #1f1f1f;
+}
+
+.site-navigation {
+  display: block;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.site-navigation ul {
+  background: #3498db00;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.site-navigation li {
+  color: #ffffff;
+  background: #3498db00;
+  display: block;
+  float: left;
+  margin: 0 0px 0 0;
+  padding: 12px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  
+.site-navigation li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.site-navigation li:hover {
+  transition: background 0.1s;
+  background: #d3461ff6;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+.menu-item:hover{
+  color: #ffffff;
+}
+
+.site-navigation ul li ul {
+  background: #fe4d1c;
+  visibility: hidden;
+  float: left;
+  min-width: 320px;
+  position: absolute;
+  transition: visibility 0.1s ease-in;
+  margin-top:12px;
+  left: 0;
+  z-index: 999;
+}
+
+.site-navigation ul li:hover > ul,
+.site-navigation ul li ul:hover {
+   visibility: visible;
+}
+
+.site-navigation ul li ul li {
+  clear: both;
+  padding: 5px 0 5px 18px;
+  width: 100%;
+}
+
+.site-navigation ul li ul li:hover {
+  background: #f4917d;
+}
+.main_logo{
+  filter: drop-shadow(5px 5px 12px rgb(255, 255, 255,0.4));
+}

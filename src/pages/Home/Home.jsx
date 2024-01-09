@@ -17,6 +17,7 @@ import test from "../../assets/Images/test.jpg";
 // import data from "../Services/CatalogueServices/data";
 
 import HeaderMain from "../../components/Header/HeaderMain";
+// import HeaderMain from "../../components/Header/HeaderMain";
 import Footer from "../../components/Footer/Footer";
 import Features from "../../components/Feature/Features";
 
@@ -73,12 +74,13 @@ const Home = () => {
   return (
     <>
       {/*Main Section start */}
-      {/* <div className="row">
-      <div className="position-fixed"> */}
+      {/* <div className="row"> */}
+      <div className="sticky-top HeaderMain1">
       <HeaderMain />
-      {/* </div>
-     </div>
-         */}
+      {/* <HeaderMain/> */}
+      </div>
+     {/* </div> */}
+        
 
       <div className="container_main_page ">
         <div className="container-fluid">
@@ -126,7 +128,7 @@ const Home = () => {
             </marquee>
             <div className="col-md-6 p-0 mt-0 order-md-2">
               {/* <img src={test} className="img-fluid" alt="test" /> */}
-              <div className="mt-md-1">
+              <div className="mt-md-0 ">
                 {/* <ControlledCarousel /> */}
                 <Lottie animationData={animationData} />
               </div>
@@ -188,7 +190,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div data-aos="zoom-in" className="col-md-12 mt-md-5">
+      <div data-aos="zoom-in" className="col-md-12 mt-md-2">
         <Features />
       </div>
       {/* <div className="container">

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import brand from "../../assets/logo.png";
 
-const Header = () => {
+const AdminHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Header = () => {
       >
         <div className="row">
           <div className="col-md-2  mt-2">
-          <Link to={"/dashboard"}>
+          <Link to={"/admin-dashboard"}>
               <img
                 src={brand}
                 height={"57px"}
@@ -45,7 +45,7 @@ const Header = () => {
             // defaultActiveKey="/home"
           >
             <Nav.Item>
-              <Nav.Link className="nav_items_emp" as={Link} to="/dashboard">
+              <Nav.Link className="nav_items_emp" as={Link} to="/admin-dashboard">
                 Home
               </Nav.Link>
             </Nav.Item>
@@ -95,7 +95,7 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AdminHeader;
 
 
 

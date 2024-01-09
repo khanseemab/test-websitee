@@ -1,17 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Invoice.css";
-import Header from "../../components/Header/Header";
+import Header from "../../components/Header/AdminHeader";
 import SalaryProvider from "./SalaryContext";
 import EmployeeDetails from "./EmployeeDetails";
 import MainInvoice from "./MainInvoice";
 import generatePDF from "react-to-pdf";
 
-const Invoice = () => {
+const PaySlip = () => {
   const [showMainInvoice, setShowMainInvoice] = useState(false);
 
   const pdfContainerRef = useRef();
 
-  const generateAndDownloadPDF =async() => {
+  const generateAndDownloadPDF = async () => {
     if (pdfContainerRef) {
       const options = {
         filename: "pay-slip.pdf",
@@ -29,22 +29,21 @@ const Invoice = () => {
     }
   };
 
-  const downloadPDF = () => {    setShowMainInvoice(true);
+  const downloadPDF = () => {
+    setShowMainInvoice(true);
 
-    setTimeout(()=>{
+    setTimeout(() => {
       generateAndDownloadPDF();
-    },100)
+    }, 100);
     // Call the function to generate and download the PDF
-    
 
     // Add any other logic you need after triggering the PDF download
     console.log("PDF download initiated");
   };
-  useEffect(()=>{
+  useEffect(() => {
     setShowMainInvoice(true);
-    setShowMainInvoice(false);
-
-  },[])
+    // setShowMainInvoice(false);
+  }, []);
 
   return (
     <>
@@ -75,4 +74,4 @@ const Invoice = () => {
   );
 };
 
-export default Invoice;
+export default PaySlip;

@@ -12,7 +12,7 @@ const PerformaDetails = ({ downloadPDF }) => {
   return (
     <>
       <Form className="row" onSubmit={submitHandle}>
-        <h2 className="employee_heading">Buyer Details </h2>
+        <h3 className="employee_heading">Buyer Details </h3>
         <br />
         <br />
         <br />
@@ -117,7 +117,7 @@ const PerformaDetails = ({ downloadPDF }) => {
         <br />
         <br />
         <br />
-        <h2 className="income_heading">Description</h2>
+        <h3 className="income_heading">Description</h3>
         <br />
 
         {/* <Form.Group

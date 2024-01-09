@@ -67,7 +67,7 @@ const SalaryProvider = ({ children }) => {
   const totalDeduction =employee.incomeTax+employee.PF;
   const totalPay = employee.salary + employee.HRA + employee.incentives - employee.incomeTax - employee.PF;
 
- 
+
 
   return (
     <>

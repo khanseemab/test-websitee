@@ -4,7 +4,6 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Register from "./pages/Register/Register";
-import Dashboard from "./Employee/Dashboard";
 import Login from "./pages/Login/Login";
 import ClientDetail from "./pages/clientDetails/ClientDetail";
 import Client from "./pages/Client/Clients";
@@ -12,18 +11,25 @@ import ClientForm from "./components/addClientForm/clientForm";
 import ContactPage from "./pages/Contact/Contact";
 import ContactEmployee from "./pages/Contact/ContactEmployee";
 import About from "./pages/AboutUs/About";
-import Invoice from "./pages/Invoice/Invoice";
+import PaySlip from "./pages/PaySlip/PaySlip";
 import Services from "./pages/Services/Services";
 // import MainInvoice from "./pages/Invoice/MainInvoice";
 import CatalogueServices from "./pages/Services/CatalogueServices/CatalogueServices";
 import WebDev from "./pages/Services/WebDev/WebDev";
-import Pricing from "./pages/Pricing/Pricing";
+import Packages from "./pages/Pricing/Pricing";
 import WhyUs from "./pages/WhyUS/WhyUs";
 import SEO from "./pages/Services/SEO/SEO";
 import SMO from "./pages/Services/SMO/SMO";
 import SEM from "./pages/Services/SEM/SEM";
 import DigitalMarketing from "./pages/Services/DigitalMarketing/DigitalMarketing";
 import Performa from "./pages/Performa/Performa";
+import FlipkartAccount from "./pages/Services/AccountManagement/FlipkartAccount";
+import AdminDashboard from "./pages/Dashboard/AdminDashboard";
+import EmpDashboard from "./pages/Dashboard/EmpDashboard";
+import TaxInvoice from "./pages/TaxInvoice/CGST-SGST/TaxInvoice";
+import CurrentAccount from "./pages/Payment/CurrentAccount";
+import SavingAccount from "./pages/Payment/SavingAccount";
+import IGSTInvoice from "./pages/TaxInvoice/IGST/IGSTInvoice";
 
 const router = createBrowserRouter([
   {
@@ -39,8 +45,12 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
-    path: "/dashboard",
-    element: <Dashboard />,
+    path: "/admin-dashboard",
+    element: <AdminDashboard/>,
+  },
+  {
+    path: "/emp-dashboard",
+    element: <EmpDashboard/>,
   },
   {
     path: "/client",
@@ -92,24 +102,43 @@ const router = createBrowserRouter([
   },
   {
     path: "/services/sem",
-    element: <SEM/>
+    element: <SEM />,
   },
   {
     path: "/services/digital-marketing",
-    element: <DigitalMarketing/>
+    element: <DigitalMarketing />,
   },
   {
-    path: "/services/pricing",
-    element: <Pricing />,
+    path: "/services/packages",
+    element: <Packages />,
   },
   {
-    path: "/invoice",
-    element: <Invoice />,
+    path: "/pay-slip",
+    element: <PaySlip />,
   },
   {
     path: "/performa",
-    element: <Performa/>
+    element: <Performa />,
   },
+  {
+    path: "/sgst-cgst-invoice",
+    element: <TaxInvoice/>
+  },
+  {
+    path: "/igst-invoice",
+    element: <IGSTInvoice/>
+  },
+  {
+    path: "/flipkart-account-management",
+    element: <FlipkartAccount />,
+  },
+  {
+    path: "/current-account",
+    element: <CurrentAccount/>,
+  },{
+    path: "/savings-account",
+    element: <SavingAccount/> ,
+  }
 ]);
 const Router = () => {
   return (

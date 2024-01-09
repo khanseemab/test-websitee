@@ -52,7 +52,9 @@
     transform: translateX(-15%);
   }
 }
-
+.HeaderMain1{
+  z-index: 10;
+}
 
 .card_home,
 .card_home1 ,
@@ -68,6 +70,7 @@
   border: 2px solid transparent;
   transition: transform 0.9s; /* Add transition for a smooth effect */
   font-family: "Nunito", sans-serif;
+  z-index: 1;
 }
 .card_home1,
 .card_home2 {

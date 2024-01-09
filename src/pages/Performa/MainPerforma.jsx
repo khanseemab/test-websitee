@@ -50,7 +50,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
     <>
       <div ref={pdfPerformaRef} className="">
         <div  className="container mainInvoice mt-2">
-          <table className="performa_table">
+          <table className="performa_table"  style={{ color: "black" }}>
             <tr style={{ padding: "0px" }}>
               <td colspan="7" style={{ padding: "0px" }}>
                 <img
