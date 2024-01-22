@@ -14,7 +14,7 @@ const AdminDashboard = () => {
             <AdminSidebar />
           </div>
           <div className="col-md-6 ms-4 ">
-            <h1 className="welcome ms-3 mt-5">Welcome Back !!</h1>
+            <h1 className="welcome ms-3 mt-5">Welcome Admin !!</h1>
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import "./ClientDetail.css";
+// import "./ClientDetail.css";
 import { Link,useParams } from "react-router-dom";
+import EmpHeader from "../../components/Header/EmpHeader";
 
 const ClientDetail = () => {
   const [rowData, setRowData] = useState(null);
@@ -18,27 +19,28 @@ const ClientDetail = () => {
   useEffect(() => {
     // showData()
   },[])
-if(rowData==null){return(<><h1>Loading....</h1></>)}
+// if(rowData==null){return(<><h1 style={{textAlign:"center",color:"white",marginTop:"50px"}}>Loading....</h1></>)}
  
 
 
   return (
     <>
-      <div className="client_detail_container">
+    <EmpHeader/>
+      <div className="client_detail_container mt-5">
         <h1 className=".client_detail_heading">Company Details Form</h1>
         <Link to={"/client"}>Dashboard</Link>
 
         <form className="client_detail_form ">
         <div className="item">
-              <label for="companyName">Company Name: {rowData['Company Name']}</label>
+              <label for="companyName">Company Name: </label>
             </div>
           <div className="grid">
             
             <div className="item">
-              <label for="companyName">Name: {rowData['Name']}</label>
+              <label for="companyName">Name: </label>
             </div>
             <div className="item">
-              <label for="mobileNo">Mobile Number: {rowData['Mobile']}</label>
+              <label for="mobileNo">Mobile Number: </label>
             </div>
             <div className="item">
               <label for="email">Email:</label>
@@ -222,9 +224,9 @@ if(rowData==null){return(<><h1>Loading....</h1></>)}
             <table className="client-report">
               <thead>
                 <tr>
-                  <th>Reported by</th>
-                  <th>Task</th>
-                  <th>Add Task/View Task</th>
+                  <th    className="client_report_head">Reported by</th>
+                  <th className="client_report_head">Task</th>
+                  <th className="client_report_head">Add Task/View Task</th>
                 </tr>
               </thead>
               <tbody>
@@ -232,8 +234,8 @@ if(rowData==null){return(<><h1>Loading....</h1></>)}
                   <td>Working time: 41 Hours 8 Minutes</td>
                   <td>Task: Health Check</td>
                   <td>
-                    <button className="add-task-btn">Add Task</button>
-                    <button className="add-task-btn">View Task</button>
+                    <button className="add-task-btn ms-3">Add Task</button>
+                    <button className="view-task-btn ms-3">View Task</button>
                   </td>
                 </tr>
               </tbody>
@@ -244,18 +246,18 @@ if(rowData==null){return(<><h1>Loading....</h1></>)}
           </button>
         </form>
       </div>
-      <div className="container_project">
+      <div className="container_project mb-5">
         <h1 className="clientDetail_h1">Projected Work Table</h1>
-        <table>
+        <table className="package_details" >
           <thead>
             <tr>
-              <th>Package</th>
-              <th>Details</th>
-              <th>Listing QCC</th>
-              <th>Listing QCC Done</th>
-              <th>Billing Date</th>
-              <th>Expired</th>
-              <th>View</th>
+              <th className="client_report_head">Package</th>
+              <th className="client_report_head">Details</th>
+              <th className="client_report_head">Listing QCC</th>
+              <th className="client_report_head">Listing QCC Done</th>
+              <th className="client_report_head">Billing Date</th>
+              <th className="client_report_head">Expired</th>
+              <th className="client_report_head">View</th>
             </tr>
           </thead>
           <tbody>
@@ -271,7 +273,9 @@ if(rowData==null){return(<><h1>Loading....</h1></>)}
           </tbody>
         </table>
       </div>
-      <div className="container_history">
+
+
+      {/* <div className="container_history">
         <h1 className="clientDetail_h1">Comment History</h1>
         <div className="comment">
           <div className="meta">Sapna Singh - Sep 19, 2023 - 12:00 A.M.</div>
@@ -287,7 +291,7 @@ if(rowData==null){return(<><h1>Loading....</h1></>)}
             <p>Description: Email response sent</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

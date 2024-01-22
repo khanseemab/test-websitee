@@ -3,44 +3,44 @@ import React, { useState, useRef, useEffect } from "react";
 import Header from "../../../components/Header/AdminHeader";
 import IGSTInvoiceProvider from "./IGSTInvoiceContext";
 import IGSTInvoiceDetails from "./IGSTInvoiceDetails";
-import MainTaxInvoice from "./Main-IGST-Invoice";
+import MainIGSTTaxInvoice from "./Main-IGST-Invoice";
 import generatePDF from "react-to-pdf";
 
 const IGSTInvoice = () => {
-  const [showMainTaxInvoice, setShowMainTaxInvoice] = useState(true);
+  const [showMainIGSTTaxInvoice, setShowMainIGSTTaxInvoice] = useState(true);
 
-  const pdfTaxInvoiceRef = useRef();
+  const pdfIGSTTaxInvoiceRef = useRef();
 
-  const generateAndDownloadPDF = async () => {
-    if (pdfTaxInvoiceRef) {
+  const generateDownloadPDF = async () => {
+    if (pdfIGSTTaxInvoiceRef) {
       const options = {
         filename: "IGST-Invoice.pdf",
         page: {
-          marginTop: 10,
+          margin: 0,
           format: "a4",
           orientation: "portrait",
         },
       };
 
-      await generatePDF(pdfTaxInvoiceRef, options);
-      setShowMainTaxInvoice(false);
+      await generatePDF(pdfIGSTTaxInvoiceRef, options);
+      setShowMainIGSTTaxInvoice(false);
     } else {
       console.error("pdfContainerRef is null or undefined");
     }
   };
 
-  const downloadPDF = () => {
-    setShowMainTaxInvoice(true);
+  const IGSTdownloadPDF = () => {
+    setShowMainIGSTTaxInvoice(true);
 
     setTimeout(() => {
-      generateAndDownloadPDF();
+      generateDownloadPDF();
     }, 100);
     console.log("PDF download initiated");
   };
   useEffect(() => {
-    setShowMainTaxInvoice(true);
-    setShowMainTaxInvoice(false);
-  }, [setShowMainTaxInvoice]);
+    setShowMainIGSTTaxInvoice(true);
+    setShowMainIGSTTaxInvoice(false);
+  }, [setShowMainIGSTTaxInvoice]);
 
   return (
     <>
@@ -51,7 +51,7 @@ const IGSTInvoice = () => {
             <div className="row">
               <h2 className="text-white text-end">IGST Tax Invoice GENERATOR</h2>
               <div className="col-md-12 ms-5">
-                <IGSTInvoiceDetails downloadPDF={downloadPDF} />
+                <IGSTInvoiceDetails IGSTdownloadPDF={IGSTdownloadPDF} />
               </div>
             </div>
 
@@ -65,8 +65,8 @@ const IGSTInvoice = () => {
             </button> */}
           </div>
         </div>
-        {showMainTaxInvoice && (
-          <MainTaxInvoice pdfTaxInvoiceRef={pdfTaxInvoiceRef} />
+        {showMainIGSTTaxInvoice && (
+          <MainIGSTTaxInvoice pdfIGSTTaxInvoiceRef={pdfIGSTTaxInvoiceRef} />
         )}
       </IGSTInvoiceProvider>
     </>

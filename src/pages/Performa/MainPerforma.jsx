@@ -49,7 +49,8 @@ const MainPerforma = ({ pdfPerformaRef }) => {
   return (
     <>
       <div ref={pdfPerformaRef} className="">
-        <div  className="container mainInvoice mt-2">
+        <div  className="container mainInvoice mt-2"> <h4 style={{textAlign:"center" ,marginTop:"100px"}}>Performa Invoice
+</h4> 
           <table className="performa_table"  style={{ color: "black" }}>
             <tr style={{ padding: "0px" }}>
               <td colspan="7" style={{ padding: "0px" }}>
@@ -129,12 +130,13 @@ const MainPerforma = ({ pdfPerformaRef }) => {
               </td>
             </tr>
             <tr>
-              <td style={{ textAlign: "center" }}>1</td>
+              <td style={{ textAlign: "center",verticalAlign: "top" }}>1</td>
               <td
                 style={{
                   height: "210px",
                   maxWidth: "500px",
                   overflow: "hidden",
+                  verticalAlign: "top",
                   whiteSpace: "pre-wrap",
                 }}
               >
@@ -146,7 +148,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                 {performa.marketplace}
 
                 <br />
-                {performa.sku}
+                SKU {performa.sku}
                 <br />
 
                 {performa.details}

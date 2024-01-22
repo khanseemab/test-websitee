@@ -75,15 +75,15 @@ const Home = () => {
     <>
       {/*Main Section start */}
       {/* <div className="row"> */}
-      <div className="sticky-top HeaderMain1">
+      {/* <div className="sticky-top HeaderMain1"> */}
       <HeaderMain />
       {/* <HeaderMain/> */}
-      </div>
+      {/* </div> */}
      {/* </div> */}
         
-
+   <div className="container-fluid">
       <div className="container_main_page ">
-        <div className="container-fluid">
+     
           <div className="row mt-md-3 ">
             <marquee
               behavior="scroll"

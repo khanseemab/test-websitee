@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, {  useContext } from "react";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
@@ -153,7 +153,7 @@ Date  </Form.Label>
               name="invoice"
               id="invoice"
               value={taxInvoice.invoice}
-              onChange={handleInputNum}
+              onChange={handleInput}
               placeholder="Enter Invoice Number"
             />
           </Col>

@@ -15,14 +15,14 @@ function AdminSidebar() {
           <Link to={"/clientform"} className="sidebar_element">
             NC Data
           </Link>{" "}
-          <Link to={"/client"} className="sidebar_element">
+          <Link to={"/admin-all-client"} className="sidebar_element">
             All Clients
           </Link>
-          <Link to={"#"} className="sidebar_element">
+          <Link to={"https://forms.gle/aADmP93UAkdrDUed8"} className="sidebar_element" target="_blank">
             Close Deal
           </Link>
-          <Dropdown className="text-white">
-            <Dropdown.Toggle variant="none" className="sidebar_element ms-2">
+          <Dropdown className="text-white" >
+            <Dropdown.Toggle variant="none" className="sidebar_element ">
               Generate Performa
             </Dropdown.Toggle>
             <Dropdown.Menu>
@@ -43,7 +43,7 @@ function AdminSidebar() {
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown className="text-white ">
-            <Dropdown.Toggle variant="none" className="sidebar_element m-auto">
+            <Dropdown.Toggle variant="none" className="sidebar_element">
               Generate Tax Invoice
             </Dropdown.Toggle>
             <Dropdown.Menu>

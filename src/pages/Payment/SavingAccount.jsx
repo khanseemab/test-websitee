@@ -1,7 +1,7 @@
 import React from "react";
 import "./Payment.css";
 import HeaderMain from "../../components/Header/HeaderMain";
-import QR from "../../components/Cards/QR";
+import QR from "../../components/Cards/SavingsQR";
 import qrData from "./qrData";
 
 const SavingAccount = () => {
@@ -18,7 +18,11 @@ const SavingAccount = () => {
           To Facilitate the payment of Service charges, we would like to provide
           you with our Account details. Please find the required Information
           below:
-          <br /><span className="" style={{color:"#fe4c1c", fontSize:"15px"}}> NOTE : Only for without GST payments</span> 
+          <br />
+          <span className="" style={{ color: "#fe4c1c", fontSize: "15px" }}>
+            {" "}
+            NOTE : Only for without GST payments
+          </span>
         </p>
         <p></p>
         <div className="row mt-4">
@@ -28,12 +32,6 @@ const SavingAccount = () => {
               <div class="notiborderglow"></div>
               <div class="notititle">Bank Details</div>
 
-              {/* <div class="notibody">Account Holder: NABEEL AHAMAD</div>
-              <div class="notibody">Account Number: 50100352685283</div>
-              <div class="notibody">IFSC: HDFC0000863</div>
-              <div class="notibody">Branch: BIJNOR</div>
-              <div class="notibody">Account Type: SAVING</div>
-              <div class="notibody">MMID:9240110</div> */}
 
               <div class="notibody row">
                 <div className="col-6">Account Holder : NABEEL AHAMAD</div>
@@ -48,7 +46,7 @@ const SavingAccount = () => {
           {qrData.map((currElem, id) => {
             const { name, src, upi } = currElem;
             return (
-              <div className="col-md-3">
+              <div data-aos="zoom-in" className="col-md-3" key={id}>
                 <QR name={name} src={src} upi={upi} />{" "}
               </div>
             );

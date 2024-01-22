@@ -12,20 +12,35 @@ function EmpSidebar() {
    <img src={brand} height={'55px'} alt='K2 e-commerce Solutions' />
    </div>  */}
         <div className="sidebar">
+          <Link to={"#"} className="sidebar_element">
+            My Team{" "}
+          </Link>
+          <Link to={"/emp-all-client"} className="sidebar_element">
+            All Clients
+          </Link>
+          <Link to={"#"} className="sidebar_element">
+            DSR{" "}
+          </Link>
           <Link to={"/clientform"} className="sidebar_element">
             NC Data
           </Link>{" "}
-          <Link to={"/client"} className="sidebar_element">
-            All Clients
+          <Link to={"#"} className="sidebar_element">
+            Ratio Sale{" "}
           </Link>
-          {/* <Link to={"/performa"} className="sidebar_element">
-            Generate Performa
-          </Link> */}
-          <Dropdown  className="text-white">
-            <Dropdown.Toggle
-              variant="none"
-              className="sidebar_element "
-            >
+          <Link to={"#"} className="sidebar_element">
+            Not Open Pool Data{" "}
+          </Link>
+          <Link to={"#"} className="sidebar_element">
+            Open Pool Data{" "}
+          </Link>
+          <Link to={"https://forms.gle/aADmP93UAkdrDUed8"} className="sidebar_element" target="_blank">
+            Close Deal
+          </Link>
+          <Link to={"#"} className="sidebar_element">
+            Daily Calling (Scheduled){" "}
+          </Link>
+          <Dropdown className="text-white">
+            <Dropdown.Toggle variant="none" className="sidebar_element">
               Generate Performa
             </Dropdown.Toggle>
             <Dropdown.Menu>

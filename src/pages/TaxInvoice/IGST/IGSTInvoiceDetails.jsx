@@ -1,12 +1,12 @@
-import React, { useEffect, useContext } from "react";
+import React, {  useContext } from "react";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { IGSTInvoiceContext } from "./IGSTInvoiceContext";
 
-const TaxInvoiceDetails = ({ downloadPDF }) => {
+const IGSTInvoiceDetails = ({ IGSTdownloadPDF }) => {
   const {
-    taxInvoice,
+    igstInvoice,
     handleInputNum,
     handleInput,
     handleCustomInputChange,
@@ -39,7 +39,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="text"
               name="name"
               id="name"
-              value={taxInvoice.name}
+              value={igstInvoice.name}
               placeholder="Enter Company Name"
               onChange={handleInput}
               autoComplete="false"
@@ -59,7 +59,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="text"
               name="GSTIN"
               id="GSTIN"
-              value={taxInvoice.GSTIN}
+              value={igstInvoice.GSTIN}
               placeholder="Enter GSTIN "
               onChange={handleInput}
             />
@@ -78,7 +78,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="text"
               name="address"
               id="address"
-              value={taxInvoice.address}
+              value={igstInvoice.address}
               placeholder="Enter Company Address"
               onChange={handleInput}
               autoComplete="false"
@@ -99,7 +99,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="text"
               name="state"
               id="state"
-              value={taxInvoice.state}
+              value={igstInvoice.state}
               placeholder="Enter State Name"
               onChange={handleInput}
             />
@@ -118,7 +118,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="number"
               name="code"
               id="code"
-              value={taxInvoice.code}
+              value={igstInvoice.code}
               placeholder="Enter State Code"
               onChange={handleInputNum}
             />
@@ -133,7 +133,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="date"
               name="payDate"
               id="payDate"
-              value={taxInvoice.date}
+              value={igstInvoice.date}
               placeholder="Enter Pay Date"
               onChange={handleInput}
               min="2022-01"
@@ -160,8 +160,8 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="number"
               name="invoice"
               id="invoice"
-              value={taxInvoice.invoice}
-              onChange={handleInputNum}
+              value={igstInvoice.invoice}
+              onChange={handleInput}
               placeholder="Enter Invoice Number"
             />
           </Col>
@@ -216,7 +216,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="text"
               name="marketplace"
               id="marketplace"
-              value={taxInvoice.marketplace}
+              value={igstInvoice.marketplace}
               onChange={handleInput}
               placeholder="Enter Marketplace Name"
             />
@@ -235,7 +235,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="text"
               name="sku"
               id="sku"
-              value={taxInvoice.sku}
+              value={igstInvoice.sku}
               onChange={handleInput}
               placeholder="Enter SKU Details"
             />
@@ -254,7 +254,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="text"
               name="details"
               id="details"
-              value={taxInvoice.details}
+              value={igstInvoice.details}
               onChange={handleInput}
               placeholder="Enter Additional Information"
             />
@@ -273,7 +273,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="number"
               name="amount"
               id="amount"
-              value={taxInvoice.amount}
+              value={igstInvoice.amount}
               onChange={handleInputNum}
               placeholder="Enter Total Amount"
             />
@@ -292,7 +292,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               type="number"
               name="discount"
               id="discount"
-              value={taxInvoice.discount}
+              value={igstInvoice.discount}
               onChange={handleInputNum}
               placeholder="Enter Discount"
             />
@@ -307,7 +307,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
             <Form.Control
               name="exevutive"
               id="exevutive"
-              value={taxInvoice.exevutive}
+              value={igstInvoice.exevutive}
               onChange={handleInput}
               placeholder="Enter Executive Name"
             ></Form.Control>
@@ -318,7 +318,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
           <Form.Label column sm={2}></Form.Label>
           <Col sm={8}>
             <button className=" cta col-md-3 mt-3 justify-content-start align-items-start text-start">
-              <span className="d-inline" onClick={downloadPDF}>
+              <span className="d-inline" onClick={IGSTdownloadPDF}>
                 Generate
               </span>
               <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -333,4 +333,4 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
   );
 };
 
-export default TaxInvoiceDetails;
+export default IGSTInvoiceDetails;

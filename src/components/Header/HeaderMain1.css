@@ -1,13 +1,14 @@
 body {
-  background: #1f1f1f;
+  /* background: #1f1f1f; */
 }
 
 .site-navigation {
   display: block;
   font-family: 'Titillium Web', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   margin: 0px;
+  padding: 0px;
 }
 
 .site-navigation ul {
@@ -22,8 +23,8 @@ body {
   background: #3498db00;
   display: block;
   float: left;
-  margin: 0 0px 0 0;
-  padding: 12px;
+  margin: 0px 0px 0px 0px;
+  padding:0px  9px ;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -36,7 +37,7 @@ body {
 }
 
 .site-navigation li:hover {
-  transition: background 0.1s;
+  transition: 0.1s;
   background: #d3461ff6;
   color: #ffffff;
 
@@ -73,5 +74,5 @@ body {
   background: #f4917d;
 }
 .main_logo{
-  filter: drop-shadow(5px 5px 12px rgb(255, 255, 255,0.4));
+  /* filter: drop-shadow(5px 5px 12px rgb(255, 255, 255,0.4)); */
 }

@@ -3,19 +3,19 @@ import { createContext, useEffect, useState } from "react";
 export const IGSTInvoiceContext = createContext();
 
 const IGSTInvoiceProvider = ({ children }) => {
-  const [taxInvoice, setTaxInvoice] = useState({
+  const [igstInvoice, setIGSTInvoice] = useState({
     name: "",
     address: "",
     GSTIN: "",
     state: "",
     code: "",
     payDate: "",
-    invoice:'',
+    invoice:"",
     marketplace:"",
     sku:"",
     details:"",
     amount: '',
-    discount: "",
+    discount: '',
     executive:''
   });
   const [selectedPackage, setSelectedPackage] = useState('');
@@ -24,7 +24,7 @@ const IGSTInvoiceProvider = ({ children }) => {
 
 
   const handleInputNum = (e) => {
-    setTaxInvoice((prev) => {
+    setIGSTInvoice((prev) => {
       const { name, value } = e.target;
       
       const numericValue = parseFloat(value);
@@ -33,7 +33,7 @@ const IGSTInvoiceProvider = ({ children }) => {
   };
 
   const handleInput = (e) => {
-    setTaxInvoice((prevalue) => {
+    setIGSTInvoice((prevalue) => {
       const { name, value } = e.target;
       return { ...prevalue, [name]: value };
     });
@@ -54,20 +54,19 @@ const IGSTInvoiceProvider = ({ children }) => {
   };
   
     
-   const sgst=taxInvoice.amount * 9 / 100;
-   const igst=taxInvoice.amount * 18 / 100;
-   const gstAmount = igst
+   const igst=igstInvoice.amount * 18 / 100;
+   const gstAmount = igst;
 
-    const totalAmount = taxInvoice.amount + igst;
-    const grandTotal = totalAmount - taxInvoice.discount;
-
+    const totalAmount = igstInvoice.amount + igst;
+    const grandTotal = totalAmount - igstInvoice.discount;
 
 
-    const month = new Date(taxInvoice.payDate).toLocaleDateString('en-GB');
+
+    const month = new Date(igstInvoice.payDate).toLocaleDateString('en-GB');
 
   return (
     <IGSTInvoiceContext.Provider
-      value={{ taxInvoice, setTaxInvoice, handleInputNum, handleInput, gstAmount,handleCustomInputChange,customPackage,selectedPackage,handleSelectChange,totalAmount, grandTotal, month,igst }}
+      value={{ igstInvoice, setIGSTInvoice, handleInputNum, handleInput, gstAmount,handleCustomInputChange,customPackage,selectedPackage,handleSelectChange,totalAmount, grandTotal, month,igst }}
     >
       {children}
     </IGSTInvoiceContext.Provider>

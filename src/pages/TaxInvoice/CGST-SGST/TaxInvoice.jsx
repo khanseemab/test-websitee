@@ -16,7 +16,7 @@ const TaxInvoice = () => {
       const options = {
         filename: "SGST-CGST-Invoice.pdf",
         page: {
-          marginTop: 10,
+          margin: 0,
           format: "a4",
           orientation: "portrait",
         },

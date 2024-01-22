@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 export const TaxInvoiceContext = createContext();
 
@@ -10,7 +10,7 @@ const TaxInvoiceProvider = ({ children }) => {
     state: "",
     code: "",
     payDate: "",
-    invoice:'',
+    invoice:"",
     marketplace:"",
     sku:"",
     details:"",

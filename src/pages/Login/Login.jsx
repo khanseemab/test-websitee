@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [values, setValue] = useState({
-    email: "",
+    username: "",
     password: "",
   });
   const navigate = useNavigate();
@@ -21,15 +21,18 @@ const Login = () => {
         [name]: value,
       };
     });
-    const { email, password } = values;
+    const { username, password } = values;
 
     if (
-      (email === "nabeel" || email === "seemab" || email === "dawood") &&
-      password === "admin"
+      (username === "seemab" ) &&
+      password === "Seemab@2001"
     ) {
       alert("Successfully Logged In");
       navigate("/admin-dashboard");
-    } else if (email === "K2" && password === "Hills@123") {
+    } else if (username === "nabeel" && password === "Nabeel@1996") {
+      alert("Successfully Logged In");
+      navigate("/admin-dashboard");
+    }else if (username === "K2" && password === "K2@ecommerce") {
       alert("Successfully Logged In");
       navigate("/emp-dashboard");
     } else {
@@ -66,9 +69,9 @@ const Login = () => {
                     type="text"
                     className="login__input"
                     placeholder="User name / Email"
-                    value={values.email}
+                    value={values.username}
                     onChange={(e) => {
-                      setValue((prev) => ({ ...prev, email: e.target.value }));
+                      setValue((prev) => ({ ...prev, username: e.target.value }));
                     }}
                     autoComplete="off"
                   />

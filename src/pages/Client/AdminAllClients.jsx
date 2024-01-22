@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
-import Header from "../../components/Header/AdminHeader";
-import Sidebar from "../../components/Sidebar/AdminSidebar";
+import AdminHeader from "../../components/Header/AdminHeader";
+import AdminSidebar from "../../components/Sidebar/AdminSidebar";
 import { Table } from "react-bootstrap";
 import "./Client.css";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import MyContext from "../../MyContext";
 import { Link, useParams } from "react-router-dom";
 
-const Client = () => {
+const AdminAllClient = () => {
   const [data, setData] = useState([]);
   const { clientName, setClientName } = useContext(MyContext);
 
@@ -43,8 +43,8 @@ const Client = () => {
   return (
     <>
       <div className="client_detail_main">
-        <Header />
-        <Sidebar />
+        <AdminHeader />
+        <AdminSidebar />
         <div className="googleSheetData">
           <Table hover className="clientTable">
             <thead className="clientTableHead">
@@ -95,4 +95,4 @@ const Client = () => {
     </>
   );
 };
-export default Client;
+export default AdminAllClient;

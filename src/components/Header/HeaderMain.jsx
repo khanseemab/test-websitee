@@ -27,17 +27,17 @@ const LightToggleButton = styled(Navbar.Toggle)({
   },
 });
 
-const LightDropdown = styled(NavDropdown)({
-  "& .nav-link": {
-    color: "white",
-  },
-  "&:hover": {
-    color: "#fe4c1c",
-  },
-  "::after": {
-    color: "#ffffff",
-  },
-});
+// const LightDropdown = styled(NavDropdown)({
+//   "& .nav-link": {
+//     color: "white",
+//   },
+//   "&:hover": {
+//     color: "#fe4c1c",
+//   },
+//   "::after": {
+//     color: "#ffffff",
+//   },
+// });
 
 const HeaderMain = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,21 +62,21 @@ const HeaderMain = () => {
         className={` sticky-top${isScrolled ? " bg-True" : " bg-False"}`}
       >
         <Container fluid>
-          <Navbar.Brand as={Link} to="/" className="col-md-1">
+          <Navbar.Brand as={Link} to="/" >
             <img
               src={brand}
-              height="57px"
-              className="main_logo p-0 ms-4 "
+              height="55px"
+              className="main_ogo p-0 ms-4"
               alt="K2 e-commerce Solutions"
             />
           </Navbar.Brand>
           <LightToggleButton aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav ">
-            <Nav className="offset-md-1 col-md-8">
+            <Nav className="offset-md-1 col-md-9 ">
               <nav
                 id="navigation"
                 expand="lg"
-                className="site-navigation "
+                className="site-navigation mx-auto"
                 role="navigation"
               >
                 <ul className="menu">
@@ -91,7 +91,7 @@ const HeaderMain = () => {
                     </Link>
                     <ul className="dropdown">
                       <li className="menu-item sub-menu">
-                        <Link to="/flipkart-account-management">
+                        <Link to="#">
                           Flipkart Account Management
                         </Link>
                       </li>
@@ -177,8 +177,8 @@ const HeaderMain = () => {
                 </ul>
               </nav>
             </Nav>
-            <div className="offset-1 col-md-2 mt-0">
-              <CustomButton variant="outlined" className="emp_login_btn p-0">
+            <div className="col-md-2 mt-0 ">
+              <CustomButton variant="outlined" className="emp_login_btn p-0 ms-5">
                 <Dropdown>
                   <Dropdown.Toggle variant="none" className="nav_items_main">
                     Internal Links

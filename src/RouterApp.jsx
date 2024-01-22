@@ -6,7 +6,8 @@ import Home from "./pages/Home/Home";
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
 import ClientDetail from "./pages/clientDetails/ClientDetail";
-import Client from "./pages/Client/Clients";
+import AdminAllClients from "./pages/Client/AdminAllClients";
+import EmpAllClients from "./pages/Client/EmpAllClient";
 import ClientForm from "./components/addClientForm/clientForm";
 import ContactPage from "./pages/Contact/Contact";
 import ContactEmployee from "./pages/Contact/ContactEmployee";
@@ -53,15 +54,19 @@ const router = createBrowserRouter([
     element: <EmpDashboard/>,
   },
   {
-    path: "/client",
-    element: <Client />,
+    path: "/admin-all-client",
+    element: <AdminAllClients />,
+  },{
+    path: "/emp-all-client",
+    element: <EmpAllClients />,
   },
   {
     path: "/clientform",
     element: <ClientForm />,
   },
   {
-    path: ":clientdetail",
+    path: "/clientdetail",
+    // path: ":clientdetail",
     element: <ClientDetail />,
   },
   {

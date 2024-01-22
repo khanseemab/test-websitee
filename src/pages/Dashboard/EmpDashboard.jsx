@@ -14,7 +14,7 @@ const EmpDashboard = () => {
             <EmpSidebar />
           </div>
           <div className="col-md-6 ms-4 ">
-            <h1 className="welcome ms-3 mt-5">Welcome Back !!</h1>
+            <h1 className="welcome ms-3 mt-5">Welcome Employee !!</h1>
           </div>
         </div>
       </div>

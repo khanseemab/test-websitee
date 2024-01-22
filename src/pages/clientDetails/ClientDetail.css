@@ -1,4 +1,4 @@
-/* 
+
 .client_detail_container {
     max-width: 90%;
     margin: 0 auto;
@@ -26,12 +26,12 @@
 
 .item {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    font-weight: bold;
+
 }
 
-label {
-    font-weight: bold;
-}
+
 
 input,
 select,
@@ -43,7 +43,7 @@ textarea {
 }
 
 .client_detail_button {
-    background-color: #007BFF;
+    background-color: #fe4c1c;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -52,14 +52,11 @@ textarea {
 }
 
 .client_detail_button:hover {
-    background-color: #0056b3;
+    background-color: #b53816;
 }
 
-
-
-
 .container_project {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
@@ -73,19 +70,19 @@ textarea {
     margin-bottom: 20px;
 }
 
-table {
+.client-report {
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid #ddd;
+/* th, td {
+    border: 1px solid #f83434;
     padding: 10px;
     text-align: left;
-}
+} */
 
-th {
-    background-color: #007BFF;
+.client_report_head {
+    background-color: #fe4c1c;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -96,11 +93,11 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #ddd;
+    /* background-color: #ddd; */
 }
 
 
-
+/* 
 
 
 
@@ -130,7 +127,7 @@ tr:hover {
 
 .comment .description {
     margin-top: 10px;
-}
+} */
 
 
 
@@ -169,7 +166,7 @@ tr:hover {
 }
 
 .client-report th {
-    background-color: #007BFF;
+    background-color: #fe4c1c;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -180,7 +177,7 @@ tr:hover {
 }
 
 .add-task-btn {
-    background-color: #007BFF;
+    background-color: #fe4c1c;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -189,7 +186,20 @@ tr:hover {
 }
 
 .add-task-btn:hover {
-    background-color: #0056b3;
-} */
+    background-color: #b5320e;
+} 
+
+.view-task-btn {
+    background-color: #fe4c1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-task-btn:hover {
+    background-color: #b5320e;
+} 
 
 
