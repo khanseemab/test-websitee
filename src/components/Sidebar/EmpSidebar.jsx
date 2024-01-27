@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 
 function EmpSidebar() {
+
+  // let link=https:""
+  // if name="arbaz"{
+  //   link="https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8adad/edit#gid=0"
+  // }
+
   return (
     <>
       <div className="container_sidebar ">
@@ -15,7 +21,7 @@ function EmpSidebar() {
           <Link to={"#"} className="sidebar_element">
             My Team{" "}
           </Link>
-          <Link to={"/emp-all-client"} className="sidebar_element">
+          <Link to={"https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=0"} className="sidebar_element">
             All Clients
           </Link>
           <Link to={"#"} className="sidebar_element">

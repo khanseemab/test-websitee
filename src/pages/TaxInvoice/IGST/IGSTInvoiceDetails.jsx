@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { IGSTInvoiceContext } from "./IGSTInvoiceContext";
 
-const IGSTInvoiceDetails = ({ IGSTdownloadPDF }) => {
+const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
   const {
     igstInvoice,
     handleInputNum,
@@ -18,6 +18,11 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF }) => {
   const submitHandle = (e) => {
     e.preventDefault();
   };
+  const handleName=(e)=>{
+    setfileName(e.target.value)
+    handleInput(e)
+
+  }
 
   return (
     <>
@@ -41,7 +46,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF }) => {
               id="name"
               value={igstInvoice.name}
               placeholder="Enter Company Name"
-              onChange={handleInput}
+              onChange={handleName}
               autoComplete="false"
             />
           </Col>

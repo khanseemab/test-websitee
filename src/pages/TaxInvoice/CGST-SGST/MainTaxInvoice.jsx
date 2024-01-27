@@ -81,7 +81,7 @@ const MainTaxInvoice = ({ pdfTaxInvoiceRef }) => {
                 <b> K2/G/{taxInvoice.invoice}</b>
               </td>
               <td colSpan="3">
-                Date: <b>{month}</b>
+                Dated: <br/><b>{month}</b>
               </td>
             </tr>
             <tr>
@@ -136,14 +136,24 @@ const MainTaxInvoice = ({ pdfTaxInvoiceRef }) => {
             <tr>
               <td style={{ textAlign: "center",verticalAlign: "top" }}>1</td>
               <td
-                style={{
+               style={{
                   height: "210px",
-                  maxWidth: "500px",
+                  width: "500px",
                   overflow: "hidden",
                   verticalAlign: "top",
+
                   whiteSpace: "pre-wrap",
+                  padding:"0px 0px 0px 10px"
                 }}
               >
+              <span  style={{
+                  
+                  width: "500px",
+                  verticalAlign: "top",
+                  margin:"0px",
+                  padding:"0px"
+
+                }}>
                 {customPackage || selectedPackage}
                 <br />
                 {taxInvoice.marketplace}
@@ -152,7 +162,7 @@ const MainTaxInvoice = ({ pdfTaxInvoiceRef }) => {
                 SKU {taxInvoice.sku}
                 <br />
 
-                {taxInvoice.details}
+                {taxInvoice.details}</span>
               </td>
               <td style={{ textAlign: "center" }}>998399</td> <td></td>
               <td>
@@ -236,49 +246,53 @@ const MainTaxInvoice = ({ pdfTaxInvoiceRef }) => {
                 <b>₹{gstAmount}</b>
               </td>
             </tr>
-            <tr>
-              <td colspan="7">
-                Tax Amount (in words) :<b> {gstWords} </b>
+            <tr> 
+              <td colspan="7" style={{borderBottom:"0px",height:"10vh"}}>
+                Tax Amount (in words) :<br/><b> {gstWords} </b>
               </td>
             </tr>
-            <tr style={{height:"10vh"}}>
-
-            <td colSpan="2" style={{ textDecoration:"underline"}} >
-            Declaration
-                </td>
-                <td colSpan="5" style={{ textAlign:"center"}}><b>
-                for K2 E COMMERCE SOLUTIONS</b>
-                </td>
-             </tr>
+           
+            <tr> 
+              <td colspan="7" style={{borderBottom:"0px",height:"5vh"}}>
+                Tax Amount (in words) :<br/><b> {gstWords} </b>
+              </td>
+            </tr>
+           
              <tr
               // className="declaration"
-              style={{height:"20vh", fontSize: "15px", padding: "" }}
+              style={{height:"10vh", fontSize: "15px", padding: "" }}
              >
-              <td  colspan="2" style={{width:"140px"}}>
-                  
+              <td  colspan="3" style={{borderTop:"0px",width:"140px"}}>
+              <div style={{width:"400px"}} >
+              <span style={{ textDecoration:"underline"}}>
+              Declaration
+                                        </span>
+                                        <br/>
+             
                    We declare that this invoice shows the actual price of 
                       the goods described and that all particulars are true 
-                     and correct.
+                     and correct.</div>
               </td>
-              <td colspan="5">
+              <td colspan="4">
                  <div
                           className=""
-                          style={{ position: "relative", textAlign: "bottom" }}
+                          style={{ position: "relative", textAlign: "end" }}
                         >
+                        <b>for K2 E COMMERCE SOLUTIONS</b>
                           <img
-                          className="adminSignature"
+                          // className="adminSignature"
                            src={adminSignature}
-                               height={"88px"}
+                               height={"60px"}
                                alt="Admin Signature"
                                style={{
                                  position: "absolute",
-                                 top: 0,
-                                 left: "32%",
-                                 transform: "translateX(30%) translateY(-100%)", // Combine transformations
+                                 right: 0,
+                                //  left: "32%",
+                                 transform: "translateX(0%) translateY(40%)", // Combine transformations
                                }}
                              />
 
-                          <span style={{ display: "block", margin:"70px 0px 0px 200px"}}>
+                          <span style={{ display: "block", margin:"60px 0px 0px 200px"}}>
                             Authorised Signatory
                           </span>
                         </div>

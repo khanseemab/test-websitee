@@ -132,18 +132,25 @@ const MainPerforma = ({ pdfPerformaRef }) => {
             <tr>
               <td style={{ textAlign: "center",verticalAlign: "top" }}>1</td>
               <td
-                style={{
+               style={{
                   height: "210px",
-                  maxWidth: "500px",
+                  width: "500px",
                   overflow: "hidden",
                   verticalAlign: "top",
+
                   whiteSpace: "pre-wrap",
+                  padding:"0px 0px 0px 10px"
                 }}
               >
-                <b>
-                {/* {performa.package} */}
-                {customPackage||selectedPackage}
-                </b>
+              <span  style={{
+                  
+                  width: "500px",
+                  verticalAlign: "top",
+                  margin:"0px",
+                  padding:"0px"
+
+                }}>
+                {customPackage || selectedPackage}
                 <br />
                 {performa.marketplace}
 
@@ -151,7 +158,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                 SKU {performa.sku}
                 <br />
 
-                {performa.details}
+                {performa.details}</span>
               </td>
               <td style={{ textAlign: "center" }}>998399</td> <td></td>
               <td>
@@ -314,8 +321,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                               top: 0,
                               left: "32%",
 
-                              transform: "translateX(-50%)",
-                              transform: "translateY(-100%)",
+                              transform: "translateX(0%) translateY(-100%)",
                             }}
                           />
                           <span style={{ display: "block" }}>

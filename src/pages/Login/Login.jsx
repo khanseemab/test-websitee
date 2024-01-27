@@ -32,10 +32,41 @@ const Login = () => {
     } else if (username === "nabeel" && password === "Nabeel@1996") {
       alert("Successfully Logged In");
       navigate("/admin-dashboard");
-    }else if (username === "K2" && password === "K2@ecommerce") {
+    }
+    
+    else if (username === "aman@k2ecommercesolution.com" && password === "Aman.12@!") {
       alert("Successfully Logged In");
       navigate("/emp-dashboard");
-    } else {
+    }else if (username === "anjali.k2es@gmail.com" && password === "Anjali@!#") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    }else if (username === "himanshu.k2es@gmail.com" && password === "Him@nshuNegi") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    }else if (username === "rajat@k2ecommercesolution.com" && password === "R@jat#23!") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    }else if (username === "avi@k2ecommercesolution.com" && password === "Avi@!123") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    }else if (username === "mahima@k2ecommercesolution.com" && password === "M@hima!@3") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    }else if (username === "rachna.k2es@gmail.com" && password === "R@chna!@2") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    }else if (username === "atul@k2ecommercesolution.com" && password === "Atul@#123") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    }else if (username === "monal@k2ecommercesolution.com" && password === "Mon@L!#21") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    }else if (username === "Tarish@k2ecommercesolution.com" && password === "Tarish@#Ali") {
+      alert("Successfully Logged In");
+      navigate("/emp-dashboard");
+    } 
+    
+    else {
       alert("You don't have permissions");
     }
   };
