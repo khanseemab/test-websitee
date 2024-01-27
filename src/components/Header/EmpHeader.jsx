@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 
 import brand from "../../assets/logo.png";
 
+import { onAuthStateChanged,signOut } from "firebase/auth";
+import { auth } from "../../firbase";
+
 const EmpHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -84,7 +87,7 @@ const EmpHeader = () => {
           <div className="col-md-2 m-auto ">
             <h3 className="logout_user">
               username :
-              <Link to={"/login"}>
+              <Link onClick={()=>signOut(auth)}>
                 <span className="logout_username"> Logout</span>
               </Link>
             </h3>

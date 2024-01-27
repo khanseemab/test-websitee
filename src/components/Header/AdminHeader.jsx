@@ -1,14 +1,25 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import Nav from "react-bootstrap/Nav";
-import { Link } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 
 import brand from "../../assets/logo.png";
+import { onAuthStateChanged,signOut } from "firebase/auth";
+import { auth } from "../../firbase";
 
 const AdminHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+const navigate=useNavigate()
 
   useEffect(() => {
+    
+    onAuthStateChanged(auth,user=>{
+      if(user){
+console.log("hello",user)
+      }else{
+        navigate("/login")
+      }
+    })
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 20); // Adjust the scroll threshold as needed
@@ -84,8 +95,8 @@ const AdminHeader = () => {
           <div className="col-md-2 m-auto ">
             <h3 className="logout_user">
               username :
-              <Link to={"/login"}>
-                <span className="logout_username"> Logout</span>
+              <Link onClick={()=>signOut(auth)}>
+                <span  className="logout_username"> Logout</span>
               </Link>
             </h3>
           </div>

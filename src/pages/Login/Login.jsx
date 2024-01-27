@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo2.png";
-
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth  } from "../../firbase";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -74,6 +75,50 @@ const Login = () => {
   //   setValue((prev)=>({...prev,name:e.target.value}))
   // }
 
+  const signInUser = async (e) => {
+    e.preventDefault();
+    const { username, password } = values;
+  
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, username, password);
+      const user = userCredential.user;
+      console.log(user,"user")
+  
+      // Determine user role based on email
+      const role = determineUserRole(username);
+  
+      // Redirect based on user role
+      if (role === 'admin') {
+        alert("Successfully Logged In")
+        navigate("/admin-dashboard?email=" );
+
+      } else if (role === 'employee') {
+        alert("Successfully Logged In")
+        navigate("/emp-dashboard");
+      } else {
+        alert("You don't have permissions");
+        // Handle other roles or errors
+      }
+    } catch (error) {
+      alert("Error signing in: " + error.message);
+      console.error("Error signing in:", error);
+    }
+  };
+
+  const determineUserRole = (email) => {
+    // Check if the email belongs to an admin or employee
+    if (email === 'seemab2703@gmail.com' || email === 'nabeel123@gmail.com') {
+      return 'admin';
+    // } else if (email === 'anjali.k2es@gmail.com') {
+    //   return 'employee';
+    } else {
+      // Handle other cases if needed
+      return 'employee';
+    }
+  };
+
+
+
   return (
     <>
       <div className="login_container">
@@ -94,7 +139,7 @@ const Login = () => {
 
           <div className="login_screen p-0 m-0">
             <div className="screen__content">
-              <form className="login" onSubmit={submitLogin}>
+              <form className="login" onSubmit={signInUser}>
                 <div className="login__field">
                   <input
                     type="text"
@@ -146,5 +191,7 @@ const Login = () => {
       </div>
     </>
   );
+
+  
 };
 export default Login;
