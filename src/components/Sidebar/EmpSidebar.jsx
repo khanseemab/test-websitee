@@ -5,12 +5,6 @@ import { Link } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 
 function EmpSidebar() {
-
-  // let link=https:""
-  // if name="arbaz"{
-  //   link="https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8adad/edit#gid=0"
-  // }
-
   return (
     <>
       <div className="container_sidebar ">
@@ -21,13 +15,26 @@ function EmpSidebar() {
           <Link to={"#"} className="sidebar_element">
             My Team{" "}
           </Link>
-          <Link to={"https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=0"} className="sidebar_element">
+          <Link
+            to={
+              "https://docs.google.com/spreadsheets/d/1n_6ZrO_Qpo0BNELKNPGebXn_7Qs19UpFgtS_EKeeo_s/edit?usp=sharing"
+            }
+            target="_blank"
+            className="sidebar_element"
+          >
             All Clients
           </Link>
+          <Link className="sidebar_element" to={"/all-task"}>
+            Tasks
+          </Link>{" "}
           <Link to={"#"} className="sidebar_element">
             DSR{" "}
           </Link>
-          <Link to={"/clientform"} className="sidebar_element">
+          <Link
+            to={"https://forms.gle/Us2CVzVkFmdn7HMA9"}
+            className="sidebar_element"
+            target="_blank"
+          >
             NC Data
           </Link>{" "}
           <Link to={"#"} className="sidebar_element">
@@ -39,7 +46,11 @@ function EmpSidebar() {
           <Link to={"#"} className="sidebar_element">
             Open Pool Data{" "}
           </Link>
-          <Link to={"https://forms.gle/aADmP93UAkdrDUed8"} className="sidebar_element" target="_blank">
+          <Link
+            to={"https://forms.gle/aADmP93UAkdrDUed8"}
+            className="sidebar_element"
+            target="_blank"
+          >
             Close Deal
           </Link>
           <Link to={"#"} className="sidebar_element">

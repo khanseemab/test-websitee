@@ -8,13 +8,14 @@ import generatePDF from "react-to-pdf";
 
 const TaxInvoice = () => {
   const [showMainTaxInvoice, setShowMainTaxInvoice] = useState(true);
+  const [fileName,setFileName]=useState("")
 
   const pdfTaxInvoiceRef = useRef();
 
   const generateAndDownloadPDF = async () => {
     if (pdfTaxInvoiceRef) {
       const options = {
-        filename: "SGST-CGST-Invoice.pdf",
+        filename: `${fileName} CGST SGST .pdf`,
         page: {
           margin: 0,
           format: "a4",
@@ -51,7 +52,7 @@ const TaxInvoice = () => {
             <div className="row">
               <h2 className="text-white text-end">CGST & SGST Invoice GENERATOR</h2>
               <div className="col-md-12 ms-5">
-                <TaxInvoiceDetails downloadPDF={downloadPDF} />
+                <TaxInvoiceDetails downloadPDF={downloadPDF} setFileName={setFileName}/>
               </div>
             </div>
 

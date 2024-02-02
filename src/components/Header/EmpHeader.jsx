@@ -56,7 +56,7 @@ const EmpHeader = () => {
               <Nav.Link
                 className="nav_items_emp"
                 as={Link}
-                to="/client"
+                to="/emp-all-client"
                 // eventKey="client"
               >
                 All Clients

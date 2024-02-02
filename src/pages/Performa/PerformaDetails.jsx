@@ -3,12 +3,15 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { PerformaContext } from "./PerformaContext";
-const PerformaDetails = ({ downloadPDF }) => {
-  const { performa, handleInputNum, handleInput,handleCustomInputChange,customPackage,selectedPackage,handleSelectChange } = useContext(PerformaContext);
+const PerformaDetails = ({ downloadPDF,setFileName }) => {
+  const { performa, handleInputNum, handleInput, handleCustomInputChange, customPackage, selectedPackage, handleSelectChange } = useContext(PerformaContext);
   const submitHandle = (e) => {
     e.preventDefault();
   };
-
+const handleFileName=(e)=>{
+  setFileName(e.target.value)
+  handleInput(e)
+}
   return (
     <>
       <Form className="row" onSubmit={submitHandle}>
@@ -31,7 +34,7 @@ const PerformaDetails = ({ downloadPDF }) => {
               id="name"
               value={performa.name}
               placeholder="Enter Company Name"
-              onChange={handleInput}
+              onChange={handleFileName}
               autoComplete="false"
             />
           </Col>

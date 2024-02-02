@@ -31,6 +31,7 @@ import TaxInvoice from "./pages/TaxInvoice/CGST-SGST/TaxInvoice";
 import CurrentAccount from "./pages/Payment/CurrentAccount";
 import SavingAccount from "./pages/Payment/SavingAccount";
 import IGSTInvoice from "./pages/TaxInvoice/IGST/IGSTInvoice";
+import Task from "./pages/Task/Task";
 
 const router = createBrowserRouter([
   {
@@ -47,16 +48,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin-dashboard",
-    element: <AdminDashboard/>,
+    element: <AdminDashboard />,
   },
   {
     path: "/emp-dashboard",
-    element: <EmpDashboard/>,
+    element: <EmpDashboard />,
   },
   {
     path: "/admin-all-client",
     element: <AdminAllClients />,
-  },{
+  },
+  {
     path: "/emp-all-client",
     element: <EmpAllClients />,
   },
@@ -68,6 +70,10 @@ const router = createBrowserRouter([
     path: "/clientdetail",
     // path: ":clientdetail",
     element: <ClientDetail />,
+  },
+  {
+    path: "/all-task",
+    element: <Task />,
   },
   {
     path: "/contact",
@@ -127,11 +133,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/sgst-cgst-invoice",
-    element: <TaxInvoice/>
+    element: <TaxInvoice />,
   },
   {
     path: "/igst-invoice",
-    element: <IGSTInvoice/>
+    element: <IGSTInvoice />,
   },
   {
     path: "/flipkart-account-management",
@@ -139,11 +145,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/current-account",
-    element: <CurrentAccount/>,
-  },{
+    element: <CurrentAccount />,
+  },
+  {
     path: "/savings-account",
-    element: <SavingAccount/> ,
-  }
+    element: <SavingAccount />,
+  },
 ]);
 const Router = () => {
   return (

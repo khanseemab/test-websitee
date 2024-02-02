@@ -12,9 +12,7 @@
     color: white;
   }
   
-  .CurrentQRcard:hover {
-    transform: skew(0deg);
-  }
+ 
   
   .align {
     padding: 0.4rem;
@@ -55,4 +53,8 @@
     text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
   }
   
-  
+  .CurrentQRImage{
+    margin-top: 14px;
+
+    border-radius: 10px;
+  }

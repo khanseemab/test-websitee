@@ -8,13 +8,13 @@ import generatePDF from "react-to-pdf";
 
 const Performa = () => {
   const [showMainPerforma, setShowMainPerforma] = useState(true);
-
+const [fileName,setFileName]=useState("")
   const pdfPerformaRef = useRef();
 
   const generateAndDownloadPDF = async () => {
     if (pdfPerformaRef) {
       const options = {
-        filename: "Performa.pdf",
+        filename: `${fileName} Performa .pdf`,
         page: {
           margin: 0,
           format: "a4",
@@ -51,7 +51,7 @@ const Performa = () => {
             <div className="row">
               <h2 className="text-white text-end">PERFORMA GENERATOR</h2>
               <div className="col-md-12 ms-5">
-                <PerformaDetails downloadPDF={downloadPDF} />
+                <PerformaDetails downloadPDF={downloadPDF} setFileName={setFileName}/>
               </div>
             </div>
 

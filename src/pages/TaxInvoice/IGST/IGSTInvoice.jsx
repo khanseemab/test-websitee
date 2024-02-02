@@ -10,13 +10,13 @@ const IGSTInvoice = () => {
   // const {igstInvoice}=useContext(IGSTInvoiceContext);
       const [showMainIGSTTaxInvoice, setShowMainIGSTTaxInvoice] = useState(true);
 
-  const [fileName, setfileName]=useState("abcd")
+  const [fileName, setfileName]=useState("")
   const pdfIGSTTaxInvoiceRef = useRef();
 
   const generateDownloadPDF = async () => {
     if (pdfIGSTTaxInvoiceRef) {
       const options = {
-        filename: `${fileName}.pdf`,
+        filename: `${fileName} IGST .pdf`,
         page: {
           margin: 0,
           format: "a4",

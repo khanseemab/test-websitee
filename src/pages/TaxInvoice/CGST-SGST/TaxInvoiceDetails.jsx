@@ -4,13 +4,18 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { TaxInvoiceContext } from "./TaxInvoiceContext";
 
-const TaxInvoiceDetails = ({ downloadPDF }) => {
+const TaxInvoiceDetails = ({ downloadPDF ,setFileName}) => {
   
   const { taxInvoice, handleInputNum, handleInput,handleCustomInputChange,customPackage,selectedPackage,handleSelectChange } = useContext(TaxInvoiceContext);
   
   const submitHandle = (e) => {
     e.preventDefault();
   };
+
+  const handleFileName=(e)=>{
+    setFileName(e.target.value)
+    handleInput(e)
+  }
 
   return (
     <>
@@ -34,7 +39,7 @@ const TaxInvoiceDetails = ({ downloadPDF }) => {
               id="name"
               value={taxInvoice.name}
               placeholder="Enter Company Name"
-              onChange={handleInput}
+              onChange={handleFileName}
               autoComplete="false"
             />
           </Col>

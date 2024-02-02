@@ -12,14 +12,44 @@ function AdminSidebar() {
    <img src={brand} height={'55px'} alt='K2 e-commerce Solutions' />
    </div>  */}
         <div className="sidebar">
+        <Link to={"#"} className="sidebar_element">
+            My Team{" "}
+          </Link>
+          <Link
+            to={
+              "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=0"
+            }
+            className="sidebar_element"
+          >
+            All Clients
+          </Link>
+          <Link className="sidebar_element" to={"/all-task"}>
+            Tasks
+          </Link>{" "}
+          <Link to={"#"} className="sidebar_element">
+            DSR{" "}
+          </Link>
           <Link to={"/clientform"} className="sidebar_element">
             NC Data
           </Link>{" "}
-          <Link to={"/admin-all-client"} className="sidebar_element">
-            All Clients
+          <Link to={"#"} className="sidebar_element">
+            Ratio Sale{" "}
           </Link>
-          <Link to={"https://forms.gle/aADmP93UAkdrDUed8"} className="sidebar_element" target="_blank">
+          <Link to={"#"} className="sidebar_element">
+            Not Open Pool Data{" "}
+          </Link>
+          <Link to={"#"} className="sidebar_element">
+            Open Pool Data{" "}
+          </Link>
+          <Link
+            to={"https://forms.gle/aADmP93UAkdrDUed8"}
+            className="sidebar_element"
+            target="_blank"
+          >
             Close Deal
+          </Link>
+          <Link to={"#"} className="sidebar_element">
+            Daily Calling (Scheduled){" "}
           </Link>
           <Dropdown className="text-white" >
             <Dropdown.Toggle variant="none" className="sidebar_element ">

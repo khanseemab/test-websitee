@@ -56,7 +56,7 @@ const ContactPage = () => {
 
       <div className="container-fluid contact-page">
         <div className="row">
-          <div data-aos="zoom-in" className="map_container ms-md-3 col-md-6">
+          <div  className="map_container ms-md-3 col-md-6">
             <Map />
           </div>
           <div className="details-container col-md-5 p-0 ms-md-5 mt-md-5">

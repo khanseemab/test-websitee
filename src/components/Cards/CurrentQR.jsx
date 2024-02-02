@@ -10,7 +10,7 @@ const QR = ({src}) => {
         <span className="yellow"></span>
         <span className="green"></span>
     </div>
-    <img src={src}  alt='QR code for Current Account Upi Payments'/>
+    <img src={src} className='CurrentQRImage' alt='QR code for Current Account Upi Payments'/>
 </div>
 </>  )
 }

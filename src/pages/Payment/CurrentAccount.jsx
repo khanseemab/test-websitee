@@ -3,10 +3,9 @@ import HeaderMain from "../../components/Header/HeaderMain";
 
 import CurrentQR from "../../components/Cards/CurrentQR";
 
-import cred from "../../assets/QR/CRED.png";
+import cred from "../../assets/QR/currentAccountQR.png";
 
 const CurrentAccount = () => {
-  const src = { cred };
   return (
     <>
       <HeaderMain />
@@ -63,7 +62,7 @@ best regards, <br/>
 K2 E COMMERCE SOLUTIONS</p>
           </div>
           <div data-aos="zoom-in" className="offset-md-1 col-md-3 mt-md-3">
-            <CurrentQR src={src} />
+            <CurrentQR src={cred} />
           </div>
         </div>
       </div>

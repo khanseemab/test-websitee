@@ -79,11 +79,10 @@ const Home = () => {
       <HeaderMain />
       {/* <HeaderMain/> */}
       {/* </div> */}
-     {/* </div> */}
-        
-   <div className="container-fluid">
-      <div className="container_main_page ">
-     
+      {/* </div> */}
+
+      <div className="container-fluid">
+        <div className="container_main_page ">
           <div className="row mt-md-3 ">
             <marquee
               behavior="scroll"
@@ -130,63 +129,67 @@ const Home = () => {
               {/* <img src={test} className="img-fluid" alt="test" /> */}
               <div className="mt-md-0 ">
                 {/* <ControlledCarousel /> */}
-                <Lottie animationData={animationData} />
+                {/* <Lottie animationData={animationData} /> */}
               </div>
             </div>
-            <div data-aos="fade-right" className=" col-md-6   mt-md-4 order-md-1">
-             <div className="cards_main"> <div className=" row  mt-5">
-                <Link
-                  className="card_home col-md-6 "
-                  to={"https://wa.link/oq74n9"}
-                > 
-                 
-                  {/* <FaRegHandshake className="home_icons" /> */}
-                  <img
-                    src={connect}
-                    height={"70px"}
-                    alt="K2 e-commerce Solutions connect"
-                  /><br /> Let's Connect
-                  
-                </Link>
-                <Link className="card_home1 col-md-6" to={"/why-us"}>
-                  
-                  {/* <RiQuestionnaireLine className="home_icons" /> */}
-                  <img
-                    src={whyUS}
-                    height={"70px"}
-                    alt="K2 e-commerce Solutions connect"
-                  /> <br /> Why US ?
-                 
-                </Link>
+            <div
+              data-aos="fade-right"
+              className=" col-md-6   mt-md-4 order-md-1"
+            >
+              <div className="cards_main">
+                {" "}
+                <div className=" row  mt-5">
+                  <Link
+                    className="card_home col-md-6 "
+                    to={"https://wa.link/oq74n9"}
+                  >
+                    {/* <FaRegHandshake className="home_icons" /> */}
+                    <img
+                      src={connect}
+                      height={"70px"}
+                      alt="K2 e-commerce Solutions connect"
+                    />
+                    <br /> Let's Connect
+                  </Link>
+                  <Link className="card_home1 col-md-6" to={"/why-us"}>
+                    {/* <RiQuestionnaireLine className="home_icons" /> */}
+                    <img
+                      src={whyUS}
+                      height={"70px"}
+                      alt="K2 e-commerce Solutions connect"
+                    />{" "}
+                    <br /> Why US ?
+                  </Link>
+                </div>
+                <div className="row ">
+                  <Link
+                    className="card_home2 col-md-6  "
+                    to="#"
+                    onClick={scrollToTestimonial}
+                  >
+                    {/* <FaRegCircleUser className="home_icons" /> */}
+                    <img
+                      src={testimonial}
+                      height={"70px"}
+                      alt="K2 e-commerce Solutions connect testimonial"
+                    />
+                    <br /> Testimonial
+                  </Link>
+                  <Link
+                    className="card_home col-md-6 "
+                    to={"/services/pricing"}
+                  >
+                    {/* <TbCoinRupee className="home_icons" /> */}
+                    <img
+                      src={pricing}
+                      height={"70px"}
+                      alt="K2 e-commerce Solutions connect package"
+                    />
+                    <br /> Packages
+                  </Link>
+                </div>
               </div>
-              <div className="row ">
-                <Link
-                  className="card_home2 col-md-6  "
-                  to="#"
-                  onClick={scrollToTestimonial}
-                >
-                 
-                  {/* <FaRegCircleUser className="home_icons" /> */}
-                  <img
-                    src={testimonial}
-                    height={"70px"}
-                    alt="K2 e-commerce Solutions connect testimonial"
-                  /><br /> Testimonial
-                  
-                </Link>
-                <Link className="card_home col-md-6 " to={"/services/pricing"}>
-                 
-                  {/* <TbCoinRupee className="home_icons" /> */}
-                  <img
-                    src={pricing}
-                    height={"70px"}
-                    alt="K2 e-commerce Solutions connect package"
-                  /><br /> Packages
-                  
-                </Link>
-              </div></div>
             </div>
-          
           </div>
         </div>
       </div>
@@ -237,83 +240,83 @@ const Home = () => {
       {/* Services Card start*/}
       {/* <div className="  mb-5  p-0">
         <div className="row"> */}
-          <div className="serviceshome">
-            <div className="container">
-              <div className="servicesheader">
-                <h6>{homePageText.serviceshome_subheader}</h6>
-                <h4 className="servicesHeader">
-                  {homePageText.serviceshome_header}
-                </h4>
-                <p>{homePageText.serviceshome_subheader1}</p>
+      <div className="serviceshome">
+        <div className="container">
+          <div className="servicesheader">
+            <h6>{homePageText.serviceshome_subheader}</h6>
+            <h4 className="servicesHeader">
+              {homePageText.serviceshome_header}
+            </h4>
+            <p>{homePageText.serviceshome_subheader1}</p>
+          </div>
+          <div className="row">
+            <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6 ">
+              <div className="services-box-home m-3">
+                <AiOutlineNotification className="icon1" />
+                <h4>{homePageText.services_box_title1}</h4>
+                <p>{homePageText.services_box_des1}</p>
+                <button className="btn learn-more-btn">Learn More</button>
               </div>
-              <div className="row">
-                <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6 ">
-                  <div className="services-box-home m-3">
-                    <AiOutlineNotification className="icon1" />
-                    <h4>{homePageText.services_box_title1}</h4>
-                    <p>{homePageText.services_box_des1}</p>
-                    <button className="btn learn-more-btn">Learn More</button>
-                  </div>
-                </div>
+            </div>
 
-                <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
-                  <div className="services-box-home m-3">
-                    <AiOutlineFundView className="icon2" />
-                    <h4>{homePageText.services_box_title2}</h4>
-                    <p>{homePageText.services_box_des2}</p>
-                    <Link to={"/services/web-dev"}>
-                      <button className="btn learn-more-btn">Learn More</button>
-                    </Link>
-                  </div>
-                </div>
+            <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
+              <div className="services-box-home m-3">
+                <AiOutlineFundView className="icon2" />
+                <h4>{homePageText.services_box_title2}</h4>
+                <p>{homePageText.services_box_des2}</p>
+                <Link to={"/services/web-dev"}>
+                  <button className="btn learn-more-btn">Learn More</button>
+                </Link>
+              </div>
+            </div>
 
-                <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
-                  <div className="services-box-home m-3">
-                    <AiOutlineFileSearch className="icon3" />
-                    <h4>{homePageText.services_box_title3}</h4>
-                    <p>{homePageText.services_box_des3}</p>
-                    <Link to={"/services/sem"}>
-                      <button className="btn learn-more-btn">Learn More</button>
-                    </Link>
-                  </div>
-                </div>
+            <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
+              <div className="services-box-home m-3">
+                <AiOutlineFileSearch className="icon3" />
+                <h4>{homePageText.services_box_title3}</h4>
+                <p>{homePageText.services_box_des3}</p>
+                <Link to={"/services/sem"}>
+                  <button className="btn learn-more-btn">Learn More</button>
+                </Link>
+              </div>
+            </div>
 
-                <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
-                  <div className="services-box-home m-3">
-                    <AiOutlineTeam className="icon3" />
-                    <h4>{homePageText.services_box_title4}</h4>
-                    <p>{homePageText.services_box_des4}</p>
-                    <Link to={"/services/smo"}>
-                      <button className="btn learn-more-btn">Learn More</button>
-                    </Link>
-                  </div>
-                </div>
+            <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
+              <div className="services-box-home m-3">
+                <AiOutlineTeam className="icon3" />
+                <h4>{homePageText.services_box_title4}</h4>
+                <p>{homePageText.services_box_des4}</p>
+                <Link to={"/services/smo"}>
+                  <button className="btn learn-more-btn">Learn More</button>
+                </Link>
+              </div>
+            </div>
 
-                <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
-                  <div className="services-box-home m-3">
-                    <AiOutlineProject className="icon2" />
-                    <h4>{homePageText.services_box_title5}</h4>
-                    <p>{homePageText.services_box_des5}</p>
-                    <Link to={"/services/digital-marketing"}>
-                      <button className="btn learn-more-btn">Learn More</button>
-                    </Link>
-                  </div>
-                </div>
+            <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
+              <div className="services-box-home m-3">
+                <AiOutlineProject className="icon2" />
+                <h4>{homePageText.services_box_title5}</h4>
+                <p>{homePageText.services_box_des5}</p>
+                <Link to={"/services/digital-marketing"}>
+                  <button className="btn learn-more-btn">Learn More</button>
+                </Link>
+              </div>
+            </div>
 
-                <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
-                  <div className="services-box-home m-3">
-                    <AiOutlineSync className="icon1" />
-                    <h4>{homePageText.services_box_title6}</h4>
-                    <p>{homePageText.services_box_des6}</p>
-                    <Link to={"/services/seo"}>
-                      <button className="btn learn-more-btn">Learn More</button>
-                    </Link>
-                  </div>
-                </div>
+            <div data-aos="zoom-in-up" className="col-lg-4 col-md-4 col-6">
+              <div className="services-box-home m-3">
+                <AiOutlineSync className="icon1" />
+                <h4>{homePageText.services_box_title6}</h4>
+                <p>{homePageText.services_box_des6}</p>
+                <Link to={"/services/seo"}>
+                  <button className="btn learn-more-btn">Learn More</button>
+                </Link>
               </div>
             </div>
           </div>
-        {/* </div>
+        </div>
+      </div>
+      {/* </div>
       </div> */}
 
       {/* Services Card end*/}
@@ -327,8 +330,7 @@ const Home = () => {
 
         {/* Header 4 test */}
         <div className="container">
-        <div className="home-test mt-0" id="testimonial">
-          
+          <div className="home-test mt-0" id="testimonial">
             <div className="row">
               <div className="col-md-6 ">
                 <div className="">

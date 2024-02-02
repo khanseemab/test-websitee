@@ -8,7 +8,15 @@ import { auth } from "../../firbase";
 
 const AdminDashboard = () => {
   const [user,setUser]=useState(null);
-  const [userEmail, setUserEmail] = useState(null);
+  const [admin, setAdmin] = useState(null);
+  const userEmail = localStorage.getItem('username');
+
+  var userName=""
+if (userEmail==="nabeel123@gmail.com"){
+  userName="Nabeel Ahmad"
+}else if (userEmail==="seemab.k2es@gmail.com"){
+  userName="Seemab Akhtar Khan"
+}
 
 const navigate=useNavigate()
 
@@ -25,11 +33,11 @@ if(user){
 }
 })
 
-const currentUser = auth.currentUser;
-    if (currentUser) {
-      const email = currentUser.email;
-      setUserEmail(email);
-    }
+// const currentUser = auth.currentUser;
+//     if (currentUser) {
+//       const email = currentUser.email;
+//       setAdmin(email);
+//     }
 
 },[])
   return (
@@ -42,7 +50,7 @@ const currentUser = auth.currentUser;
             <AdminSidebar />
           </div>
           <div className="col-md-7 ms-4 ">
-            <h2 className="welcome ms-3 mt-5">Welcome <span style={{color:"#fe4c1c"}}>{userEmail} </span> !!</h2>
+            <h2 className="welcome  mt-5">Welcome Back <span style={{color:"#fe4c1c"}}>{userName} </span> !!</h2>
           </div>
         </div>
       </div>

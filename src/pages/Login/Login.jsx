@@ -107,7 +107,7 @@ const Login = () => {
 
   const determineUserRole = (email) => {
     // Check if the email belongs to an admin or employee
-    if (email === 'seemab2703@gmail.com' || email === 'nabeel123@gmail.com') {
+    if (email === 'seemab.k2es@gmail.com' || email === 'nabeel123@gmail.com') {
       return 'admin';
     // } else if (email === 'anjali.k2es@gmail.com') {
     //   return 'employee';
@@ -116,7 +116,8 @@ const Login = () => {
       return 'employee';
     }
   };
-
+localStorage.setItem('username', values.username)
+    localStorage.setItem('password', values.password)
 
 
   return (
