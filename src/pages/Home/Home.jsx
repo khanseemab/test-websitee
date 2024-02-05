@@ -129,7 +129,7 @@ const Home = () => {
               {/* <img src={test} className="img-fluid" alt="test" /> */}
               <div className="mt-md-0 ">
                 {/* <ControlledCarousel /> */}
-                {/* <Lottie animationData={animationData} /> */}
+                <Lottie animationData={animationData} />
               </div>
             </div>
             <div
@@ -141,7 +141,7 @@ const Home = () => {
                 <div className=" row  mt-5">
                   <Link
                     className="card_home col-md-6 "
-                    to={"https://wa.link/oq74n9"}
+                    to={"https://wa.link/susy6s"}
                   >
                     {/* <FaRegHandshake className="home_icons" /> */}
                     <img
