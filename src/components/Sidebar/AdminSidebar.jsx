@@ -12,13 +12,14 @@ function AdminSidebar() {
    <img src={brand} height={'55px'} alt='K2 e-commerce Solutions' />
    </div>  */}
         <div className="sidebar">
-        <Link to={"#"} className="sidebar_element">
+          <Link to={"#"} className="sidebar_element">
             My Team{" "}
           </Link>
           <Link
             to={
-              "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=0"
+              "https://docs.google.com/spreadsheets/d/1n_6ZrO_Qpo0BNELKNPGebXn_7Qs19UpFgtS_EKeeo_s/edit?usp=sharing"
             }
+            target="_blank"
             className="sidebar_element"
           >
             All Clients
@@ -29,7 +30,7 @@ function AdminSidebar() {
           <Link to={"#"} className="sidebar_element">
             DSR{" "}
           </Link>
-          <Link to={"/clientform"} className="sidebar_element">
+          <Link to={"https://forms.gle/Us2CVzVkFmdn7HMA9"} className="sidebar_element">
             NC Data
           </Link>{" "}
           <Link to={"#"} className="sidebar_element">
@@ -51,7 +52,7 @@ function AdminSidebar() {
           <Link to={"#"} className="sidebar_element">
             Daily Calling (Scheduled){" "}
           </Link>
-          <Dropdown className="text-white" >
+          <Dropdown className="text-white">
             <Dropdown.Toggle variant="none" className="sidebar_element ">
               Generate Performa
             </Dropdown.Toggle>

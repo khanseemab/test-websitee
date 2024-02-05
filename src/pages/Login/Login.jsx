@@ -62,7 +62,7 @@ const Login = () => {
     }else if (username === "monal@k2ecommercesolution.com" && password === "Mon@L!#21") {
       alert("Successfully Logged In");
       navigate("/emp-dashboard");
-    }else if (username === "Tarish@k2ecommercesolution.com" && password === "Tarish@#Ali") {
+    }else if (username === "tarish@k2ecommercesolution.com" && password === "Tarish@#Ali") {
       alert("Successfully Logged In");
       navigate("/emp-dashboard");
     } 
@@ -179,7 +179,7 @@ localStorage.setItem('username', values.username)
                 >
                 <span  className="social-login" >
                  [ Join Us ]</span>
-                </Link>
+                </Link> 
               </div> */}
             </div>
             <div className="screen__background">

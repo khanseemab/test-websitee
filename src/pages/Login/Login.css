@@ -25,16 +25,13 @@
   height: 380px;
   margin: -15px 20px -60px 12%;
   opacity: 1;
- 
+
   border-radius: 100%;
   transform: translateY(-10px) scale(0.95); /* Initial state */
   transition: transform 1s;
 }
-.image_logo:hover{
-
-
+.image_logo:hover {
   transform: translateY(-10px) scale(1.02); /* Adjust the scale factor as needed */
-
 }
 
 .form_box {
@@ -129,12 +126,13 @@
 
 .login__input {
   border: none;
+  font-size: 13px;
   border-bottom: 2px solid #a7a7a8;
-  background: none;
-  padding: 10px;
-  padding-left: 24px;
+  /* background: rgba(255, 0, 0, 0); */
+  padding: 10px 0px 10px 5px;
+  /* padding-left: ; */
   font-weight: 700;
-  width: 75%;
+  width: 88%;
   transition: 0.2s;
 }
 
@@ -190,6 +188,6 @@
   color: rgb(255, 255, 255);
 }
 
-.button__text{
+.button__text {
   color: #0b0b0b;
 }
