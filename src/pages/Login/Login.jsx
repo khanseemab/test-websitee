@@ -39,7 +39,7 @@ const Login = () => {
       alert("Successfully Logged In");
       navigate("/emp-dashboard");
     }else if (username === "anjali.k2es@gmail.com" && password === "Anjali@!#") {
-      alert("Successfully Logged In");
+      alert("Successfully Logged In"); 
       navigate("/emp-dashboard");
     }else if (username === "himanshu.k2es@gmail.com" && password === "Him@nshuNegi") {
       alert("Successfully Logged In");

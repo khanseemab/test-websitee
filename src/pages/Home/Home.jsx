@@ -1,17 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import homePageText from "./data";
 import "./Home.css";
 import connect from "../../assets/connect.png";
 import pricing from "../../assets/package.png";
 import testimonial from "../../assets/testimonial.png";
 import whyUS from "../../assets/whyUS.png";
-
-// import  team1  from "../../assets/Images/team_1.jpg";
-// import  team2  from "../../assets/Images/team_2.jpg";
-// import  team3  from "../../assets/Images/team_3.jpg";
-// import  team4  from "../../assets/Images/team_4.jpg";
-// import  team5  from "../../assets/Images/team_5.jpg";
-// import  team6  from "../../assets/Images/team_6.jpg";
 import aboutus from "../../assets/Images/about-us.jpg";
 import test from "../../assets/Images/test.jpg";
 // import data from "../Services/CatalogueServices/data";
@@ -24,19 +17,8 @@ import Features from "../../components/Feature/Features";
 // import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import { Link } from "react-router-dom";
-// import ControlledCarousel from "../../components/Carousel/Carousel";
-// import { FaRegHandshake } from "react-icons/fa6";
-// import { TbCoinRupee } from "react-icons/tb";
-// import { FaRegCircleUser } from "react-icons/fa6";
-// import { RiQuestionnaireLine } from "react-icons/ri";
 
 import {
-  // AiOutlineRocket,
-  // AiOutlineSketch,
-  // AiOutlineRise,
-  // AiOutlineSend,
-  // AiOutlineMail,
-  // AiOutlineBlock,
   AiOutlineNotification,
   AiOutlineFileSearch,
   AiOutlineTeam,
@@ -51,35 +33,25 @@ import WhyUsSection2 from "../../components/WhyUS/WhyUsSection2";
 
 import Lottie from "lottie-react";
 import animationData from "../../assets/Animation/Animation.json";
+import MyModal from "../../components/Modal/Modal";
 
 const Home = () => {
+  const [open, setOpen] = useState(false);
+
   const scrollToTestimonial = () => {
     const testimonialElement = document.getElementById("testimonial");
     testimonialElement.scrollIntoView({ behavior: "smooth" });
   };
 
-  // const styles = {
-  //   outlinedButton: {
-  //     // Define your default styles for the outlined button
-  //     border: '1px solid #2196F3',
-  //     color: '#2196F3',
-  //     transition: 'color 0.3s, border 0.3s', // Add a transition effect
-  //   },
-  //   hoverEffect: {
-  //     color: '#1565C0', // Change the color on hover
-  //     border: '1px solid #1565C0', // Change the border color on hover
-  //   },
-  // };
+  const onCloseModal = () => setOpen(false);
+  useEffect(() => {
+    setOpen(true);
+  }, []);
 
   return (
     <>
-      {/*Main Section start */}
-      {/* <div className="row"> */}
-      {/* <div className="sticky-top HeaderMain1"> */}
       <HeaderMain />
-      {/* <HeaderMain/> */}
-      {/* </div> */}
-      {/* </div> */}
+      <MyModal onCloseModal={onCloseModal} open={open} />
 
       <div className="container-fluid">
         <div className="container_main_page ">
@@ -91,42 +63,11 @@ const Home = () => {
               className="text-white"
             >
               <div className="text-loop">
-                {/* K2 E-COMMERCE SOLUTIONS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; K2
-                E-COMMERCE SOLUTIONS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  */}
                 <span style={{ color: "#fe4c1c" }}>K2 </span>E-COMMERCE{" "}
                 <span style={{ color: "green" }}>SOLUTIONS</span>
               </div>
             </marquee>
             <div className="col-md-6 p-0 mt-0 order-md-2">
-              {/* <img src={test} className="img-fluid" alt="test" /> */}
               <div className="mt-md-0 ">
                 {/* <ControlledCarousel /> */}
                 <Lottie animationData={animationData} />

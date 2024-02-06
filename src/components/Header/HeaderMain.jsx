@@ -91,7 +91,7 @@ const HeaderMain = () => {
                     </Link>
                     <ul className="dropdown">
                       <li className="menu-item sub-menu">
-                        <Link to="#">
+                        <Link to="/flipkart-account-management">
                           Flipkart Account Management
                         </Link>
                       </li>
