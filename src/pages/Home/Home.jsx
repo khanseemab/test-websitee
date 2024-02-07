@@ -34,6 +34,8 @@ import WhyUsSection2 from "../../components/WhyUS/WhyUsSection2";
 import Lottie from "lottie-react";
 import animationData from "../../assets/Animation/Animation.json";
 import MyModal from "../../components/Modal/Modal";
+import { FloatButton } from "antd";
+import { WhatsAppOutlined } from "@ant-design/icons";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -51,8 +53,9 @@ const Home = () => {
   return (
     <>
       <HeaderMain />
+      
+      
       <MyModal onCloseModal={onCloseModal} open={open} />
-
       <div className="container-fluid">
         <div className="container_main_page ">
           <div className="row mt-md-3 ">
@@ -134,6 +137,28 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+      <FloatButton
+        href={"https://wa.link/susy6s"}
+        target="_blank"
+        style={{
+          backgroundColor: "rgba(218, 218, 218, 0.8)",
+          marginRight: "30px",
+          marginBottom: "20px",
+          width: "45px",
+          height: "45px",
+        }}
+        icon={
+          <WhatsAppOutlined
+            style={{ fontSize: "21px", alignItems: "center" }}
+          />
+        }
+        tooltip={<div>Let's Connect</div>}
+      />
+
+
+
       <div data-aos="zoom-in" className="col-md-12 mt-md-2">
         <Features />
       </div>
@@ -147,7 +172,6 @@ const Home = () => {
           })}
         </div>
        </div> */}
-
       {/* Header 2  about */}
       <div className="abouthome ">
         <div className="container-fluid ">
@@ -177,7 +201,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       {/* Services Card start*/}
       {/* <div className="  mb-5  p-0">
         <div className="row"> */}
@@ -259,11 +282,8 @@ const Home = () => {
       </div>
       {/* </div>
       </div> */}
-
       {/* Services Card end*/}
-
       {/*Main Section ends */}
-
       <section>
         <div className="mt-5 mb-3">
           <WhyUsSection1 />
