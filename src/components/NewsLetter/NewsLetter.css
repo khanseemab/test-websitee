@@ -50,7 +50,7 @@
 .newsletter h4 {
   font-size: 40px;
   font-weight: 700;
-  color: white;
+  /* color: white; */
 }
 .newsletter p {
   max-width: 600px;
@@ -60,5 +60,5 @@
   margin-right: auto;
   line-height: 1.8;
   margin-top: 12px;
-  color: white;
+  /* color: white; */
 }

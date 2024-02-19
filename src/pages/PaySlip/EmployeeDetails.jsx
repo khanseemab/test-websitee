@@ -22,7 +22,7 @@ const submitHandle=(e)=>{
         <br />
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalName"
         >
           <Form.Label column sm={3} htmlFor="name">
@@ -42,7 +42,7 @@ const submitHandle=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalID"
         >
           <Form.Label column sm={3} htmlFor="id">
@@ -61,7 +61,7 @@ const submitHandle=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalDate"
         >
           <Form.Label column sm={3} htmlFor="payPeriod">
@@ -82,7 +82,7 @@ const submitHandle=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalPaidDay"
         >
           <Form.Label column sm={3} htmlFor="paidDays">
@@ -107,7 +107,7 @@ const submitHandle=(e)=>{
 
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalIncome"
         >
           {/* <Form.Label column sm={5}>
@@ -123,7 +123,7 @@ const submitHandle=(e)=>{
        
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalDeductions"
         >
           {/* <Form.Label column sm={5}>
@@ -139,7 +139,7 @@ const submitHandle=(e)=>{
 
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="salary">
@@ -158,7 +158,7 @@ const submitHandle=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalIncomeTax"
         >
           <Form.Label column sm={3} htmlFor="incomeTax">
@@ -177,7 +177,7 @@ const submitHandle=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalHRA"
         >
           <Form.Label column sm={3} htmlFor="HRA">
@@ -196,7 +196,7 @@ const submitHandle=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalPF"
         >
           <Form.Label column sm={3} htmlFor="PF">
@@ -215,7 +215,7 @@ const submitHandle=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalIncentives"
         >
           <Form.Label column sm={3} htmlFor="incentives">
@@ -234,7 +234,7 @@ const submitHandle=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalTotal"
         >
           {/* <Form.Label column sm={8}>
@@ -246,7 +246,7 @@ const submitHandle=(e)=>{
         
         </Form.Group>
         <button className=" cta col-md-2  justify-content-start align-items-start text-start">
-  <span className="d-inline" onClick={downloadPDF}>Generate</span>
+  <span className="d-inline text-black-50" onClick={downloadPDF}>Generate</span>
   <svg viewBox="0 0 13 10" height="10px" width="15px">
     <path d="M1,5 L11,5"></path>
     <polyline points="8 1 12 5 8 9"></polyline>

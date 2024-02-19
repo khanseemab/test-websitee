@@ -1,8 +1,8 @@
 import React from "react";
 import "./Task.css";
-import EmpHeader from "../../components/Header/EmpHeader";
+// import EmpHeader from "../../components/Header/EmpHeader";
 import TaskButton from "../../components/TaskButton/TaskButton";
-const Task = () => {
+const AllTask = () => {
   const UserName = localStorage.getItem("username");
 
   // ADD TASK
@@ -12,16 +12,16 @@ const Task = () => {
   let allClient = "#";
   if (UserName === "anjali.k2es@gmail.com") {
     allClient =
-      "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit?usp=sharing";
+      "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit?pli=1#gid=584337717";
   } else if (UserName === "rachna.k2es@gmail.com") {
     allClient =
-      "https://docs.google.com/spreadsheets/d/1e2sTirG-3sF7G0HcRyZxxllChXSLWHG8GmX1iDKSxD0/edit?usp=sharing";
+      "https://docs.google.com/spreadsheets/d/1e2sTirG-3sF7G0HcRyZxxllChXSLWHG8GmX1iDKSxD0/edit#gid=115835629";
   } else if (UserName === "himanshu.k2es@gmail.com") {
     allClient =
-      "https://docs.google.com/spreadsheets/d/1jLDqGPA8AD_wEs0t4JxmVitYnu1MiEguNQxr_X6L-RE/edit?usp=sharing";
+      "https://docs.google.com/spreadsheets/d/1jLDqGPA8AD_wEs0t4JxmVitYnu1MiEguNQxr_X6L-RE/edit#gid=409330358";
   } else if (UserName === "tarish@k2ecommercesolution.com") {
     allClient =
-      "https://docs.google.com/spreadsheets/d/1jWZwiiTWbekSMpIWYlSu5BlspZziDRLT4OcuSpWqv68/edit?usp=sharing";
+      "https://docs.google.com/spreadsheets/d/1jWZwiiTWbekSMpIWYlSu5BlspZziDRLT4OcuSpWqv68/edit#gid=1576935242";
   } else {
     allClient = "#";
   }
@@ -68,23 +68,35 @@ const Task = () => {
   let cNotOpen = "#";
   if (UserName === "anjali.k2es@gmail.com") {
     cNotOpen =
-      "https://docs.google.com/spreadsheets/d/1OPhqdfVyVaMi0ZO1zQ_FQX-4SeaNRFHz2BrUNTOF9gk/edit?usp=sharing";
+      "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=1936797505";
   } else if (UserName === "rachna.k2es@gmail.com") {
     cNotOpen =
-      "https://docs.google.com/spreadsheets/d/1v_f2Mf7pqRqwM-nnvH4vhK3VDCWrDdAsHymucv0C9EY/edit?usp=sharing";
+      "https://docs.google.com/spreadsheets/d/1e2sTirG-3sF7G0HcRyZxxllChXSLWHG8GmX1iDKSxD0/edit#gid=602043963";
   } else if (UserName === "himanshu.k2es@gmail.com") {
     cNotOpen =
-      "https://docs.google.com/spreadsheets/d/1VtMyUl1Rd6lfFMdj_cmN6PTAArdVDR7U80itOBhDzQ0/edit?usp=sharing";
+      "https://docs.google.com/spreadsheets/d/1jLDqGPA8AD_wEs0t4JxmVitYnu1MiEguNQxr_X6L-RE/edit#gid=985456493";
   } else if (UserName === "tarish@k2ecommercesolution.com") {
     cNotOpen =
-      "https://docs.google.com/spreadsheets/d/1LG20nhVQsyek7hZTWY-JmnOYo61jEJ8gHjzKfdBdU6E/edit?usp=sharing";
+      "https://docs.google.com/spreadsheets/d/1jWZwiiTWbekSMpIWYlSu5BlspZziDRLT4OcuSpWqv68/edit#gid=1241319331";
   } else {
     cNotOpen = "#";
   }
 
   // C WORKING
   let cWorking = "#";
-  if (UserName === "avi@k2ecommercesolution.com") {
+  if (UserName === "anjali.k2es@gmail.com") {
+    cWorking =
+      "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=1251007563";
+  }else if (UserName==="rachna.k2es@gmail.com"){
+    cWorking ="https://docs.google.com/spreadsheets/d/1e2sTirG-3sF7G0HcRyZxxllChXSLWHG8GmX1iDKSxD0/edit#gid=908965078"
+  } else if (UserName==="himanshu.k2es@gmail.com"){
+    cWorking="https://docs.google.com/spreadsheets/d/1jLDqGPA8AD_wEs0t4JxmVitYnu1MiEguNQxr_X6L-RE/edit#gid=837797660"
+  }else if (UserName === "tarish@k2ecommercesolution.com") {
+    cWorking =
+      "https://docs.google.com/spreadsheets/d/1jWZwiiTWbekSMpIWYlSu5BlspZziDRLT4OcuSpWqv68/edit#gid=33426310";
+  }
+  
+  else if (UserName === "avi@k2ecommercesolution.com") {
     cWorking =
       "https://docs.google.com/spreadsheets/d/1aH4p6JHAODlHnGy6NJ9040CBokSnukLOq1WB9Y7nDhc/edit?usp=sharing";
   } else if (UserName === "mahima@k2ecommercesolution.com") {
@@ -106,33 +118,96 @@ const Task = () => {
     cWorking = "#";
   }
 
+  // PENDING CLIENT
+  let pendingClient = "#";
+  if (UserName === "anjali.k2es@gmail.com") {
+    pendingClient =
+      "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=31353810";
+  }else if (UserName==="rachna.k2es@gmail.com"){
+    pendingClient="https://docs.google.com/spreadsheets/d/1e2sTirG-3sF7G0HcRyZxxllChXSLWHG8GmX1iDKSxD0/edit#gid=811646784"
+  }
+  else if (UserName==="himanshu.k2es@gmail.com"){
+    pendingClient="https://docs.google.com/spreadsheets/d/1jLDqGPA8AD_wEs0t4JxmVitYnu1MiEguNQxr_X6L-RE/edit#gid=1597640465"
+  }
+  else if (UserName === "tarish@k2ecommercesolution.com") {
+    pendingClient =
+      "https://docs.google.com/spreadsheets/d/1jWZwiiTWbekSMpIWYlSu5BlspZziDRLT4OcuSpWqv68/edit#gid=824116213";
+  }
+  // PENDING MARKETPLACE
+
+  let pendingMarketPlace = "#";
+  if (UserName === "anjali.k2es@gmail.com") {
+    pendingMarketPlace =
+      "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=1836860086";
+  } else if (UserName==="rachna.k2es@gmail.com"){
+    pendingMarketPlace="https://docs.google.com/spreadsheets/d/1e2sTirG-3sF7G0HcRyZxxllChXSLWHG8GmX1iDKSxD0/edit#gid=783836997";
+  }
+  else if (UserName==="himanshu.k2es@gmail.com"){
+    pendingMarketPlace="https://docs.google.com/spreadsheets/d/1jLDqGPA8AD_wEs0t4JxmVitYnu1MiEguNQxr_X6L-RE/edit#gid=407068419"
+  }
+  else if (UserName === "tarish@k2ecommercesolution.com") {
+    pendingMarketPlace =
+      "https://docs.google.com/spreadsheets/d/1jWZwiiTWbekSMpIWYlSu5BlspZziDRLT4OcuSpWqv68/edit#gid=575046743";
+  }
+  // PENDING FROM CP
+
+  let pendingCP = "#";
+  if (UserName === "anjali.k2es@gmail.com") {
+    pendingCP =
+      "https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=820212999";
+  } else if (UserName==="rachna.k2es@gmail.com"){
+    pendingCP="https://docs.google.com/spreadsheets/d/1e2sTirG-3sF7G0HcRyZxxllChXSLWHG8GmX1iDKSxD0/edit#gid=1854318633";
+  }
+  else if (UserName==="himanshu.k2es@gmail.com"){
+    pendingCP="https://docs.google.com/spreadsheets/d/1jLDqGPA8AD_wEs0t4JxmVitYnu1MiEguNQxr_X6L-RE/edit#gid=1086614524"
+  }
+  else if (UserName === "tarish@k2ecommercesolution.com") {
+    pendingCP =
+      "https://docs.google.com/spreadsheets/d/1jWZwiiTWbekSMpIWYlSu5BlspZziDRLT4OcuSpWqv68/edit#gid=1611512139";
+  }
+  // C CLOSED
+   let cClosed="#";
+   if (UserName === "anjali.k2es@gmail.com"){
+    cClosed="https://docs.google.com/spreadsheets/d/15tG7kj_jbRta4lv9ykEHceGpfJG2WzrkEdxUN_tnO8A/edit#gid=14299903"
+   } else if (UserName==="rachna.k2es@gmail.com"){
+    cClosed="https://docs.google.com/spreadsheets/d/1e2sTirG-3sF7G0HcRyZxxllChXSLWHG8GmX1iDKSxD0/edit#gid=1245753751";
+  }
+  else if (UserName==="himanshu.k2es@gmail.com"){
+    cClosed="https://docs.google.com/spreadsheets/d/1jLDqGPA8AD_wEs0t4JxmVitYnu1MiEguNQxr_X6L-RE/edit#gid=1976695990"
+  }
+  else if (UserName === "tarish@k2ecommercesolution.com") {
+    cClosed =
+      "https://docs.google.com/spreadsheets/d/1jWZwiiTWbekSMpIWYlSu5BlspZziDRLT4OcuSpWqv68/edit#gid=1679703706";
+  }
+
+
   return (
     <>
-      <EmpHeader />
+      {/* <EmpHeader /> */}
       <div className="container text-white">
-        <div className="all-tasks mt-5 p-3">
-          <h3>All Tasks :</h3>
-          <div className="row mt-5 ">
+        <div className="all-tasks mt-4 p-3">
+          <h4>All Tasks :</h4>
+          <div className="row mt-3 ">
             <div className="col-md-2">
-              <TaskButton taskLink={addTask} task="Add Task" />{" "}
+              <TaskButton taskLink={addTask} task="Add Task" />
             </div>
             <div className="col-md-2">
-              <TaskButton taskLink={allClient} task="Clients" />{" "}
+              <TaskButton taskLink={allClient} task="Clients" />
             </div>
             <div className="col-md-2">
-              <TaskButton task="Client Time" />{" "}
+              <TaskButton task="Client Time" />
             </div>
             <div className="col-md-2">
-              <TaskButton task="Task Time" />{" "}
+              <TaskButton task="Task Time" />
+            </div>    
+            <div className="col-md-2">
+              <TaskButton task="QC Check" />
             </div>
             <div className="col-md-2">
-              <TaskButton task="QC Check" />{" "}
-            </div>
-            <div className="col-md-2">
-              <TaskButton task="QC Done" />{" "}
+              <TaskButton task="QC Done" />
             </div>
           </div>
-          <div className="row mt-5 mx-auto">
+          <div className="row mt-4 mx-auto">
             <div className="col-md-3 mx-auto">
               <TaskButton taskLink={clientStatus} task="Client Status" />
             </div>
@@ -141,70 +216,70 @@ const Task = () => {
             </div>
 
             <div className="col-md-3 mx-auto">
-              <TaskButton task="Reviews Task" />{" "}
+              <TaskButton task="Reviews Task" />
             </div>
           </div>{" "}
         </div>
-        <div className="all-tasks mt-5 p-3">
+        <div className="all-tasks mt-5 p-2">
           <div className="row mt-3 ">
             <div className="col-md-2">
-              <TaskButton task="Open by OAS" />{" "}
+              <TaskButton task="Open by OAS" />
             </div>
             <div className="col-md-2">
-              <TaskButton taskLink={cNotOpen} task="C. Not Open" />{" "}
+              <TaskButton taskLink={cNotOpen} task="C. Not Open" />
             </div>
             <div className="col-md-2">
-              <TaskButton taskLink={"#"} task="Pending Clients" />{" "}
+              <TaskButton taskLink={pendingClient} task="Pending Clients" />
             </div>
             <div className="col-md-2">
-              <TaskButton taskLink={cWorking} task="C. Working" />{" "}
+              <TaskButton taskLink={cWorking} task="C. Working" />
             </div>
 
             <div className="col-md-2">
-              <TaskButton task="Pending MarketPlace" />{" "}
+              <TaskButton taskLink={pendingMarketPlace} task="Pending MarketPlace" />
             </div>
             <div className="col-md-2">
-              <TaskButton task="Pending From CP" />{" "}
-            </div>
-          </div>
-          <div className="row mt-5">
-            <div className="col-md-2">
-              <TaskButton task="Reopen Tasks" />{" "}
-            </div>
-            <div className="col-md-2">
-              <TaskButton task="C. Closed" />{" "}
-            </div>{" "}
-            <div className="col-md-2">
-              <TaskButton task="Created Task" />{" "}
-            </div>
-            <div className="col-md-2">
-              <TaskButton taskLink={workReport} task="Work Report" />{" "}
-            </div>
-            <div className="col-md-2">
-              <TaskButton task="Breached Task" />{" "}
-            </div>
-            <div className="col-md-2">
-              <TaskButton task="Self Created" />{" "}
+              <TaskButton taskLink={pendingCP} task="Pending From CP" />
             </div>
           </div>
-          <div className="row mt-5 ">
+          <div className="row mt-4">
             <div className="col-md-2">
-              <TaskButton task="Not Open" />{" "}
+              <TaskButton task="Reopen Tasks" />
             </div>
             <div className="col-md-2">
-              <TaskButton task="Active" />{" "}
-            </div>
-            <div className="col-md-2">
-              <TaskButton task="Closed" />{" "}
-            </div>
-            <div className="col-md-2">
-              <TaskButton task="Terminated" />{" "}
-            </div>
-            <div className="col-md-2">
-              <TaskButton task="Ticket" />{" "}
+              <TaskButton taskLink={cClosed} task="C. Closed" />
             </div>{" "}
             <div className="col-md-2">
-              <TaskButton task="All Client Task" />{" "}
+              <TaskButton task="Created Task" />
+            </div>
+            <div className="col-md-2">
+              <TaskButton taskLink={workReport} task="Work Report" />
+            </div>
+            <div className="col-md-2">
+              <TaskButton task="Breached Task" />
+            </div>
+            <div className="col-md-2">
+              <TaskButton task="Self Created" />
+            </div>
+          </div>
+          <div className="row mt-4 ">
+            <div className="col-md-2">
+              <TaskButton task="Not Open" />
+            </div>
+            <div className="col-md-2">
+              <TaskButton task="Active" />
+            </div>
+            <div className="col-md-2">
+              <TaskButton task="Closed" />
+            </div>
+            <div className="col-md-2">
+              <TaskButton task="Terminated" />
+            </div>
+            <div className="col-md-2">
+              <TaskButton task="Ticket" />
+            </div>{" "}
+            <div className="col-md-2">
+              <TaskButton task="All Client Task" />
             </div>
           </div>{" "}
         </div>
@@ -213,4 +288,4 @@ const Task = () => {
   );
 };
 
-export default Task;
+export default AllTask;

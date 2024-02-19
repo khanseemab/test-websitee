@@ -1,23 +1,21 @@
-
-  .nav_items_dropdown{
-
-    color: black ;
-  }
-  .nav_items_dropdown:hover{
-
-    color: #fe4c1c;
-  }
+.nav_items_dropdown {
+  color: black;
+}
+.nav_items_dropdown:hover {
+  color: #fe4c1c;
+}
 
 .bg-False {
   /* backdrop-filter: blur(10px); */
-
 }
-.bg-True {  
+.bg-True {
   backdrop-filter: blur(10px);
 }
 
 .bg-False .nav_items_main {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #fe4c1c;
+
   font-weight: 600;
   font-size: 16px;
 }
@@ -31,15 +29,13 @@
   font-size: 16px;
 }
 .bg-True .nav_items_main:hover {
-  color: #ffffff ;
+  color: #ffffff;
 }
 
-.emp_login_btn{
-  border-color:'white';
-  color:"white"
-
+.emp_login_btn {
+  border-color: "white";
+  color: "white";
 }
-
 
 @media only screen and (max-width: 720px) {
   h1 {
@@ -53,5 +49,4 @@
   p {
     font-size: 0.8rem;
   }
-
 }

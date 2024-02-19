@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Contact.css";
+import Header from "../../components/Header/AdminHeader";
 import brand from "../../assets/logo.png";
 import Footer from "../../components/Footer/Footer";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
@@ -12,7 +13,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Map from "./Map";
-import EmpHeader from "../../components/Header/EmpHeader";
+import AdminHeader from "../../components/Header/AdminHeader";
 
 const ContactPage = () => {
   // const theme = createTheme({
@@ -52,7 +53,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <EmpHeader/>
+      <AdminHeader />
 
       <div className="container-fluid contact-page">
         <div className="row">

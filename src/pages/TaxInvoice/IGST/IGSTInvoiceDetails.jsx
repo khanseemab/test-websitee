@@ -33,7 +33,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         <br />
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalName"
         >
           <Form.Label column sm={3} htmlFor="name">
@@ -53,7 +53,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalID"
         >
           <Form.Label column sm={3} htmlFor="GSTIN">
@@ -72,7 +72,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalName"
         >
           <Form.Label column sm={3} htmlFor="address">
@@ -93,7 +93,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
 
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalDate"
         >
           <Form.Label column sm={3} htmlFor="state">
@@ -112,7 +112,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalPaidDay"
         >
           <Form.Label column sm={3} htmlFor="code">
@@ -129,7 +129,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
             />
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3 col-md-6 text-white">
+        <Form.Group as={Row} className="mb-3 col-md-6 ">
           <Form.Label column sm={3} htmlFor="payDate">
             Date{" "}
           </Form.Label>
@@ -154,7 +154,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         <br />
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalHRA"
         >
           <Form.Label column sm={3} htmlFor="invoice">
@@ -171,7 +171,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
             />
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3 col-md-6 text-white">
+        <Form.Group as={Row} className="mb-3 col-md-6 ">
           <Form.Label column sm={3} htmlFor="package">
             Package Name
           </Form.Label>
@@ -210,7 +210,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
 
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="marketplace">
@@ -229,7 +229,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="sku">
@@ -248,7 +248,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="details">
@@ -267,7 +267,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalIncomeTax"
         >
           <Form.Label column sm={3} htmlFor="amount">
@@ -286,7 +286,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalHRA"
         >
           <Form.Label column sm={3} htmlFor="discount">
@@ -304,7 +304,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
           </Col>
         </Form.Group>
 
-        <Form.Group as={Row} className="mb-3 col-md-6 text-white">
+        <Form.Group as={Row} className="mb-3 col-md-6">
           <Form.Label column sm={3} htmlFor="exevutive">
             Executive
           </Form.Label>
@@ -323,7 +323,7 @@ const IGSTInvoiceDetails = ({ IGSTdownloadPDF, setfileName }) => {
           <Form.Label column sm={2}></Form.Label>
           <Col sm={8}>
             <button className=" cta col-md-3 mt-3 justify-content-start align-items-start text-start">
-              <span className="d-inline" onClick={IGSTdownloadPDF}>
+              <span className="d-inline text-black-50" onClick={IGSTdownloadPDF}>
                 Generate
               </span>
               <svg viewBox="0 0 13 10" height="10px" width="15px">

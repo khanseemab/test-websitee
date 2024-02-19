@@ -6,7 +6,7 @@ const FlipkartAccount = () => {
   return (
     <>
       <HeaderMain />
-      <div className="container text-white align-items-center">
+      <div className="container  align-items-center">
         <div className="main_page_container mt-5">
           <h1 className=" mb-4">Flipkart Seller Account Management Services</h1>
           <p>

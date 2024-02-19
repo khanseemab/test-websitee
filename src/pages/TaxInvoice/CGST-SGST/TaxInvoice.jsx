@@ -50,7 +50,7 @@ const TaxInvoice = () => {
         <div className="container InvoiceContainer">
           <div className="Invoice_form mt-5">
             <div className="row">
-              <h2 className="text-white text-end">CGST & SGST Invoice GENERATOR</h2>
+              <h2 className="text-black-50 text-end">CGST & SGST Invoice GENERATOR</h2>
               <div className="col-md-12 ms-5">
                 <TaxInvoiceDetails downloadPDF={downloadPDF} setFileName={setFileName}/>
               </div>

@@ -64,7 +64,7 @@ console.log("hello",user)
               <Nav.Link
                 className="nav_items_emp"
                 as={Link}
-                to="/client"
+                to="/admin-all-client"
                 // eventKey="client"
               >
                 All Clients
@@ -74,7 +74,8 @@ console.log("hello",user)
               <Nav.Link
                 className="nav_items_emp"
                 as={Link}
-                to="/clientform"
+                // to="/all-task"
+                to="#"
                 // eventKey="link-2"
               >
                 Tasks
@@ -85,7 +86,7 @@ console.log("hello",user)
               <Nav.Link
                 className="nav_items_emp"
                 as={Link}
-                to="/contact-emp"
+                to="/contact-admin"
                 // eventKey="link-2"
               >
                 Contact

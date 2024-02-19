@@ -52,7 +52,7 @@ const PaySlip = () => {
         <div className="container InvoiceContainer">
           <div className="Invoice_form mt-5">
             <div className="row">
-              <h1 className="text-white text-end">PAY SLIP GENERATOR</h1>
+              <h1 className="text-black-50 text-end">PAY SLIP GENERATOR</h1>
               <div className="col-md-12">
                 <EmployeeDetails downloadPDF={downloadPDF} />
               </div>

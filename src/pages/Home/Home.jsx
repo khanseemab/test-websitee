@@ -53,8 +53,7 @@ const Home = () => {
   return (
     <>
       <HeaderMain />
-      
-      
+
       <MyModal onCloseModal={onCloseModal} open={open} />
       <div className="container-fluid">
         <div className="container_main_page ">
@@ -66,7 +65,8 @@ const Home = () => {
               className="text-white"
             >
               <div className="text-loop">
-                <span style={{ color: "#fe4c1c" }}>K2 </span>E-COMMERCE{" "}
+                <span style={{ color: "#fe4c1c" }}>K2 </span>
+                <span style={{ color: "grey" }}>E-COMMERCE </span>
                 <span style={{ color: "green" }}>SOLUTIONS</span>
               </div>
             </marquee>
@@ -138,7 +138,6 @@ const Home = () => {
         </div>
       </div>
 
-
       <FloatButton
         href={"https://wa.link/susy6s"}
         target="_blank"
@@ -156,8 +155,6 @@ const Home = () => {
         }
         tooltip={<div>Let's Connect</div>}
       />
-
-
 
       <div data-aos="zoom-in" className="col-md-12 mt-md-2">
         <Features />
@@ -185,7 +182,7 @@ const Home = () => {
             </div>
             <div
               // data-aos="fade-left"
-              className="col-lg-6 col-md-6 col-12 mt-5"
+              className="col-lg-6 col-md-6 col-12 mt-5 "
             >
               <div className="abouthome ">
                 <h6 className="mt-3">{homePageText.about_subheader}</h6>

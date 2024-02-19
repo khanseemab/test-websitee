@@ -24,9 +24,9 @@ function EmpSidebar() {
           >
             All Clients
           </Link>
-          <Link className="sidebar_element" to={"/all-task"}>
+          {/* <Link className="sidebar_element" to={"/all-task"}>
             Tasks
-          </Link>{" "}
+          </Link>{" "} */}
           <Link to={"#"} className="sidebar_element">
             DSR{" "}
           </Link>

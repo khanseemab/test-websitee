@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo2.png";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth  } from "../../firbase";
+import { auth } from "../../firbase";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
+import {  Form, Input } from "antd";
 
 const Login = () => {
   const [values, setValue] = useState({
@@ -22,82 +23,109 @@ const Login = () => {
         [name]: value,
       };
     });
-    const { username, password } = values;
 
-    if (
-      (username === "seemab" ) &&
-      password === "Seemab@2001"
-    ) {
-      alert("Successfully Logged In");
-      navigate("/admin-dashboard");
-    } else if (username === "nabeel" && password === "Nabeel@1996") {
-      alert("Successfully Logged In");
-      navigate("/admin-dashboard");
-    }
-    
-    else if (username === "aman@k2ecommercesolution.com" && password === "Aman.12@!") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    }else if (username === "anjali.k2es@gmail.com" && password === "Anjali@!#") {
-      alert("Successfully Logged In"); 
-      navigate("/emp-dashboard");
-    }else if (username === "himanshu.k2es@gmail.com" && password === "Him@nshuNegi") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    }else if (username === "rajat@k2ecommercesolution.com" && password === "R@jat#23!") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    }else if (username === "avi@k2ecommercesolution.com" && password === "Avi@!123") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    }else if (username === "mahima@k2ecommercesolution.com" && password === "M@hima!@3") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    }else if (username === "rachna.k2es@gmail.com" && password === "R@chna!@2") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    }else if (username === "atul@k2ecommercesolution.com" && password === "Atul@#123") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    }else if (username === "monal@k2ecommercesolution.com" && password === "Mon@L!#21") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    }else if (username === "tarish@k2ecommercesolution.com" && password === "Tarish@#Ali") {
-      alert("Successfully Logged In");
-      navigate("/emp-dashboard");
-    } 
-    
-    else {
-      alert("You don't have permissions");
-    }
+
+    // const { username, password } = values;
+
+    // if (username === "seemab" && password === "Seemab@2001") {
+    //   alert("Successfully Logged In");
+    //   navigate("/admin-dashboard");
+    // } else if (username === "nabeel" && password === "Nabeel@1996") {
+    //   alert("Successfully Logged In");
+    //   navigate("/admin-dashboard");
+    // } else if (
+    //   username === "aman@k2ecommercesolution.com" &&
+    //   password === "Aman.12@!"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "anjali.k2es@gmail.com" &&
+    //   password === "Anjali@!#"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "himanshu.k2es@gmail.com" &&
+    //   password === "Him@nshuNegi"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "rajat@k2ecommercesolution.com" &&
+    //   password === "R@jat#23!"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "avi@k2ecommercesolution.com" &&
+    //   password === "Avi@!123"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "mahima@k2ecommercesolution.com" &&
+    //   password === "M@hima!@3"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "rachna.k2es@gmail.com" &&
+    //   password === "R@chna!@2"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "atul@k2ecommercesolution.com" &&
+    //   password === "Atul@#123"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "monal@k2ecommercesolution.com" &&
+    //   password === "Mon@L!#21"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else if (
+    //   username === "tarish@k2ecommercesolution.com" &&
+    //   password === "Tarish@#Ali"
+    // ) {
+    //   alert("Successfully Logged In");
+    //   navigate("/emp-dashboard");
+    // } else {
+    //   alert("You don't have permissions");
+    // }
   };
   // const handleChange=(e)=>{
   //   setValue((prev)=>({...prev,name:e.target.value}))
   // }
 
   const signInUser = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const { username, password } = values;
-  
+
     try {
-      const userCredential = await signInWithEmailAndPassword(auth, username, password);
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        username,
+        password
+      );
       const user = userCredential.user;
-      console.log(user,"user")
-  
+      console.log(user, "user");
+
       // Determine user role based on email
       const role = determineUserRole(username);
-  
-      // Redirect based on user role
-      if (role === 'admin') {
-        alert("Successfully Logged In")
-        navigate("/admin-dashboard?email=" );
 
-      } else if (role === 'employee') {
-        alert("Successfully Logged In")
+      // Redirect based on user role
+      if (role === "admin") {
+        alert("Successfully Logged In");
+        navigate("/admin-dashboard?email=");
+      } else if (role === "employee") {
+        alert("Successfully Logged In");
         navigate("/emp-dashboard");
       } else {
         alert("You don't have permissions");
-        // Handle other roles or errors
       }
     } catch (error) {
       alert("Error signing in: " + error.message);
@@ -106,19 +134,22 @@ const Login = () => {
   };
 
   const determineUserRole = (email) => {
-    // Check if the email belongs to an admin or employee
-    if (email === 'seemab.k2es@gmail.com' || email === 'nabeel123@gmail.com') {
-      return 'admin';
-    // } else if (email === 'anjali.k2es@gmail.com') {
-    //   return 'employee';
+    if (email === "seemab.k2es@gmail.com" || email === "nabeel123@gmail.com") {
+      return "admin";
     } else {
-      // Handle other cases if needed
-      return 'employee';
+      return "employee";
     }
   };
-localStorage.setItem('username', values.username)
-    localStorage.setItem('password', values.password)
 
+  localStorage.setItem("username", values.username);
+
+
+  const onFinish = (values) => {
+    console.log("Success:", values);
+  };
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
 
   return (
     <>
@@ -140,7 +171,7 @@ localStorage.setItem('username', values.username)
 
           <div className="login_screen p-0 m-0">
             <div className="screen__content">
-              <form className="login" onSubmit={signInUser}>
+              {/* <form className="login" onSubmit={signInUser}>
                 <div className="login__field">
                   <input
                     type="text"
@@ -171,7 +202,99 @@ localStorage.setItem('username', values.username)
                 <button type="submit" className="button login__submit">
                   <span className="button__text">Sign In</span>
                 </button>
-              </form>
+              </form> */}
+
+              <Form
+                className="login"
+                onSubmit={signInUser}
+                name="basic"
+                labelCol={{
+                  span: 8,
+                }}
+                wrapperCol={{
+                  span: 16,
+                }}
+                style={{
+                  maxWidth: 600,
+                }}
+                initialValues={{
+                  remember: true,
+                }}
+                onFinish={signInUser}
+                onFinishFailed={onFinishFailed}
+                autoComplete="off"
+              >
+                <Form.Item
+                  // label="Username"
+                  // className="login__field"
+                  name="username"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your username!",
+                    },
+                  ]}
+                >
+                  <Input
+                    placeholder="Enter your Email"
+                    className="login__input"
+                    value={values.username}
+                    onChange={(e) => {
+                      setValue((prev) => ({
+                        ...prev,
+                        username: e.target.value,
+                      }));
+                    }}
+                  />
+                </Form.Item>
+
+                <Form.Item
+                  // className="login__field"
+                  // label="Password"
+                  name="password"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your password!",
+                    },
+                  ]}
+                >
+                  <Input.Password
+                    placeholder="Enter your Password"
+                    className="login__input"
+                    value={values.password}
+                    onChange={(e) => {
+                      setValue((prev) => ({
+                        ...prev,
+                        password: e.target.value,
+                      }));
+                    }}
+                  />
+                </Form.Item>
+
+                {/* <Form.Item
+                  name="remember"
+                  valuePropName="checked"
+                  wrapperCol={{
+                    offset: 8,
+                    span: 16,
+                  }}
+                >
+                  <Checkbox>Remember me</Checkbox>
+                </Form.Item> */}
+
+                <Form.Item
+                  wrapperCol={{
+                    offset: 8,
+                    span: 16,
+                  }}
+                >
+                  <button type="submit" className="button login__submit">
+                    <span className="button__text">Sign In</span>
+                  </button>
+                </Form.Item>
+              </Form>
+
               {/* <div>
                 <Link
                 
@@ -192,7 +315,5 @@ localStorage.setItem('username', values.username)
       </div>
     </>
   );
-
-  
 };
 export default Login;

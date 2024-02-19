@@ -10,7 +10,7 @@ const CurrentAccount = () => {
     <>
       <HeaderMain />
 
-      <div className="container saving_account text-white">
+      <div className="container saving_account ">
         {/* <h1 className="mt-4"> K2 E-COMMERCE SOLUTIONS</h1> */}
         <h2 className="mt-md-4 mb-md-2">Current Account Details</h2>
         <p className="mt-md-3 mb-md-2">

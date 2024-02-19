@@ -11,6 +11,7 @@ import EmpAllClients from "./pages/Client/EmpAllClient";
 import ClientForm from "./components/addClientForm/clientForm";
 import ContactPage from "./pages/Contact/Contact";
 import ContactEmployee from "./pages/Contact/ContactEmployee";
+import ContactAdmin from "./pages/Contact/ContactAdmin";
 import About from "./pages/AboutUs/About";
 import PaySlip from "./pages/PaySlip/PaySlip";
 import Services from "./pages/Services/Services";
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
   {
     path: "/contact-emp",
     element: <ContactEmployee />,
+  },
+  {
+    path: "/contact-admin",
+    element: <ContactAdmin/>,
   },
   {
     path: "/about",

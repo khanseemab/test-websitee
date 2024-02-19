@@ -152,7 +152,7 @@
 
 .h1,
 .p {
-  color: #fff;
+  /* color: #fff; */
   text-align: start;
   line-height: 1.4;
   width: 400px;
@@ -217,10 +217,10 @@
 .abouthome h4 {
   font-size: 38px;
   font-weight: 700;
-  color: white;
+  /* color: white; */
 }
 .abouthome p {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 16px;
   margin-bottom: 15px;
   line-height: 1.8;
@@ -266,10 +266,10 @@
 .home-test h4 {
   font-size: 40px;
   font-weight: 700;
-  color: white;
+  /* color: white; */
 }
 .home-test p {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 16px;
   margin-bottom: 15px;
   line-height: 1.8;

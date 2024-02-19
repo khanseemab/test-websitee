@@ -11,7 +11,7 @@ const QR = ({name,src,upi}) => {
     </div>
 
     <h3>{name}</h3>
-    <h6 style={{textAlign:"center",color:"#ffffff",padding:"5px",borderRadius:"3px "}}>{upi}</h6>
+    <h6 style={{textAlign:"center",color:"rgb(107, 107, 107)",padding:"5px",borderRadius:"3px "}}>{upi}</h6>
     <img src={src}  alt='QR code for Upi Payments'/>
 </div>
 </>  )

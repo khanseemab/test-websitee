@@ -21,7 +21,7 @@ const handleFileName=(e)=>{
         <br />
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalName"
         >
           <Form.Label column sm={3} htmlFor="name">
@@ -41,7 +41,7 @@ const handleFileName=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalID"
         >
           <Form.Label column sm={3} htmlFor="GSTIN">
@@ -60,7 +60,7 @@ const handleFileName=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalName"
         >
           <Form.Label column sm={3} htmlFor="address">
@@ -81,7 +81,7 @@ const handleFileName=(e)=>{
 
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalDate"
         >
           <Form.Label column sm={3} htmlFor="state">
@@ -100,7 +100,7 @@ const handleFileName=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalPaidDay"
         >
           <Form.Label column sm={3} htmlFor="code">
@@ -143,7 +143,7 @@ const handleFileName=(e)=>{
           </Col>
         </Form.Group> */}
 
-        <Form.Group as={Row} className="mb-3 col-md-6 text-white">
+        <Form.Group as={Row} className="mb-3 col-md-6 ">
       <Form.Label column sm={3} htmlFor="package">
         Package Name
       </Form.Label>
@@ -182,7 +182,7 @@ const handleFileName=(e)=>{
 
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="marketplace">
@@ -201,7 +201,7 @@ const handleFileName=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6"
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="sku">
@@ -220,7 +220,7 @@ const handleFileName=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalSalary"
         >
           <Form.Label column sm={3} htmlFor="details">
@@ -239,7 +239,7 @@ const handleFileName=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalIncomeTax"
         >
           <Form.Label column sm={3} htmlFor="amount">
@@ -258,7 +258,7 @@ const handleFileName=(e)=>{
         </Form.Group>
         <Form.Group
           as={Row}
-          className="mb-3 col-md-6 text-white"
+          className="mb-3 col-md-6 "
           // controlId="formHorizontalHRA"
         >
           <Form.Label column sm={3} htmlFor="discount">
@@ -275,7 +275,7 @@ const handleFileName=(e)=>{
             />
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3 col-md-6 text-white">
+        <Form.Group as={Row} className="mb-3 col-md-6 ">
           <Form.Label column sm={3} htmlFor="gstRate">
             GST
           </Form.Label>
@@ -296,7 +296,7 @@ const handleFileName=(e)=>{
           </Col>
         </Form.Group>
 
-        <Form.Group as={Row} className="mb-3 col-md-6 text-white">
+        <Form.Group as={Row} className="mb-3 col-md-6 ">
           <Form.Label column sm={3} htmlFor="exevutive">
             Executive
           </Form.Label>
@@ -315,7 +315,7 @@ const handleFileName=(e)=>{
           <Form.Label column sm={2}></Form.Label>
           <Col sm={8}>
             <button className=" cta col-md-3 mt-3 justify-content-start align-items-start text-start">
-              <span className="d-inline" onClick={downloadPDF}>
+              <span className="d-inline text-black-50" onClick={downloadPDF}>
                 Generate
               </span>
               <svg viewBox="0 0 13 10" height="10px" width="15px">
