@@ -8,7 +8,7 @@
   text-align: start;
   align-items: flext-start;
   flex-direction: column;
-  background-color: #747474;
+  background-color: #252525bb;
   backdrop-filter: blur(17px);
   --webkit-backdrop-filter: blur(17px);
   border-right: 1px solid rgba(255, 255, 255, 0.7);

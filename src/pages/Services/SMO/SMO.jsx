@@ -9,7 +9,7 @@ const SMO = () => {
   return (
     <>
       <HeaderMain />
-      <div className="container mt-4">
+      <div className="container mt-4 text-white">
         <div className=" row ">
           {/* <div className="col-md-3 d-flex vh-100">
             <div className=" position-fixed">

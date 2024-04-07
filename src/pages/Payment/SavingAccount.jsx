@@ -8,7 +8,7 @@ const SavingAccount = () => {
   return (
     <>
       <HeaderMain />
-      <div className="container saving_account ">
+      <div className="container saving_account  text-white">
         {/* <h1 className="mt-4"> K2 E-COMMERCE SOLUTIONS</h1> */}
         <h2 className="mt-md-4 mb-md-2">Savings Account Details</h2>
         <p className="mt-md-3 mb-md-2">

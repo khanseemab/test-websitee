@@ -1,0 +1,10 @@
+.mainContainer {
+  background-color: brown;
+  height: 100vh;
+}
+.heading {
+  color: aliceblue;
+  font-size: 50px;
+  text-decoration: line-through;
+  text-align: center;
+}

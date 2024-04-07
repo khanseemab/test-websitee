@@ -66,7 +66,7 @@ const Home = () => {
             >
               <div className="text-loop">
                 <span style={{ color: "#fe4c1c" }}>K2 </span>
-                <span style={{ color: "grey" }}>E-COMMERCE </span>
+                <span style={{ color: "white" }}>E-COMMERCE </span>
                 <span style={{ color: "green" }}>SOLUTIONS</span>
               </div>
             </marquee>
@@ -121,7 +121,7 @@ const Home = () => {
                   </Link>
                   <Link
                     className="card_home col-md-6 "
-                    to={"/services/pricing"}
+                    to={"/services/packages"}
                   >
                     {/* <TbCoinRupee className="home_icons" /> */}
                     <img
@@ -182,7 +182,7 @@ const Home = () => {
             </div>
             <div
               // data-aos="fade-left"
-              className="col-lg-6 col-md-6 col-12 mt-5 "
+              className="col-lg-6 col-md-6 col-12 mt-5  text-white"
             >
               <div className="abouthome ">
                 <h6 className="mt-3">{homePageText.about_subheader}</h6>
@@ -287,7 +287,7 @@ const Home = () => {
         </div>
 
         {/* Header 4 test */}
-        <div className="container">
+        <div className="container text-white">
           <div className="home-test mt-0" id="testimonial">
             <div className="row">
               <div className="col-md-6 ">

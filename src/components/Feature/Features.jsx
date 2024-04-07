@@ -2,6 +2,7 @@ import React from "react";
 import "./Features.css";
 import library from "../../assets/library-catalog.png";
 import { Link } from "react-router-dom";
+import courierServices from "../../assets/courier-services.jpeg";
 const Features = () => {
   return (
     <>
@@ -10,6 +11,8 @@ const Features = () => {
           <div className=" feature-card col-md-4">
             <div className="feature-container ">
               <img
+                            height={167}
+
                 src="https://techvify-software.com/wp-content/uploads/2023/09/account-management-1536x768.webp"
                 alt="Complete Account Management"
               />
@@ -41,8 +44,9 @@ const Features = () => {
           <div className="feature-card col-md-4">
             <div className="feature-container">
               <img
-                src="https://www.graycelltech.com/wp-content/uploads/2015/06/GCT-HTML5.jpg"
-                alt="Flexbox Feature"
+              height={167}
+                src={courierServices}
+                alt="Courier Services"
               />
             </div>
             <h2 className="h2">Courier Services</h2>

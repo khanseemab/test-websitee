@@ -12,7 +12,7 @@
     transform: skewX(10deg);
     transition: .8s;
     overflow: hidden;
-    color: rgb(62, 62, 62);
+    color: rgb(255, 255, 255);
   }
   
   .SavingsQRcard:hover {
@@ -55,7 +55,7 @@
   .SavingsQRcard h3 {
     text-align: center;
     margin: 0.85rem;
-    color: rgb(107, 107, 107);
+    color: rgb(255, 255, 255);
     text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
   }
   

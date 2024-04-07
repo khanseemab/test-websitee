@@ -94,7 +94,7 @@ console.log("hello",user)
             </Nav.Item>
           </Nav>
           <div className="col-md-2 m-auto ">
-            <h3 className="logout_user">
+            <h3 className="logout_user text-white">
               username :
               <Link onClick={()=>signOut(auth)}>
                 <span  className="logout_username"> Logout</span>

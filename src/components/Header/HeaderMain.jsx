@@ -85,7 +85,7 @@ const HeaderMain = () => {
                       Home
                     </Link>
                   </li>
-                  <li className="menu-item">
+                  {/* <li className="menu-item">
                     <Link href="#" className="nav_items_main" to="#">
                       Account Management
                     </Link>
@@ -108,7 +108,7 @@ const HeaderMain = () => {
                         <Link href="#">Alibaba Account Management</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li className="menu-item">
                     <Link to="/about" className="nav_items_main">
                       About Us
@@ -140,9 +140,9 @@ const HeaderMain = () => {
                       <li>
                         <Link to="/services/digital-marketing"> Digital Marketing</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link to="#"> Courier Services</Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link to="/services/packages"> Packages</Link>
                       </li>

@@ -62,7 +62,7 @@ const EmpDashboard = () => {
     <>
       <EmpHeader />
 
-      <div className=" dashboard_container">
+      <div className=" dashboard_container text-white">
         <div className="row ">
           <div className="col-md-4">
             <EmpSidebar />

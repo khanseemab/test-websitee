@@ -10,7 +10,7 @@ const SEO = () => {
   return (
     <>
       <HeaderMain />
-      <div className="container mt-4">
+      <div className="container mt-4 text-white">
         <div className=" row ">
           {/* <div className="col-md-2 d-flex vh-100">
             <SidebarServices/>

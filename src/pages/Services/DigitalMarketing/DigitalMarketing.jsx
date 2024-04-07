@@ -9,7 +9,7 @@ const DigitalMarketing = () => {
     <>
       <HeaderMain />
 
-      <div className="container mt-4">
+      <div className="container mt-4 text-white">
         <div className="row">
           {" "}
           <div className="col-md-11 m-auto">
