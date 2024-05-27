@@ -33,7 +33,10 @@ const EmpDashboard = () => {
     userName = "Anjali sharma";
   } else if (userEmail === "aman@k2ecommercesolution.com") {
     userName = "Aman Kumar";
-  } else {
+  } else if (userEmail === "muskan.k2es@gmail.com") {
+    userName = "Muskan Ganga";
+  }
+  else {
     userName = " LOGIN FIRST";
   }
 
