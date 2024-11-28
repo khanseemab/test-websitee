@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 
 import Login from "./pages/Login/Login";
@@ -31,7 +31,7 @@ import IGSTInvoice from "./pages/TaxInvoice/IGST/IGSTInvoice";
 import EmpAllTeam from "./pages/Client/EmpAllTeam";
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Login />,
