@@ -15,7 +15,7 @@ const submitHandle=(e)=>{
 
   return (
     <>
-      <Form className="row" onSubmit={submitHandle}>
+      <Form className="row text-white" onSubmit={submitHandle}>
         <h2 className="employee_heading">Employee Details </h2>
         <br />
         <br />
@@ -246,7 +246,7 @@ const submitHandle=(e)=>{
         
         </Form.Group>
         <button className=" cta col-md-2  justify-content-start align-items-start text-start">
-  <span className="d-inline text-black-50" onClick={downloadPDF}>Generate</span>
+  <span className="d-inline text-white" onClick={downloadPDF}>Generate</span>
   <svg viewBox="0 0 13 10" height="10px" width="15px">
     <path d="M1,5 L11,5"></path>
     <polyline points="8 1 12 5 8 9"></polyline>

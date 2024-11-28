@@ -1,6 +1,4 @@
-body {
-  /* background: #1f1f1f; */
-}
+
 
 .site-navigation {
   display: block;
@@ -72,7 +70,4 @@ body {
 
 .site-navigation ul li ul li:hover {
   background: #f4917d;
-}
-.main_logo{
-  /* filter: drop-shadow(5px 5px 12px rgb(255, 255, 255,0.4)); */
 }

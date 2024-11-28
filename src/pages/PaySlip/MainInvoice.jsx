@@ -25,7 +25,7 @@ const MainInvoice = ({ pdfContainerRef }) => {
   return (
     <>
         {/* <HeaderMain/> */}
-        <div className="mt-5">
+        <div className="mt-5 ">
           <div ref={pdfContainerRef} className="container mainInvoice mt-5">
             <div className="row">
               <div className="col-md-1">

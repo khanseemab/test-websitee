@@ -134,7 +134,7 @@ const Login = () => {
   };
 
   const determineUserRole = (email) => {
-    if (email === "seemab.k2es@gmail.com" || email === "nabeel123@gmail.com") {
+    if (email === "seemab2703@gmail.com" || email === "arbaz@gmail.com" ) {
       return "admin";
     } else {
       return "employee";
@@ -160,11 +160,11 @@ const Login = () => {
               <div>
                 <h1 className="heading_welcome">WELCOME TO </h1>
               </div>
-              <Link to={"/"}>
+
                 <img className="image_logo" src={Logo} alt="404" />
-              </Link>
+
               <div className="heading_name">
-                <h1>K2 E-Commerce Solution</h1>
+                <h1>TEST WEBSITE</h1>
               </div>
             </div>
           </div>

@@ -1,15 +1,26 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {getAuth} from "firebase/auth"
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCy9wf8e9LVPmP9PccWGCGHtR5v2nfOpbI",
-  authDomain: "k2-ecommerce-solution.firebaseapp.com",
-  projectId: "k2-ecommerce-solution",
-  storageBucket: "k2-ecommerce-solution.appspot.com",
-  messagingSenderId: "184512177454",
-  appId: "1:184512177454:web:88772082f89f94edcf06bf",
-  measurementId: "G-939V0Q5SMH"
+  apiKey: "AIzaSyDo3bKyCIa3KSTtN_YbwBZav2ulA7DL05A",
+  authDomain: "test-b4233.firebaseapp.com",
+  projectId: "test-b4233",
+  storageBucket: "test-b4233.firebasestorage.app",
+  messagingSenderId: "915102956044",
+  appId: "1:915102956044:web:ceec57b6adce10ef818c29",
+  measurementId: "G-GWG6R72J6B"
 };
+
+// Initialize Firebase
 
 const app = initializeApp(firebaseConfig);
 const auth= getAuth();
 export {app,auth};
+
+

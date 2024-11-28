@@ -44,12 +44,12 @@ const [fileName,setFileName]=useState("")
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <PerformaProvider>
         <div className="container InvoiceContainer">
           <div className="Invoice_form mt-5">
             <div className="row">
-              <h2 className="text-black-50 text-end">PERFORMA GENERATOR</h2>
+              <h2 className="text-white text-end">PERFORMA GENERATOR</h2>
               <div className="col-md-12 ms-5">
                 <PerformaDetails downloadPDF={downloadPDF} setFileName={setFileName}/>
               </div>

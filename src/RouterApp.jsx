@@ -2,51 +2,45 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Register from "./pages/Register/Register";
+
+
 import Login from "./pages/Login/Login";
 import ClientDetail from "./pages/clientDetails/ClientDetail";
 import AdminAllClients from "./pages/Client/AdminAllClients";
 import EmpAllClients from "./pages/Client/EmpAllClient";
+
 import ClientForm from "./components/addClientForm/clientForm";
 import ContactPage from "./pages/Contact/Contact";
 import ContactEmployee from "./pages/Contact/ContactEmployee";
 import ContactAdmin from "./pages/Contact/ContactAdmin";
-import About from "./pages/AboutUs/About";
+
 import PaySlip from "./pages/PaySlip/PaySlip";
-import Services from "./pages/Services/Services";
+
 // import MainInvoice from "./pages/Invoice/MainInvoice";
-import CatalogueServices from "./pages/Services/CatalogueServices/CatalogueServices";
-import WebDev from "./pages/Services/WebDev/WebDev";
-import Packages from "./pages/Pricing/Pricing";
-import WhyUs from "./pages/WhyUS/WhyUs";
-import SEO from "./pages/Services/SEO/SEO";
-import SMO from "./pages/Services/SMO/SMO";
-import SEM from "./pages/Services/SEM/SEM";
-import DigitalMarketing from "./pages/Services/DigitalMarketing/DigitalMarketing";
+
+
+
+
 import Performa from "./pages/Performa/Performa";
-import FlipkartAccount from "./pages/Services/AccountManagement/FlipkartAccount";
+
 import AdminDashboard from "./pages/Dashboard/AdminDashboard";
 import EmpDashboard from "./pages/Dashboard/EmpDashboard";
 import TaxInvoice from "./pages/TaxInvoice/CGST-SGST/TaxInvoice";
-import CurrentAccount from "./pages/Payment/CurrentAccount";
-import SavingAccount from "./pages/Payment/SavingAccount";
+
 import IGSTInvoice from "./pages/TaxInvoice/IGST/IGSTInvoice";
-import Task from "./pages/Task/Task";
+import EmpAllTeam from "./pages/Client/EmpAllTeam";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Login />,
   },
   {
     path: "/login",
     element: <Login />,
   },
-  {
-    path: "/register",
-    element: <Register />,
-  },
+
   {
     path: "/admin-dashboard",
     element: <AdminDashboard />,
@@ -56,11 +50,11 @@ const router = createBrowserRouter([
     element: <EmpDashboard />,
   },
   {
-    path: "/admin-all-client",
+    path: "/product-details",
     element: <AdminAllClients />,
   },
   {
-    path: "/emp-all-client",
+    path: "/emp-product-details",
     element: <EmpAllClients />,
   },
   {
@@ -68,14 +62,15 @@ const router = createBrowserRouter([
     element: <ClientForm />,
   },
   {
+    path: "/emp-all-team",
+    element: <EmpAllTeam />,
+  },
+  {
     path: "/clientdetail",
     // path: ":clientdetail",
     element: <ClientDetail />,
   },
-  {
-    path: "/all-task",
-    element: <Task />,
-  },
+ 
   {
     path: "/contact",
     element: <ContactPage />,
@@ -88,46 +83,8 @@ const router = createBrowserRouter([
     path: "/contact-admin",
     element: <ContactAdmin/>,
   },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/why-us",
-    element: <WhyUs />,
-  },
-  {
-    path: "/services",
-    element: <Services />,
-  },
-  {
-    path: "/services/catalogue-services",
-    element: <CatalogueServices />,
-  },
-  {
-    path: "/services/web-dev",
-    element: <WebDev />,
-  },
-  {
-    path: "/services/seo",
-    element: <SEO />,
-  },
-  {
-    path: "/services/smo",
-    element: <SMO />,
-  },
-  {
-    path: "/services/sem",
-    element: <SEM />,
-  },
-  {
-    path: "/services/digital-marketing",
-    element: <DigitalMarketing />,
-  },
-  {
-    path: "/services/packages",
-    element: <Packages />,
-  },
+
+
   {
     path: "/pay-slip",
     element: <PaySlip />,
@@ -144,18 +101,8 @@ const router = createBrowserRouter([
     path: "/igst-invoice",
     element: <IGSTInvoice />,
   },
-  {
-    path: "/flipkart-account-management",
-    element: <FlipkartAccount />,
-  },
-  {
-    path: "/current-account",
-    element: <CurrentAccount />,
-  },
-  {
-    path: "/savings-account",
-    element: <SavingAccount />,
-  },
+
+  
 ]);
 const Router = () => {
   return (

@@ -1,7 +1,3 @@
 .dashboard_container{
-    height: 93.3vh;
-}
-.welcome{
-    /* margin:100px 60px 0px 300px; */
-   /* color: rgb(255, 255, 255); */
+    max-height: 30vh ;
 }

@@ -64,23 +64,13 @@ console.log("hello",user)
               <Nav.Link
                 className="nav_items_emp"
                 as={Link}
-                to="/admin-all-client"
+                to="/admin-dashboard"
                 // eventKey="client"
               >
-                All Clients
+                All Users
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                className="nav_items_emp"
-                as={Link}
-                // to="/all-task"
-                to="#"
-                // eventKey="link-2"
-              >
-                Tasks
-              </Nav.Link>
-            </Nav.Item>
+
 
             <Nav.Item>
               <Nav.Link

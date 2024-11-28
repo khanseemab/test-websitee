@@ -1,14 +1,13 @@
-import React, { useContext, useState } from "react";
-import AdminHeader from "../../components/Header/AdminHeader";
-import AdminSidebar from "../../components/Sidebar/AdminSidebar";
+import React, { useContext, useEffect, useState } from "react";
+import EmpHeader from "../../components/Header/EmpHeader";
+import EmpSidebar from "../../components/Sidebar/EmpSidebar";
 import { Table } from "react-bootstrap";
 import "./Client.css";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import MyContext from "../../MyContext";
+import { Link, useParams } from "react-router-dom";
 
-const AdminAllClient = () => {
-  const { clientName, setClientName } = useContext(MyContext);
-
+const EmpAllTeam = () => {
   const [data, setData] = useState([
     {
       id: "1",
@@ -68,43 +67,53 @@ const AdminAllClient = () => {
 
   return (
     <>
-      <div className="client_detail_main">
+      {/* <div className="client_detail_main"> */}
         <div className="googleSheetData">
           <Table hover className="clientTable">
             <thead className="clientTableHead">
               <tr>
                 <th>ID</th>
                 <th>Role</th>
-                <th>Name</th>
+                <th>Name </th>
                 <th>Email Address</th>
+
                 <th>Password</th>
                 <th>Department</th>
                 <th>Action</th>
               </tr>
+
+              <tr></tr>
             </thead>
             <tbody>
-              {data.map((elem, i) => (
-                <tr key={i}>
-                  <td className="clientTableData">{elem.id}</td>
-                  <td className="clientTableData">{elem.role}</td>
-                  <td className="clientTableData">{elem.name}</td>
-                  <td className="clientTableData">{elem.email}</td>
-                  <td className="clientTableData">{elem.password}</td>
-                  <td className="clientTableData">{elem.department}</td>
-                  <td className="clientTableButton">
-                    <DeleteOutlineIcon
-                      onClick={() => deleteData(i)}
+              {data.map((elem, i) => {
+                return (
+                  <>
+                    <tr key={i}>
+                      <td className="clientTableData">{elem["id"]}</td>
+                      <td className="clientTableData">{elem["role"]}</td>
+                      <td className="clientTableData">{elem["name"]}</td>
+
+                      <td className="clientTableData">{elem["email"]}</td>
+                      <td className="clientTableData">{elem["password"]}</td>
+                      <td className="clientTableData">{elem["department"]}</td>
+                      <td className="clientTableButton">
+                        <DeleteOutlineIcon
                       style={{ cursor: "pointer", color: "red" }}
-                    />
-                  </td>
-                </tr>
-              ))}
+
+                          onClick={() => {
+                            deleteData(i);
+                          }}
+                        />
+                      </td>
+                    </tr>
+                  </>
+                );
+              })}
             </tbody>
           </Table>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };
-
-export default AdminAllClient;
+export default EmpAllTeam;

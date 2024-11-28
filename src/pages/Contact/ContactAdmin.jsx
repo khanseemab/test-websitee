@@ -82,7 +82,7 @@ const ContactPage = () => {
                   />
                 </div>
                 <p className="UserName">Phone: 01 354061391</p>
-                <p className="Id">Email: Helpdesk@k2ecommercesolution.com</p>
+                <p className="Id">Email: Helpdesk@testwebsite.com</p>
               </div>
 
               <div className="Description">

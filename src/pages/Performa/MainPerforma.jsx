@@ -52,7 +52,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
         <div  className="container mainInvoice mt-2"> <h4 style={{textAlign:"center" ,marginTop:"100px"}}>Performa Invoice
 </h4> 
           <table className="performa_table"  style={{ color: "black" }}>
-            <tr style={{ padding: "0px" }}>
+            {/* <tr style={{ padding: "0px" }}>
               <td colspan="7" style={{ padding: "0px" }}>
                 <img
                   src={performaIMG}
@@ -60,7 +60,7 @@ const MainPerforma = ({ pdfPerformaRef }) => {
                   alt="Performa Invoice"
                 />
               </td>
-            </tr>
+            </tr> */}
             <tr>
               <td rowspan="3" colSpan="2">
                 <b> K2 E COMMERCE SOLUTIONS</b>

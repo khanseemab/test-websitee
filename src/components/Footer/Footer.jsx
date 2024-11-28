@@ -28,33 +28,34 @@ const Footer = () => {
                 full potential by providing affordable, effective, custom design
                 and marketing solutions.
                 <br />
-                <Link target="_blank" to={'https://twitter.com/k2_e_solutions'}>
-
-                <FaTwitter className="social-icon" /></Link> &nbsp;
-                <Link target="_blank"
-                  to={
-                    "https://www.instagram.com/k2e_solutions/"
-                  }
-                >
-                <FaInstagram className="social-icon" /></Link> &nbsp;
-                <Link target="_blank" to={'https://www.facebook.com/profile.php?id=100092475399808'}>
-                <FaFacebook className="social-icon" /></Link> &nbsp;
-                <Link target="_blank" to={'#'}>
-
-                <FaLinkedinIn className="social-icon" /></Link>
+                <Link to={"#"}>
+                  <FaTwitter className="social-icon" />
+                </Link>{" "}
+                &nbsp;
+                <Link to={"#"}>
+                  <FaInstagram className="social-icon" />
+                </Link>{" "}
+                &nbsp;
+                <Link to={"#"}>
+                  <FaFacebook className="social-icon" />
+                </Link>{" "}
+                &nbsp;
+                <Link to={"#"}>
+                  <FaLinkedinIn className="social-icon" />
+                </Link>
               </p>
             </div>
             <div className="col-lg-2 col-md-6 col-12">
               <h3>Links</h3>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>{" "}
+                  <Link to="#">Home</Link>{" "}
                 </li>
                 <li>
-                  <Link to="/services">Services</Link>{" "}
+                  <Link to="#">Services</Link>{" "}
                 </li>
                 <li>
-                  <Link to="/pricing">Packages</Link>{" "}
+                  <Link to="#">Packages</Link>{" "}
                 </li>
               </ul>
             </div>
@@ -62,13 +63,13 @@ const Footer = () => {
               <h3> Links</h3>
               <ul>
                 <li>
-                  <Link to="/about">About Us</Link>{" "}
+                  <Link to="#">About Us</Link>{" "}
                 </li>
                 <li>
-                  <Link to="/">Team</Link>{" "}
+                  <Link to="#">Team</Link>{" "}
                 </li>
                 <li>
-                  <Link to="/contact">Contact Us</Link>{" "}
+                  <Link to="#">Contact Us</Link>{" "}
                 </li>
               </ul>
             </div>
@@ -80,16 +81,14 @@ const Footer = () => {
                   Khurd, Uttarakhand 248001
                 </li>
                 <li>01 354061391</li>
-                <li>Helpdesk@k2ecommercesolution.com</li>
+                <li>Helpdesk@testwebsite.com</li>
               </ul>
             </div>
           </div>
         </div>
         <hr className="hr_footer" />
         <div className="footer-end">
-          <h6 className="text-center">
-            Copyright @2023 | k2ecommercesolution{" "}
-          </h6>
+          <h6 className="text-center">Copyright @2024 | testwebsite </h6>
         </div>
       </div>
     </div>

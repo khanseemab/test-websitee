@@ -3,47 +3,31 @@ import "./Dashboard.css";
 import EmpHeader from "../../components/Header/EmpHeader";
 import EmpSidebar from "../../components/Sidebar/EmpSidebar";
 import { onAuthStateChanged } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { auth } from "../../firbase";
-import Task from "../Task/Task";
+import EmpAllClient from "../Client/EmpAllClient";
+import EmpAllTeam from "../Client/EmpAllTeam";
 
 const EmpDashboard = () => {
   const [user, setUser] = useState(null);
-  const [employee, setEmployee] = useState();
   const navigate = useNavigate();
+  const location = useLocation(); // Get current location for query parameters
   const userEmail = localStorage.getItem("username");
+
+  // Determine user name based on email
   var userName = "";
-  if (userEmail === "tarish@k2ecommercesolution.com") {
-    userName = "Tarish Ali";
-  } else if (userEmail === "monal@k2ecommercesolution.com") {
-    userName = "Monal tiwari";
-  } else if (userEmail === "atul@k2ecommercesolution.com") {
-    userName = "Atul sehgal";
-  } else if (userEmail === "rachna.k2es@gmail.com") {
-    userName = "Rachna Mishra";
-  } else if (userEmail === "mahima@k2ecommercesolution.com") {
-    userName = "Mahima rajput";
-  } else if (userEmail === "avi@k2ecommercesolution.com") {
-    userName = "Avi rajput";
-  } else if (userEmail === "rajat@k2ecommercesolution.com") {
-    userName = "Rajat kumar";
-  } else if (userEmail === "himanshu.k2es@gmail.com") {
-    userName = "Himanshu negi";
-  } else if (userEmail === "anjali.k2es@gmail.com") {
-    userName = "Anjali sharma";
-  } else if (userEmail === "aman@k2ecommercesolution.com") {
-    userName = "Aman Kumar";
-  } else if (userEmail === "muskan.k2es@gmail.com") {
-    userName = "Muskan Ganga";
-  }
-  else {
-    userName = " LOGIN FIRST";
+  if (userEmail === "faiz@gmail.com") {
+    userName = "Faiz Alam";
+  } else if (userEmail === "junaid@gmail.com") {
+    userName = "Junaid Ahmad";
+  }  else if (userEmail === "furqan@gmail.com") {
+    userName = "Md Furqan";
+  } else {
+    userName = "Employee";
   }
 
   useEffect(() => {
-    //   const storedUsername = localStorage.getItem('username');
-    //   const storedPassword = localStorage.getItem('password');
-
+    // Check authentication state
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
@@ -53,32 +37,30 @@ const EmpDashboard = () => {
         console.log("Sign Out");
       }
     });
+  }, [navigate]);
 
-    // const currentUser= auth.currentUser;
-    // if(currentUser){
-    //   const email= currentUser.email
-    //   setEmployee(email)
-    // }
-  }, []);
+  // Parse query parameters
+  const params = new URLSearchParams(location.search);
+  const view = params.get("view");
+  const selected = params.get("selected");
 
   return (
     <>
       <EmpHeader />
 
-      <div className=" dashboard_container text-white">
-        <div className="row ">
+      <div className="dashboard_container text-white">
+        <div className="row">
           <div className="col-md-4">
             <EmpSidebar />
           </div>
-          <div className="col-md-7 ms-4 ">
-            <h2 className="welcome  mt-5">
-              Welcome Back <span style={{ color: "#fe4c1c" }}>{userName} </span>
-              !!
+          <div className="col-md-7 ms-4">
+            <h2 className="mt-5">
+              Welcome Back <span style={{ color: "#fe4c1c" }}>{userName}</span> !!
             </h2>
-          </div>
-          <div className="col-md-3"></div>
-          <div className="col-md-9">
-            <Task />{" "}
+            
+            {/* Conditionally render components based on query parameters */}
+            {view === "products" && <EmpAllClient />}
+            {selected === "team" && <EmpAllTeam />}
           </div>
         </div>
       </div>

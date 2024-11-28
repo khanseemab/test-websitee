@@ -19,7 +19,7 @@
   transition: 0.4s;
 }
 .sidebar {
-  margin: 40px 0px 0px 35px;
+  padding: 40px 0px 0px 35px;
   font-size: 20px;
   text-align: start;
   /* background-color: aqua; */

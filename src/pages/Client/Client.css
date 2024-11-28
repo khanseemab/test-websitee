@@ -1,11 +1,11 @@
 .client_detail_main{
-	min-height: 100vh;
+	min-height: 90vh;
     /* background-image: url('../../assets/4.png'); */
 }
 .googleSheetData{
     display: flex;
     flex-wrap: wrap; 
-    margin: 50px 100px 50px 350px;
+    margin: 50px 0px ;
 }
 .clientTable{
     border: 2px solid rgb(63, 63, 63);

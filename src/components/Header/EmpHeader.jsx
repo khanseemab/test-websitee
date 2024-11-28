@@ -56,23 +56,13 @@ const EmpHeader = () => {
               <Nav.Link
                 className="nav_items_emp"
                 as={Link}
-                to="/emp-all-client"
+                to="/emp-dashboard"
                 // eventKey="client"
               >
-                All Clients
+                All Products
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                className="nav_items_emp"
-                as={Link}
-                // to="/all-task"
-                to="#"
-                // eventKey="link-2"
-              >
-                Tasks
-              </Nav.Link>
-            </Nav.Item>
+           
 
             <Nav.Item>
               <Nav.Link

@@ -14,7 +14,7 @@ const handleFileName=(e)=>{
 }
   return (
     <>
-      <Form className="row" onSubmit={submitHandle}>
+      <Form className="row text-white" onSubmit={submitHandle}>
         <h3 className="employee_heading">Buyer Details </h3>
         <br />
         <br />
@@ -315,7 +315,7 @@ const handleFileName=(e)=>{
           <Form.Label column sm={2}></Form.Label>
           <Col sm={8}>
             <button className=" cta col-md-3 mt-3 justify-content-start align-items-start text-start">
-              <span className="d-inline text-black-50" onClick={downloadPDF}>
+              <span className="d-inline text-white" onClick={downloadPDF}>
                 Generate
               </span>
               <svg viewBox="0 0 13 10" height="10px" width="15px">

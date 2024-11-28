@@ -1,61 +1,35 @@
 import React from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
-// import brand from '../../assets/logo.png'
 import { Dropdown } from "react-bootstrap";
 
 function EmpSidebar() {
   return (
     <>
-      <div className="container_sidebar ">
-        {/* <div className="logos">
-   <img src={brand} height={'55px'} alt='K2 e-commerce Solutions' />
-   </div>  */}
+      <div className="container_sidebar">
         <div className="sidebar">
-          <Link to={"#"} className="sidebar_element">
+          {/* Link to My Team with query parameter */}
+          <Link
+            to={{
+              pathname: "/emp-dashboard",
+              search: "?selected=team", // Query parameter for "My Team"
+            }}
+            className="sidebar_element"
+          >
             My Team{" "}
           </Link>
+
+          {/* Link to All Products with query parameter */}
           <Link
-            to={
-              "https://docs.google.com/spreadsheets/d/1n_6ZrO_Qpo0BNELKNPGebXn_7Qs19UpFgtS_EKeeo_s/edit?usp=sharing"
-            }
-            target="_blank"
+            to={{
+              pathname: "/emp-dashboard",
+              search: "?view=products", // Query parameter for "All Products"
+            }}
             className="sidebar_element"
           >
-            All Clients
+            All Products
           </Link>
-          {/* <Link className="sidebar_element" to={"/all-task"}>
-            Tasks
-          </Link>{" "} */}
-          <Link to={"#"} className="sidebar_element">
-            DSR{" "}
-          </Link>
-          <Link
-            to={"https://forms.gle/Us2CVzVkFmdn7HMA9"}
-            className="sidebar_element"
-            target="_blank"
-          >
-            NC Data
-          </Link>{" "}
-          <Link to={"#"} className="sidebar_element">
-            Ratio Sale{" "}
-          </Link>
-          <Link to={"#"} className="sidebar_element">
-            Not Open Pool Data{" "}
-          </Link>
-          <Link to={"#"} className="sidebar_element">
-            Open Pool Data{" "}
-          </Link>
-          <Link
-            to={"https://forms.gle/aADmP93UAkdrDUed8"}
-            className="sidebar_element"
-            target="_blank"
-          >
-            Close Deal
-          </Link>
-          <Link to={"#"} className="sidebar_element">
-            Daily Calling (Scheduled){" "}
-          </Link>
+
           <Dropdown className="text-white">
             <Dropdown.Toggle variant="none" className="sidebar_element">
               Generate Performa
@@ -77,15 +51,6 @@ function EmpSidebar() {
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          {/* <Link to={"#"} className="sidebar_element">
-            Printed Invoice
-          </Link> */}
-          {/* <Link to={"/pay-slip"} className="sidebar_element">
-            Generate Pay Slip
-          </Link> */}
-          {/* <Link to={"/print-invoice"} className="sidebar_element">
-            Printed Slip
-          </Link> */}
         </div>
       </div>
     </>
