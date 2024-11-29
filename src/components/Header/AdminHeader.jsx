@@ -42,12 +42,12 @@ console.log("hello",user)
         <div className="row">
           <div className="col-md-2  mt-2">
           <Link to={"/admin-dashboard"}>
-              <img
+              {/* <img
                 src={brand}
                 height={"57px"}
                 className="logos p-1 ms-4"
                 alt="K2 e-commerce Solutions"
-              />
+              /> */}
             </Link>
           </div>
           <Nav

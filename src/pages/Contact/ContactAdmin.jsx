@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Contact.css";
-import Header from "../../components/Header/AdminHeader";
-import brand from "../../assets/logo.png";
+
+import brand from "../../assets/1144760.png";
 import Footer from "../../components/Footer/Footer";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import { Link } from "react-router-dom";

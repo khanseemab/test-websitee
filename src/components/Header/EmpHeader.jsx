@@ -3,10 +3,11 @@ import "./Header.css";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
-import brand from "../../assets/logo.png";
+import brand from "../../assets/1144760.png";
 
 import { onAuthStateChanged,signOut } from "firebase/auth";
 import { auth } from "../../firbase";
+import { VerifiedUserOutlined } from "@mui/icons-material";
 
 const EmpHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,12 +35,7 @@ const EmpHeader = () => {
         <div className="row">
           <div className="col-md-2  mt-2">
           <Link to={"/emp-dashboard"}>
-              <img
-                src={brand}
-                height={"57px"}
-                className="logos p-1 ms-4"
-                alt="K2 e-commerce Solutions"
-              />
+              {/* <VerifiedUserOutlined /> */}
             </Link>
           </div>
           <Nav

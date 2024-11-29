@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo2.png";
+import Image from "../../assets/1144760.png"
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firbase";
 import "./Login.css";
@@ -158,13 +159,13 @@ const Login = () => {
           <div className="Screen1 p-0 m-0">
             <div className="register_main">
               <div>
-                <h1 className="heading_welcome">WELCOME TO </h1>
+                <h1 className="heading_welcome">WELCOME  </h1>
+
+                <img className="image_logo" src={Image} alt="404" />
               </div>
 
-                <img className="image_logo" src={Logo} alt="404" />
-
               <div className="heading_name">
-                <h1>TEST WEBSITE</h1>
+                <h1></h1>
               </div>
             </div>
           </div>

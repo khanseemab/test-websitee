@@ -81,14 +81,14 @@ const Footer = () => {
                   Khurd, Uttarakhand 248001
                 </li>
                 <li>01 354061391</li>
-                <li>Helpdesk@testwebsite.com</li>
+
               </ul>
             </div>
           </div>
         </div>
         <hr className="hr_footer" />
         <div className="footer-end">
-          <h6 className="text-center">Copyright @2024 | testwebsite </h6>
+          <h6 className="text-center">Copyright @2024  </h6>
         </div>
       </div>
     </div>
