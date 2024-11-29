@@ -123,19 +123,19 @@ const ContactPage = () => {
               <div className="social-media">
                 <ul className="d-flex mt-3 style-none">
                   <li>
-                    <Link to={"https://twitter.com/k2_e_solutions"}>
+                    <Link to={"#"}>
                       <FaTwitter className="social-icon me-2" />
                     </Link>
                   </li>
                   <li>
-                    <Link to={"https://www.instagram.com/k2e_solutions/"}>
+                    <Link to={"#"}>
                       <FaInstagram className="social-icon me-2" />
                     </Link>
                   </li>
                   <li>
                     <Link
                       to={
-                        "https://www.instagram.com/k2e_solutions/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+                        "#"
                       }
                     >
                       <FaFacebook className="social-icon me-2" />

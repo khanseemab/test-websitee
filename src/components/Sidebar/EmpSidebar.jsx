@@ -30,27 +30,6 @@ function EmpSidebar() {
             All Products
           </Link>
 
-          <Dropdown className="text-white">
-            <Dropdown.Toggle variant="none" className="sidebar_element">
-              Generate Performa
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item
-                as={Link}
-                to="/performa"
-                className="nav_items_dropdown"
-              >
-                Performa Invoice
-              </Dropdown.Item>
-              <Dropdown.Item
-                as={Link}
-                to="/performa"
-                className="nav_items_dropdown"
-              >
-                Discounted Performa
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
         </div>
       </div>
     </>

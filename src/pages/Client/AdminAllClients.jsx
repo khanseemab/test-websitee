@@ -29,13 +29,38 @@ const AdminAllClient = () => {
     {
       id: "3",
       role: "User",
+      name: "Himanshu",
+      email: "himanshu@gmail.com",
+      password: "Himanshu@Test",
+      department: "Engineering",
+    },
+    {
+      id: "4",
+      role: "User",
       name: "Faiz Alam",
       email: "faiz@gmail.com",
       password: "Faiz@Test",
       department: "Engineering",
     },
     {
-      id: "4",
+      id: "5",
+      role: "User",
+      name: "Daksh",
+      email: "daksh@gmail.com",
+      password: "Daksh@Test",
+     
+      department: "RD",
+    },
+    {
+      id: "6",
+      role: "User",
+      name: "Rohan",
+      email: "rohan@gmail.com",
+      password: "Rohan@Test",
+      department: "Technical",
+    },
+    {
+      id: "7",
       role: "User",
       name: "Junaid Ahmad",
       email: "junaid@gmail.com",
@@ -43,12 +68,29 @@ const AdminAllClient = () => {
       department: "Technical",
     },
     {
-      id: "5",
+      id: "8",
       role: "User",
       name: "Md Furqan",
       email: "furqan@gmail.com",
       password: "Furqan@Test",
       department: "RD",
+    },
+    {
+      id: "9",
+      role: "User",
+      name: "Saurav",
+      email: "saurav@gmail.com",
+      password: "Saurav@Test",
+    
+      department: "Technical",
+    },{
+      id: "10",
+      role: "User",
+      name: "Masir",
+      email: "masir@gmail.com",
+      password: "Masir@Test",
+    
+      department: "Technical",
     },
   ]);
 

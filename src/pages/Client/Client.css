@@ -12,7 +12,7 @@
    
 }
 .clientTableHead{
-text-align: center;
+text-align: start;
 }
 .clientTableData{
     padding: 0px 10px !important;
