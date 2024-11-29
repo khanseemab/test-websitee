@@ -135,7 +135,7 @@ const Login = () => {
   };
 
   const determineUserRole = (email) => {
-    if (email === "seemab2703@gmail.com" || email === "arbaz@gmail.com" ) {
+    if (email === "admin@gmail.com" || email === "arbaz@gmail.com" ) {
       return "admin";
     } else {
       return "employee";

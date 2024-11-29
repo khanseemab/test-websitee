@@ -13,9 +13,9 @@ const AdminAllClient = () => {
     {
       id: "1",
       role: "Admin",
-      name: "Seemab Khan",
-      email: "seemab2703@gmail.com",
-      password: "Seemab@Test",
+      name: "Admin",
+      email: "admin@gmail.com",
+      password: "Admin",
       department: "Mechanical",
     },
     {

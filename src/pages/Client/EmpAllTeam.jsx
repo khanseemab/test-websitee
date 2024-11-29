@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import EmpHeader from "../../components/Header/EmpHeader";
-import EmpSidebar from "../../components/Sidebar/EmpSidebar";
+
 import { Table } from "react-bootstrap";
 import "./Client.css";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
